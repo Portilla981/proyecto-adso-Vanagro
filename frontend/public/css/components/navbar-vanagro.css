@@ -1,0 +1,150 @@
+.header-vanagro {
+    /* display: grid;
+    grid-template-columns: repeat(1fr, 1); */
+    position: static;
+    /* Posición fija */
+    top: 0;
+    /* Altura Total*/
+    width: 100%;
+    z-index: 10;
+    background-color: var(--primary-900);
+    display: flex;
+    flex-direction: column;
+}
+
+ion-icon {
+    visibility: hidden;
+    display: none;
+}
+
+.header__carrito {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+
+.navbar-vanagro__title {
+    margin: 0;
+    padding: 3rem;
+    font-size: var(--fs-xxl);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.navbar-vanagro__subtitle {
+    font-size: var(--fs-md);
+    color: var(--gray-600);
+
+
+}
+
+.navbar-vanagro {
+    display: flex;
+    flex-direction: column;
+    /* Dirección de los elementos */
+    margin: 0 auto;
+    /* Este pegado a la margen y utilice automáticamente el ancho*/
+    width: 100%;
+    background-color: var(--primary-900);
+}
+
+.navbar-vanagro__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    /* font-size: var(--fs-xxs); */
+}
+
+
+/* Mobile firts */
+.navbar-vanagro__link {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    /* Elimina el decorador de las referencias*/
+    color: var(--white);
+    /* Tamaño de la fuente */
+    font-size: var(--fs-xs);
+    /* Efecto*/
+    transition: color 0.3s ease;
+}
+
+.navbar-vanagro__link:hover {
+    color: var(--secundary-950);
+    font-size: var(--fs-md);
+    padding: 2px;
+}
+
+
+
+p {
+    font-size: var(--fs-md);
+}
+
+
+/* Determinar el estilo responsive de la lista de la barra */
+@media (width > 768px) {
+
+    ion-icon {
+        visibility: visible;
+        display: block;
+        padding: 1rem 3rem;
+        font-size: 48px;
+        color: aliceblue;
+        position: absolute;
+        left: 2rem;
+    }
+
+    .header__carrito {
+        visibility: visible;
+        display: block;
+        padding: 1rem;
+        font-size: 48px;
+        position: absolute;
+        right: 4rem;
+    }
+
+    ion-icon:hover{
+        color: var(--secundary-950);
+        
+    }
+
+    .header__carrito:hover{
+        color: var(--secundary-950);
+        cursor: pointer;
+    }
+    
+    .navbar-vanagro__list {
+        /* list-style: none; */
+        /* Elimina los puntos de la lista de elementos*/
+        /* padding: 4px; */
+        /* margin: 0; */
+        display: flex;
+        flex-direction: row;
+        /* Elementos en linea a lo horizontal*/
+        gap: 40px;
+        /* Separación de elementos */
+        flex-grow: 1;
+        justify-content: space-evenly;
+        /* Separación uniforme a lo ancho del elemento según el total de los elementos*/
+    }
+
+    .sesion2 {
+        display: none;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+    
+}
