@@ -3,7 +3,7 @@
     /* flex-direction: column;   
     justify-content: center;
     align-items: center; */
-    padding: 7rem;
+    padding: 3rem;
     background-color: transparent;
 }
 
@@ -20,8 +20,7 @@
 }
 
 /* Botón de búsqueda */
-.search-section button {
-    
+.search-section button {    
     padding: 10px;
     border: 1px solid var(--gray-300);
     border-left: none;
@@ -33,10 +32,10 @@
     color: var(--gray-900);
 }
 
-.search-bar-container{
-    display: flex;
+/*.search-bar-container{
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 100%; 
 
-}
+}*/

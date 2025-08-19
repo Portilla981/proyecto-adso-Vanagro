@@ -7,13 +7,21 @@ body {
 }
 
 /* Contenedor principal del formulario con fondo blanco, sombra, centrado y padding amplio. */
+.section-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
 .formulario-container {
   background-color: var(--white);
-  padding: 50px;
-  margin: 40px auto;
+  padding: 30px;
+  margin: 20px;
   max-width: 600px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 h2 {
@@ -21,7 +29,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-size: 14px;
   color: var(--black);
 }
@@ -80,7 +88,7 @@ textarea {
 }
 
 /* Responsivo para pantallas menores a 768px */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .grupo-input {
     flex-direction: column;
   }
@@ -89,4 +97,4 @@ textarea {
     flex-direction: column;
     gap: 10px;
   }
-}
+} */
