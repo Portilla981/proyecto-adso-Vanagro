@@ -102,6 +102,7 @@ p {
         color: aliceblue;
         position: absolute;
         left: 2rem;
+        /* z-index: 10;*/
     }
 
     .header__carrito {

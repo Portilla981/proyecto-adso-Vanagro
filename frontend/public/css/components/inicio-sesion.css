@@ -4,9 +4,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 70rem;
+    height: 50rem;
     position: relative;
-    text-align: center;      
+    /* text-align: center;      */
     
 }
 
@@ -18,8 +18,8 @@
 
 .inicio__subtitle{
     margin: 0;
-    padding: 15px;
-    color: black;
+    padding: 1rem;
+    color: var(--white);
 }
 
 .inicio-sesion{
@@ -29,7 +29,7 @@
     border: 2px solid black;
     width: 40rem;
     padding: 2rem;
-    height: 45rem;
+    height: 42rem;
     z-index: 100;
     border-radius: 5rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
@@ -37,12 +37,16 @@
 
 
 label {
-    color: black;
+    display: flex;
+    width: 10rem;
+    padding: 0 3rem;
+    color: var(--white);
     font-size: var(--fs-sm);
+
 }
 
 input{
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 30rem;
     border-radius: 1rem;
     background-color: var(--gray-200);    
@@ -50,9 +54,10 @@ input{
 
 .inicio-button__enlaces{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
-    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 button{
