@@ -1,35 +1,11 @@
-Fondo general blanco
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--main-font);
-    background-color: var(--white);
-} */
 
 .cards__section {
     display: flex;
-    flex-direction: row;
-    /* align-items: center;
     justify-content: center;
     gap: 2rem;
     background-color: var(--gray-50);
-    padding: 30px 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 900px;
-    margin: 20rem;
-    border: 2px solid var(--gray-200);
-    border-radius: 16px; */
+    padding: 0.5rem 2rem 4rem 2rem;    
 } 
-
-.cards-wrapper {
-    display: flex;    
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 1rem 1rem 2rem 1rem;
-
-}
 
 /* Card individual */
 .card {
@@ -41,7 +17,7 @@ Fondo general blanco
     border-radius: 8px;
     border: 1px solid var(--gray-200);
     padding: 16px; 
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(88, 209, 51, 0.699);
 }
 
 /* Imagen */

@@ -10,12 +10,17 @@
 
     <!-- Script de javaScript para el llamado de la clase navbar y render automáticamente con el defer -->
     <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>
-    <!-- <script src="/frontend/public/js/components/sesion-inicio.js" defer></script> -->
+    
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
-    <!-- <script src="/frontend/public/js/components/form-contact-vanagro.js" defer></script> -->
-    <script src="/frontend/public/js/components/cards-home.js" defer></script>
+    
     <script src="/frontend/public/js/components/search.js" defer></script>
-    <!-- <script src="/frontend/public/js/components/hero.js" defer></script> -->
+    
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-product.js";
+        loadCards(".cards__section");
+        // esta la clase para cargar todas las clases 
+    </script>
+
 </head>
 
 <body>
@@ -26,11 +31,9 @@
 
     <section class="search-section">
         <div class="search-bar-container"></div>  
-
-    <!-- Sección de las cards -->
-    
-        <div class="cards__section"></div>
     </section>
+    <!-- Sección de las cards -->    
+    <section class="cards__section"></section>
     
 
     <footer class="footer-vanagro-container"></footer>
