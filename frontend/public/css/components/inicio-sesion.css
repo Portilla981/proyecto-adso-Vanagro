@@ -1,19 +1,32 @@
 .sesion_inicio{
+    /* margin-bottom: -1rem; */
+    padding: 0;
     background-image: url(/frontend/public/assets/vanagro/image1.png);
-    /* image-rendering: auto; */
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 50rem;
-    position: relative;
-    /* text-align: center;      */
-    
+        
 }
 
+label{
+    display: none;    
+    width: 20rem;
+    padding: 0 3rem;
+    color: var(--white);
+}
+
+
 .inicio-sesion-container{
+    /* forma de centrar objetos dentro del contenedor 
     display: flex;
     justify-content: center;
+    align-items: center;*/
+    /* otra forma es asi  */
+    display: grid;
+    place-content: center;
+    height: 100%;
     font-size: var(--fs-sm);
+    
 }
 
 .inicio__subtitle{
@@ -22,62 +35,110 @@
     color: var(--white);
 }
 
+
 .inicio-sesion{
-    background-color: rgba(216, 248, 227, 0.2);
-    margin: 4rem;
-    position: absolute;
+    background-color: rgba(216, 248, 227, 0.5);
+    position: relative;
     border: 2px solid black;
-    width: 40rem;
-    padding: 2rem;
-    height: 42rem;
-    z-index: 100;
     border-radius: 5rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
-}
-
-
-label {
-    display: flex;
-    width: 10rem;
-    padding: 0 3rem;
-    color: var(--white);
-    font-size: var(--fs-sm);
-
+    
+    margin: 3rem;
+    padding: 2rem;
+    width: 30rem;    
+    height: 40rem;
+    
+    /* forma de centrar objetos pero q esten sobre los demas objetos
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    /* z-index: 100; */    
 }
 
 input{
     /* padding: 1rem; */
-    width: 30rem;
+    width: 100%;
     border-radius: 1rem;
     background-color: var(--gray-200);    
 }
 
 .inicio-button__enlaces{
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;    
     justify-content: center;
-    margin-top: 2rem;
+    gap: 2rem; 
+    margin: 2rem 0;
+    padding: 1rem 0; 
 }
 
 button{
     padding: 1rem;
     width: 15rem;
     border-radius: 1rem; 
-    font-size: var(--fs-xs);     
+    font-size: var(--fs-xs); 
+    cursor: pointer;    
 }
 
 .btn-iniciar{
     background-color: var(--primary-950);
 }
 
+.btn-iniciar:hover{
+    background-color: var(--primary-800);
+    color: var(--white);
+    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
+}
+
 .btn-crear{
     background-color: var(--secundary-950);
 }
 
-a{
-    text-decoration: none;
-    color: rgb(45, 11, 201);   
+.btn-crear:hover{
+    background-color: var(--secundary-800);
+    color: var(--gray-400);
+    box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
 }
 
 
+
+a{
+    text-decoration: none;
+    color: rgb(45, 11, 201);    
+}
+
+a:hover{
+    color: var(--secundary-950);
+}
+
+@media (width > 768px) {
+
+    .inicio-sesion{
+    margin: 2rem;
+    padding: 3rem;
+    width: 35rem;    
+    height: 40rem;
+    }
+    
+    .inicio-button__enlaces{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    gap: 2rem;   
+    margin: 1rem 0;
+    }
+
+    label{
+    display: flex;    
+    width: 20rem;
+    padding: 0 3rem;
+    color: var(--white);
+    }
+
+    a{    
+    font-size: var(--fs-md);   
+    }
+
+}
