@@ -1,0 +1,60 @@
+<div class="product-edit">
+    <h2 class="product-edit__title">Edición de Productos</h2>
+    <p class="product-edit__subtitle">Haga los cambios necesarios y luego dé clic en <strong>Guardar Cambios</strong> para hacer efectivos sus cambios.</p>
+
+    <form action="#" method="post" class="product-edit__form">
+        <!-- ID del producto -->
+        <div class="product-edit__row">
+            <span class="product-edit__label">ID_PRODUCTO: AB12345</span>
+        </div>
+
+        <!-- Campos de entrada -->
+        <div class="product-edit__row">
+            <input type="text" value="Plátano Verde" class="product-edit__input" required>
+            <input type="number" value="3000" class="product-edit__input" required>
+        </div>
+
+        <div class="product-edit__row">
+            <textarea class="product-edit__textarea" required>Plátano Verde x 1 ud</textarea>
+            <select class="product-edit__select" required>
+                <option value="">Unidad de Medida</option>
+                <option value="kg">Kilogramos</option>
+                <option value="und" selected>Unidades</option>
+                <option value="lt">Litros</option>
+            </select>
+        </div>
+
+        <!-- Tipo de producto -->
+        <div class="product-edit__row product-edit__row--checkbox">
+            <span class="product-edit__label">Tipo de Producto:</span>
+            <label><input type="checkbox"> Carne</label>
+            <label><input type="checkbox" checked> Frutas</label>
+            <label><input type="checkbox"> Granos</label>
+            <label><input type="checkbox"> Lácteos</label>
+            <label><input type="checkbox"> Verduras</label>
+        </div>
+
+        <!-- Sección de fechas -->
+        <div class="product-edit__dates">
+            <h3 class="product-edit__dates-title">Caducidad</h3>
+            <input type="date" class="product-edit__input" value="2025-05-24" required>
+            <input type="date" class="product-edit__input" value="2025-06-01" required>
+        </div>
+
+        <!-- Subida de imagen -->
+        <div class="product-edit__image">
+            <span class="product-edit__label">ID_PRODUCTO: PR987654</span>
+            <div class="product-edit__image-upload">
+                <img src="/frontend/public/img/platano-verde.jpg" alt="Plátano Verde" class="product-edit__image-preview">
+                <p>Habilitar / Deshabilitar</p>
+                <span class="product-edit__icon">👁</span>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="product-edit__actions">
+            <button type="submit" class="product-edit__button product-edit__button--save">Guardar Cambios</button>
+            <button type="reset" class="product-edit__button product-edit__button--cancel">Cancelar</button>
+        </div>
+    </form>
+</div>
