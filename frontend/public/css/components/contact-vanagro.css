@@ -7,11 +7,9 @@ body {
 }
 
 /* Contenedor principal del formulario con fondo blanco, sombra, centrado y padding amplio. */
-.section-contacto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.contact__section{  
+  display: grid;
+  place-content: center;
 }
 
 
@@ -43,6 +41,7 @@ p {
 /* Grupo de campos alineados horizontalmente con espacio entre ellos. */
 .grupo-input {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -56,14 +55,16 @@ input, textarea {
 }
 
 textarea {
-  height: 80px;
-  resize: none;
+  height: 30rem;
+  /* resize: none; */
 }
 
 .botones {
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer; 
 }
 
 .btn-enviar {
@@ -74,7 +75,12 @@ textarea {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
+}
 
+.btn-enviar:hover {
+  background-color: var(--primary-800);
+  color: var(--black);
+  box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
 }
 
 .btn-cancelar {
@@ -87,14 +93,29 @@ textarea {
   font-weight: bold;
 }
 
-/* Responsivo para pantallas menores a 768px */
-/* @media (max-width: 768px) {
-  .grupo-input {
-    flex-direction: column;
-  }
+.btn-cancelar:hover {
+  background-color: var(--secundary-800);
+  color: var(--gray-400);
+  box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
+}
+
+
+@media (width > 768px) {
 
   .botones {
-    flex-direction: column;
-    gap: 10px;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-evenly; 
+  
   }
-} */
+  
+  .grupo-input {  
+  flex-direction: row;
+  gap: 30px;
+  }
+
+
+
+
+
+}

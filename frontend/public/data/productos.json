@@ -29,7 +29,40 @@
         "breve": "Delicioso Quesillo",
         "imgProd": "../assets/quesito.jpg",
         "precio": "$ 6.800"
+    },
+
+    {
+        "id": "banano-1",
+        "title": "Banano x 500g",
+        "breve": "Apróx... 3 uds",
+        "imgProd": "../assets/banano.png",
+        "precio": "$ 2.079"
+    },
+
+    {
+        "id": "cafe-1",
+        "title": "Café x 100gr",
+        "breve": "Café en grano",
+        "imgProd": "../assets/cafe.jpg",
+        "precio": "$ 17.500"
+    },
+
+    {
+        "id": "carne-res-1",
+        "title": "Carne de res posta x 1kg",
+        "breve": "Corte especial fresco",
+        "imgProd": "../assets/posta.png",
+        "precio": "$ 34.200"
+    },
+    
+    {
+        "id": "queso-libra-1",
+        "title": "Queso x 1Lb",
+        "breve": "Delicioso Quesillo",
+        "imgProd": "../assets/quesito.jpg",
+        "precio": "$ 6.800"
     }
+    
     
     
 

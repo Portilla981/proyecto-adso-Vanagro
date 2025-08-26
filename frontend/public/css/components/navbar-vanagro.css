@@ -1,6 +1,4 @@
 .header-vanagro {
-    /* display: grid;
-    grid-template-columns: repeat(1fr, 1); */
     position: static;
     /* Posición fija */
     top: 0;
@@ -22,13 +20,10 @@ ion-icon {
     display: none;
 }
 
-
-
-
 .navbar-vanagro__title {
     margin: 0;
-    padding: 3rem;
-    font-size: var(--fs-xxl);
+    padding: 1rem;
+    font-size: var(--fs-xl);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -63,7 +58,6 @@ ion-icon {
     /* font-size: var(--fs-xxs); */
 }
 
-
 /* Mobile firts */
 .navbar-vanagro__link {
     display: block;
@@ -80,11 +74,8 @@ ion-icon {
 
 .navbar-vanagro__link:hover {
     color: var(--secundary-950);
-    font-size: var(--fs-md);
-    padding: 2px;
+    scale: 1.5;    
 }
-
-
 
 p {
     font-size: var(--fs-md);

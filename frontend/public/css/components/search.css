@@ -3,13 +3,13 @@
     /* flex-direction: column;   
     justify-content: center;
     align-items: center; */
-    padding: 3rem;
+    padding: 1rem;
     background-color: transparent;
 }
 
 /* Campo de texto */
 .search-section input {
-    width: 300px;
+    width: 200px;
     padding: 10px;
     border: 1px solid var(--gray-300);
     border-radius: 5px 0 0 5px;
@@ -21,21 +21,17 @@
 
 /* Botón de búsqueda */
 .search-section button {    
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid var(--gray-300);
-    border-left: none;
+    /* border-left: none; */
     background-color: var(--gray-200);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: var(--fs-xs); 
-    font-family: var(--main-font);
-    color: var(--gray-900);
+    /* font-size: var(--fs-xs);*/
+    /* font-family: var(--main-font); */
+    /* color: var(--gray-900); */
+}
+.searchButton{
+    width: 50px;
 }
 
-/*.search-bar-container{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%; 
-
-}*/

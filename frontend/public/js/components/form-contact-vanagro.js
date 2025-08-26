@@ -5,11 +5,11 @@ function cancelarFormulario() {
 }
 
 // Enviar formulario
-document.getElementById("formulario-contacto").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Formulario enviado correctamente.");
-  this.reset();
-});
+// document.getElementById("formulario-contacto").addEventListener("submit", function(e) {
+//   e.preventDefault();
+//   alert("Formulario enviado correctamente.");
+//   this.reset();
+// });
 
 
 

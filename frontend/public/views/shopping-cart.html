@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+    <!-- script para los iconos del footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+    
+    <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>    
+    <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
+    <script src="/frontend/public/js/components/shopping-cart.js" defer></script>
+    
+    
+</head>
+
+<body>
+    
+
+    <header class="header-vanagro">
+        <div class="navbar-vanagro-container"></div>
+    </header>
+
+
+    <main class="cart">
+        <h2 class="cart__title">Mi Carrito</h2>
+
+        <div class="cart__header">
+            <span>Producto</span>
+            <span>Medida</span>
+            <span>Cantidad</span>
+            <span>Subtotal</span>
+            <span>Finca/Tienda</span>
+            <span>Eliminar</span>
+        </div>
+
+
+        <section class="cart__products" id="cart-products">
+        <!-- Aquí se insertarán las cards de producto con JS -->
+        </section>
+
+        <div class="cart__summary">
+            <div class="cart__total">
+                <span class="cart__total-label">TOTAL</span>
+                <span class="cart__total-value" id="cart-total">$0</span>
+            </div>
+        </div>
+        <br>
+        <div class="cart__actions">
+            <button class="cart__button cart__button--buy">¡Comprar!</button>
+            <button class="cart__button cart__button--continue">Seguir Viendo</button>
+        </div>
+    </main>
+    
+    
+
+
+    <footer class="footer-vanagro-container"></footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</html>
