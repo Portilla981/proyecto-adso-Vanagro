@@ -1,0 +1,142 @@
+body {
+  background-color: var(--gray-50);
+  font-family: var(--main-font);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+/* ====== CART ====== */
+.cart {
+  padding: 20px;
+}
+
+.cart__header {
+  display: grid;
+  grid-template-columns: 120px 100px 150px 100px 1fr 60px; 
+  padding: 10px;
+  font-weight: bold;
+  background: var(--gray-100);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.cart__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart__products {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart__summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: var(--primary-200);
+  border-radius: 5px;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cart__button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cart__button--buy {
+  background: var(--primary-900);
+  color: var(--black);
+}
+
+.cart__button--continue {
+  background: var(--secundary-900);
+}
+
+/* ====== PRODUCT CARD ====== */
+.product-card {
+  display: grid;
+  grid-template-columns: 0fr 0.5fr 1fr 0.5fr 1fr 0fr;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.product-card__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card__info {
+  margin: 0;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-card__measure,
+.product-card__price,
+.product-card__store {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.product-card__quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-card__btn {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: var(--gray-50);
+}
+
+.product-card__remove {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: var(--black);
+}
+
+@media (width > 768px) {
+
+  .botones {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-evenly; 
+  
+  }
+  
+  .grupo-input {  
+  flex-direction: row;
+  gap: 30px;
+  }
+
+
+}
