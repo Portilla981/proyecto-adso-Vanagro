@@ -1,0 +1,161 @@
+.contenedor-info-user {
+    display: flex;
+    flex-direction: column-reverse;
+    /* place-content: center; */
+    height: 100%;
+    font-size: var(--fs-sm);
+
+}
+
+.info-user {
+    background-color: rgba(216, 248, 227, 0.5);
+    border: 2px solid black;
+    border-radius: 5rem;
+    margin: 3rem 1rem;
+    padding: 0 5rem;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info-user h3 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0 0.5rem 0;
+    color: var(--black);
+}
+
+.info-user p {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: var(--gray-900);
+    font-size: var(--fs-md);
+}
+
+.info-user-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.info-user button {
+    align-items: center;
+    padding: 0.5rem;
+    width: 150px;
+    border-radius: 1rem;
+    font-size: var(--fs-xs);
+    cursor: pointer;
+
+}
+
+
+.btn-editar-user {
+    background-color: var(--primary-950);
+}
+
+.btn-editar-user:hover {
+    background-color: var(--primary-800);
+    color: var(--white);
+    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
+}
+
+.btn-cerrar-sesion {
+    background-color: var(--secundary-950);
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: var(--secundary-800);
+    color: var(--gray-400);
+    box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400);
+}
+
+
+
+.foto-user-cuenta {
+    background-image: url(/frontend/public/assets/vanagro/oficina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+.foto-user-cuenta img {
+    margin: 2rem 4rem;
+    display: flex;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid var(--black);
+    border-radius: 30%;
+    border-color: var(--secundary-400);
+    /* box-shadow: 0.5rem 0.5rem 1rem var(--primary-400); */
+}
+
+.acciones-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+.opciones-user {
+    display: flex;
+    width: 300px;
+    height: 5rem;
+    justify-content: end;
+
+}
+
+.opciones-user ion-icon {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.opciones-user input {
+    display: flex;
+    align-items: start;
+}
+
+.opciones-user input:hover{
+    background-color: var(--secundary-400);
+    color: var(--primary-950);
+    scale: 1.1;    
+}
+
+
+@media (width > 768px) {
+
+    .contenedor-info-user {       
+        
+        place-content: center;
+        flex-direction: row;
+        /* height: 100%; */
+        font-size: var(--fs-sm);
+
+    }
+
+    .info-user {
+        width: 50%;
+        height: 300px;
+    }
+
+    .info-user-button {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
