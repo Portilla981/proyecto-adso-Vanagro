@@ -1,0 +1,72 @@
+<div class="formulario-registro">
+    <h2>Registro de Usuarios</h2>
+    
+    <form class="form-register-user" action="">
+        <p>Id:</p>
+
+        <div class="form-container">
+
+        <div class="form-register_fields">
+        
+        <!-- <label for="nombres">Nombres</label> -->
+        <input id="nombres" type="text" placeholder="Ingrese sus nombres">   
+        
+        <!-- <label for="apellidos">Apellidos</label> -->
+        <input id="apellidos" type="text" placeholder="Ingrese sus apellidos">   
+               
+        <!-- <label for="tipo_documento">Tipo de documento</label> -->
+        <select name="tipo-docuemnto" id="tipo_documento">
+            <option value="cedula">Cedula de ciudadania</option>
+            <option value="extranjero">Cedula de extranjeria</option>
+            <option value="nit">NIT</option>
+        </select>
+        
+        <!-- <label for="numero-documento">Numero Documento</label> -->
+        <input id="numero-documento" type="text" placeholder="Ingrese su numero de docuemnto">
+        
+        <!-- <label for="departamento">Departamento</label> -->
+        <select name="departamento" id="departamento">
+            <option value="caldas">Caldas</option>
+            <option value="quindio">Quindio</option>
+            <option value="risaralda">Risaralda</option>
+        </select>
+
+        <!-- <label for="municipio">Municipio</label> -->
+        <select name="municipio" id="municipio">
+            <option value="pereira">Pereira</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+
+        <!-- <label for="email">Correo electronico</label> -->
+        <input id="email" type="email" placeholder="Ingrese su e-mail">
+        
+        <!-- <label for="direccion">Direccion</label> -->
+        <input id="direccion" type="text" placeholder="Ingrese su direccion">
+        
+        <!-- <label for="telefono">Telefono 1</label> -->
+        <input id="telefono" type="text" placeholder="Ingrese su numero de contacto">
+        
+        <!-- <label for="telefono-2">Telefono 2</label> -->
+        <input id="telefono-2" type="text" placeholder="Ingrese otro numero de contacto ">   
+
+        <input id="contraseña" type="password" placeholder="Ingrese una contraseña">   
+        <input id="contraseña-2" type="password" placeholder="Ingrese nuevamente la contraseña">   
+        </div>
+        <div class="foto-user" aria-placeholder="Inserte foto">
+            <input type="file">
+                                            
+        </div>
+        </div>
+
+        <div class="form-button__accion">
+            <button class="btn-crear-user" type="submit">Crear Usuario</button>
+            <a href="/frontend/public/views/index_vanagro.html">
+            <button type="button" class="btn-cancelar-user" >Cancelar</button>
+            </a>               
+        </div>
+
+    </form>
+    
+
+</div>

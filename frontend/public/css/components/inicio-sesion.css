@@ -8,7 +8,7 @@
         
 }
 
-label{
+.sesion_inicio label{
     display: none;    
     width: 20rem;
     padding: 0 3rem;
@@ -43,9 +43,9 @@ label{
     border-radius: 5rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
     
-    margin: 3rem;
+    margin:  3rem 1rem;
     padding: 2rem;
-    width: 30rem;    
+    width: 35rem;    
     height: 40rem;
     
     /* forma de centrar objetos pero q esten sobre los demas objetos
@@ -56,9 +56,9 @@ label{
     /* z-index: 100; */    
 }
 
-input{
+.inicio-sesion input{
     /* padding: 1rem; */
-    width: 100%;
+    width: 90%;
     border-radius: 1rem;
     background-color: var(--gray-200);    
 }
@@ -73,7 +73,7 @@ input{
     padding: 1rem 0; 
 }
 
-button{
+.inicio-button__enlaces button{
     padding: 1rem;
     width: 15rem;
     border-radius: 1rem; 
@@ -117,7 +117,7 @@ a:hover{
     .inicio-sesion{
     margin: 2rem;
     padding: 3rem;
-    width: 35rem;    
+    width: 40rem;    
     height: 40rem;
     }
     
@@ -130,7 +130,7 @@ a:hover{
     margin: 1rem 0;
     }
 
-    label{
+    .sesion_inicio label{
     display: flex;    
     width: 20rem;
     padding: 0 3rem;

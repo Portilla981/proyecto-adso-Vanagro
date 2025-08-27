@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-ion-icon {
+.header-vanagro ion-icon {
     visibility: hidden;
     display: none;
 }
@@ -85,7 +85,7 @@ p {
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
 
-    ion-icon {
+    .header-vanagro ion-icon {
         visibility: visible;
         display: block;
         padding: 1rem 3rem;
@@ -105,7 +105,7 @@ p {
         right: 4rem;
     }
 
-    ion-icon:hover{
+    .header-vanagro ion-icon:hover{
         color: var(--secundary-950);
         
     }
