@@ -1,0 +1,168 @@
+/* ============================= */
+/*  CREATE PRODUCT - PRODUCT FORM*/
+/* ============================= */
+
+.product-form {
+  background-color: var(--white);
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--main-font);
+}
+
+.product-form__title {
+  font-size: var(--fs-lg);
+  color: var(--primary-900);
+  text-align: center;
+}
+
+.product-form__subtitle {
+  font-size: var(--fs-xxs);
+  color: var(--gray-700);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product-form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* filas generales */
+.product-form__row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-form__label {
+  font-size: var(--fs-xs);
+  color: var(--gray-900);
+  font-weight: bold;
+}
+
+/* inputs, selects y textarea */
+.product-form__input,
+.product-form__select,
+.product-form__textarea {
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  background-color: var(--gray-50);
+  font-size: var(--fs-xs);
+}
+
+.product-form__textarea {
+  resize: vertical;
+  min-height: 8rem;
+  flex: 1;
+}
+
+/* checkbox */
+.product-form__row--checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start; /* evita que crezca con textarea */
+}
+
+.product-form__row--checkbox label {
+  display: inline-flex;       /* hace que checkbox y texto estén juntos */
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-xs);
+  color: var(--gray-800);
+  flex: none;                 /* evita que crezca */
+}
+
+/* sección de fechas */
+.product-form__dates {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-form__dates-title {
+  font-size: var(--fs-sm);
+  color: var(--primary-800);
+  font-weight: bold;
+}
+
+/* imagen */
+.product-form__image {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.product-form__image-upload {
+  border: 2px dashed var(--gray-400);
+  border-radius: 0.5rem;
+  padding: 4rem;
+  color: var(--gray-500);
+  font-size: var(--fs-xs);
+  cursor: pointer;
+}
+.product-form__image-upload:hover {
+  background-color: var(--gray-100);
+}
+
+/* acciones (botones) */
+.product-form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-form__button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: var(--fs-xs);
+  transition: 0.3s ease;
+}
+
+/* boton crear */
+.product-form__button--create {
+  background-color: var(--primary-900);
+  color: var(--white);
+}
+.product-form__button--create:hover {
+  background-color: var(--primary-700);
+  color: var(--black);
+  box-shadow: 0.2rem 0.2rem 0.8rem var(--primary-400);
+}
+
+/* boton cancelar */
+.product-form__button--cancel {
+  background-color: var(--secundary-900);
+  color: var(--black);
+}
+.product-form__button--cancel:hover {
+  background-color: var(--secundary-800);
+  color: var(--gray-700);
+  box-shadow: 0.2rem 0.2rem 0.8rem var(--secundary-400);
+}
+
+/* RESPONSIVE */
+@media (width > 768px) {
+  .product-form__row {
+    flex-direction: row;
+  }
+  .product-form__actions {
+    flex-direction: row;
+  }
+  .product-form__dates {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
