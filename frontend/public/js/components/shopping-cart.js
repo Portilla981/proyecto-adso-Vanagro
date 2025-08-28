@@ -42,7 +42,9 @@ function renderCart() {
     productCard.classList.add("product-card");
 
     productCard.innerHTML = `
+      <div>
       <img src="${product.image}" alt="${product.name}" class="product-card__image">
+      </div>
       <h3 class="product-card__title">${product.name}</h3>
       <p class="product-card__measure">${product.measure}</p>
       <div class="product-card__quantity">

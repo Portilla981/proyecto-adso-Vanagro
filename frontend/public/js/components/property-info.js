@@ -41,7 +41,7 @@ async function cargarFincas() {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = template;
 
-    const card = tempDiv.querySelector(".card");
+    const card = tempDiv.querySelector(".card-property");
     card.querySelector(".card__image").src = finca.imagen;
     card.querySelector(".card__title").textContent = finca.nombre;
     card.querySelector(".card__owner").textContent = finca.encargado;

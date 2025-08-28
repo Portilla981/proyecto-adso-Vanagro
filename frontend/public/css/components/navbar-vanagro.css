@@ -5,20 +5,15 @@
     /* Altura Total*/
     width: 100%;
     z-index: 10;
-    background-color: var(--primary-900);
-    display: flex;
-    flex-direction: column;
+    background-color: var(--primary-900);    
 }
+
 
 .header-vanagro ion-icon {
     visibility: hidden;
     display: none;
 }
 
-.header__carrito {
-    visibility: hidden;
-    display: none;
-}
 
 .navbar-vanagro__title {
     margin: 0;
@@ -33,8 +28,6 @@
 .navbar-vanagro__subtitle {
     font-size: var(--fs-md);
     color: var(--gray-600);
-
-
 }
 
 .navbar-vanagro {
@@ -85,29 +78,27 @@ p {
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
 
+    .navbar-vanagro__container{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
     .header-vanagro ion-icon {
         visibility: visible;
         display: block;
         padding: 1rem 3rem;
         font-size: 48px;
         color: aliceblue;
-        position: absolute;
-        left: 2rem;
-        /* z-index: 10;*/
+        position: relative;   
+                
     }
 
-    .header__carrito {
-        visibility: visible;
-        display: block;
-        padding: 1rem;
-        font-size: 48px;
-        position: absolute;
-        right: 4rem;
-    }
-
+    
     .header-vanagro ion-icon:hover{
         color: var(--secundary-950);
-        
+        scale: 1.2;        
     }
 
     .header__carrito:hover{
