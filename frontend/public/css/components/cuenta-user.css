@@ -137,6 +137,15 @@
 
 
 @media (width > 768px) {
+    
+    .header-simple ion-icon {
+        /* visibility: visible; */
+        /* display: block; */
+        /* padding: 1rem 3rem;
+        font-size: 48px;
+        color: aliceblue; */
+        position: absolute;
+    }
 
     .contenedor-info-user {       
         
@@ -156,6 +165,10 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
+    }
+
+    .back{
+        display: none;
     }
 
 }

@@ -13,11 +13,11 @@
 } 
 
 /* Card individual */
-.card {
+.card-product {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 320px;
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--gray-200);
@@ -26,12 +26,12 @@
     cursor: pointer;
 }
 
-.card:hover{
+.card-product:hover{
     scale: 1.1;
 }
 
 /* Imagen */
-.card img {
+.card-product img {
     width: 140px; 
     height: 140px;
     object-fit: cover;
@@ -39,7 +39,7 @@
 }
 
 /* Descripción */
-.card p {
+.card-product p {
     margin: 6px 0;
     font-size: var(--fs-xs); 
     text-align: center;
@@ -48,10 +48,26 @@
 }
 
 /* Precio en negrilla */
-.card strong {
+.card-product strong {
     font-weight: bold;
     color: var(--black);
     font-size: var(--fs-md); 
+}
+
+.reference-product button {
+    padding: 10px 20px;
+    width: 250px;
+    background-color: var(--secundary-800);    
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.reference-product{
+    display: flex;
+    width: 90%;
+    justify-content: center;
 }
 
 @media(width > 768px){
@@ -61,7 +77,15 @@
     flex-direction: row;
     flex-wrap: wrap;    
     width: 98%; 
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     } 
+
+    .card-product {
+        width: 250px;        
+    }
+
+    .reference-product{
+        justify-content: flex-end;
+    }
 }

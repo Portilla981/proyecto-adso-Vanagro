@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Script de javaScript para el llamado de la clase navbar y render automáticamente con el defer -->
-    <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>    
-    <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>    
+    <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>
+    <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
     <script src="/frontend/public/js/components/search.js" defer></script>
-    
+
     <script type="module">
         import { loadCards } from "/frontend/public/js/components/card-product.js";
         loadCards(".cards__section");
@@ -28,14 +28,26 @@
     </header>
 
     <section class="search-section">
-        <div class="search-bar-container"></div>  
-    
-    <!-- Sección de las cards -->    
-    <section class="cards__section"></section> 
-    </section>   
+        <div class="search-bar-container"></div>
+
+        <!-- Sección de las cards -->
+        <section class="cards__section">
+
+        </section>
+        <a class="reference-product" href="/frontend/public/views/index_vanagro.html">
+            <button type="button">Ver mas</button>
+        </a>
+
+    </section>
+
+
 
     <footer class="footer-vanagro-container"></footer>
-    
+
+
+
+
+
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
