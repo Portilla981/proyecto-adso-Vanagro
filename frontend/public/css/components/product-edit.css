@@ -45,25 +45,51 @@
 .product-edit__input,
 .product-edit__select,
 .product-edit__textarea {
-  padding: 1rem;
+  height: 48px;
+  padding: 0 16px;
   border: 1px solid var(--gray-400);
-  border-radius: 0.5rem;
-  background-color: var(--gray-50);
+  border-radius: 4px;
+  background-color: var(--white);
   font-size: var(--fs-xs);
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.product-edit__input:focus,
+.product-edit__select:focus,
+.product-edit__textarea:focus {
+  outline: none;
+  border-color: var(--primary-900);
+  box-shadow: 0 0 0 2px rgba(85, 180, 12, 0.2);
+}
+
+/* Textarea */
 .product-edit__textarea {
+  min-height: 120px;
+  padding: 12px 16px;
   resize: vertical;
-  min-height: 8rem;
   flex: 1;
 }
 
-/* checkboxes */
+.product-edit__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23676767' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
+/* Checkboxes con Material Design */
 .product-edit__row--checkbox {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
+}
+
+.product-edit__row--checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-900);
 }
 
 .product-edit__row--checkbox label {
@@ -75,7 +101,7 @@
   flex: none;
 }
 
-/* fechas */
+/* Fechas */
 .product-edit__dates {
   display: flex;
   flex-direction: column;
@@ -91,7 +117,7 @@
   font-weight: bold;
 }
 
-/* imagen */
+/* Imagen */
 .product-edit__image {
   display: flex;
   flex-direction: column;
@@ -121,46 +147,7 @@
   color: var(--gray-700);
 }
 
-/* botones */
-.product-edit__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.product-edit__button {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: var(--fs-xs);
-  transition: 0.3s ease;
-}
-
-.product-edit__button--save {
-  background-color: var(--primary-900);
-  color: var(--white);
-}
-.product-edit__button--save:hover {
-  background-color: var(--primary-700);
-  color: var(--black);
-  box-shadow: 0.2rem 0.2rem 0.8rem var(--primary-400);
-}
-
-.product-edit__button--cancel {
-  background-color: var(--secundary-900);
-  color: var(--black);
-}
-.product-edit__button--cancel:hover {
-  background-color: var(--secundary-800);
-  color: var(--gray-700);
-  box-shadow: 0.2rem 0.2rem 0.8rem var(--secundary-400);
-}
-
-/* responsive */
+/* Responsive */
 @media (width > 768px) {
   .product-edit__row {
     flex-direction: row;
