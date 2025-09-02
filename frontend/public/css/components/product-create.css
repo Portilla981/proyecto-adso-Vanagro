@@ -1,8 +1,4 @@
-/* ============================= */
-/*  CREATE PRODUCT - PRODUCT FORM*/
-/* ============================= */
-
-.product-form {
+.product-form { 
   background-color: var(--white);
   padding: 3rem;
   margin: 2rem auto;
@@ -34,7 +30,7 @@
   gap: 2rem;
 }
 
-/* filas generales */
+/* Filas */
 .product-form__row {
   display: flex;
   flex-direction: column;
@@ -47,59 +43,88 @@
   font-weight: bold;
 }
 
-/* inputs, selects y textarea */
+/* Inputs, selects y textarea Material Design */
 .product-form__input,
 .product-form__select,
 .product-form__textarea {
-  padding: 1rem;
+  height: 48px;
+  padding: 0 16px;
   border: 1px solid var(--gray-400);
-  border-radius: 0.5rem;
-  background-color: var(--gray-50);
+  border-radius: 4px;
+  background-color: var(--white);
   font-size: var(--fs-xs);
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.product-form__input:focus,
+.product-form__select:focus,
+.product-form__textarea:focus {
+  outline: none;
+  border-color: var(--primary-900);
+  box-shadow: 0 0 0 2px rgba(85, 180, 12, 0.2);
+}
+
+/* Textarea */
 .product-form__textarea {
+  min-height: 120px;
+  padding: 12px 16px;
   resize: vertical;
-  min-height: 8rem;
   flex: 1;
 }
 
-/* checkbox */
+/* Select */
+.product-form__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23676767' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
+/* Checkboxes */
 .product-form__row--checkbox {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: flex-start; /* evita que crezca con textarea */
+  align-items: flex-start; 
+}
+
+.product-form__row--checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-900);
 }
 
 .product-form__row--checkbox label {
-  display: inline-flex;       /* hace que checkbox y texto estén juntos */
+  display: inline-flex;       
   align-items: center;
   gap: 0.5rem;
   font-size: var(--fs-xs);
   color: var(--gray-800);
-  flex: none;                 /* evita que crezca */
+  flex: none;
 }
 
-/* sección de fechas */
+/* Fechas */
 .product-form__dates {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .product-form__dates-title {
   font-size: var(--fs-sm);
   color: var(--primary-800);
   font-weight: bold;
 }
 
-/* imagen */
+/* Imagen */
 .product-form__image {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: center;
 }
+
 .product-form__image-upload {
   border: 2px dashed var(--gray-400);
   border-radius: 0.5rem;
@@ -108,52 +133,12 @@
   font-size: var(--fs-xs);
   cursor: pointer;
 }
+
 .product-form__image-upload:hover {
   background-color: var(--gray-100);
 }
 
-/* acciones (botones) */
-.product-form__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.product-form__button {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: var(--fs-xs);
-  transition: 0.3s ease;
-}
-
-/* boton crear */
-.product-form__button--create {
-  background-color: var(--primary-900);
-  color: var(--white);
-}
-.product-form__button--create:hover {
-  background-color: var(--primary-700);
-  color: var(--black);
-  box-shadow: 0.2rem 0.2rem 0.8rem var(--primary-400);
-}
-
-/* boton cancelar */
-.product-form__button--cancel {
-  background-color: var(--secundary-900);
-  color: var(--black);
-}
-.product-form__button--cancel:hover {
-  background-color: var(--secundary-800);
-  color: var(--gray-700);
-  box-shadow: 0.2rem 0.2rem 0.8rem var(--secundary-400);
-}
-
-/* RESPONSIVE */
+/* Responsive */
 @media (width > 768px) {
   .product-form__row {
     flex-direction: row;

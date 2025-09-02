@@ -100,11 +100,6 @@ p {
         color: var(--secundary-950);
         scale: 1.2;        
     }
-
-    .header__carrito:hover{
-        color: var(--secundary-950);
-        cursor: pointer;
-    }
     
     .navbar-vanagro__list {
         /* list-style: none; */
@@ -120,14 +115,4 @@ p {
         justify-content: space-evenly;
         /* Separación uniforme a lo ancho del elemento según el total de los elementos*/
     }
-
-    .sesion2 {
-        display: none;
-    }
-
-    .carrito {
-        display: none;
-    }
-
-    
 }
