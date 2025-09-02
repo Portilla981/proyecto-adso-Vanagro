@@ -46,12 +46,7 @@
 
 }
 
-.foto-user input{
-    /* display: flex; */
-    /* align-items: end; */
-    /* flex-direction: column; */
-    
-    /* background-color: var(--gray-100); */
+.foto-user input{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -61,13 +56,9 @@
     margin: 20px 10px;
     align-content: flex-end;
     background-color: var(--white);
-
-    /* margin-bottom: 200px; */
-    
-
 }
 
-.form-container{
+.form-container__register{
     display: flex;    
     flex-direction: column;
     align-items: center;
@@ -91,9 +82,8 @@
     border-radius: 1rem; 
     font-size: var(--fs-xs); 
     cursor: pointer;
-
-
 }
+
 
 .btn-crear-user{
     background-color: var(--primary-950);
@@ -123,11 +113,13 @@
         display: grid;
         place-content: center;
         height: 100%;
+        width: 100%;
     }
 
     .form-register-user{
         height: 500px;
         width: 700px;
+        overflow: visible;
     }
 
     .form-register_fields{
@@ -140,7 +132,7 @@
 
 }
 
-.form-container{
+.form-container__register{
     flex-direction: row;
     align-items: flex-start;
 
@@ -152,7 +144,6 @@
     align-items: center;    
     justify-content:space-evenly ;
     width: 70%;
-
     gap: 4rem; 
     margin: 2rem 0;
     padding: 1rem 0;

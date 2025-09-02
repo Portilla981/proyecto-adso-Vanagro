@@ -7,26 +7,19 @@
 .navbar-logged-in__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   padding: 1rem;
 }
 
-/* Logout a la izquierda */
-.navbar-logged-in__logout {
-  position: absolute;
-  left: 1rem;
-}
+/* .navbar-logged-in__logout {
+  visibility: hidden;
+  display: none;
+} */
 
-.navbar-logged-in__logout ion-icon {
-  font-size: 2rem;
-  color: var(--white);
-  transition: color 0.3s, transform 0.3s;
-}
-
-.navbar-logged-in__logout ion-icon:hover {
-  color: var(--secundary-950);
-  transform: scale(1.2);
+.navbar-logged-in__logout  ion-icon{
+  visibility: hidden;
+  display: none;
 }
 
 .navbar-logged-in__brand {
@@ -80,10 +73,29 @@
 }
 
 @media (width > 768px) {
+
   .navbar-logged-in__list {
     flex-direction: row;
     gap: 40px; /* separación grande */
     justify-content: center;
   }
+
+  .navbar-logged-in__logout ion-icon {
+        visibility: visible;
+        display: block;
+        padding: 1rem 3rem;
+        font-size: 48px;
+        color: var(--white);
+        position: relative; 
+        z-index: 10;  
+        transition: color 0.3s ease, transform 0.2s ease;              
+    }
+
+  .navbar-logged-in__logout:hover ion-icon{
+        color: var(--secundary-950);
+        scale: 1.2;
+    } 
+
+
 }
 

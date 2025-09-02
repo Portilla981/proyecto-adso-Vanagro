@@ -1,10 +1,10 @@
-body {
+/* body {
   background-color: var(--gray-50);
   font-family: var(--main-font);
   text-align: center;
   margin: 0;
   padding: 0;
-}
+} */
 
 .edit_producter_section{  
   display: grid;
@@ -33,14 +33,14 @@ body {
   gap: 20px;
 }
 
-input, select {
+.product-edit__row input, select {
   flex: 1;
   padding: 10px;
   border: 1px solid var(--gray-900);
   border-radius: 4px;
   background-color: var(--gray-100);
   font-size: 12px;
-  width: 270px;
+  /* width: 300px; */
 }
 
 select {

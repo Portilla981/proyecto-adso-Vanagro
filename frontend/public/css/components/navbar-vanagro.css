@@ -84,18 +84,18 @@
     .header-vanagro ion-icon {
         visibility: visible;
         display: block;
-        padding: 1rem 3rem;
+        padding: 1rem 5rem;
         font-size: 48px;
-        color: aliceblue;
+        color: var(--white);
         position: relative; 
-        z-index: 10;  
-                
+        z-index: 10;                
     }
 
     
     .header-vanagro ion-icon:hover{
         color: var(--secundary-950);
-        scale: 1.2;        
+        scale: 1.2;
+
     }
     
     .navbar-vanagro__list {
@@ -103,7 +103,7 @@
         /* Elimina los puntos de la lista de elementos*/
         /* padding: 4px; */
         /* margin: 0; */
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         /* Elementos en linea a lo horizontal*/
         gap: 40px;
@@ -112,4 +112,17 @@
         justify-content: space-evenly;
         /* Separación uniforme a lo ancho del elemento según el total de los elementos*/
     }
+
+
+    .sesion2 {
+        display: none;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+
+
+
 }

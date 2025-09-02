@@ -1,3 +1,22 @@
+.user-title {
+    text-align: center;
+    margin: 2rem 1rem 0 1rem;
+    padding: 0 1rem;
+}
+
+.user-title h2 {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: var(--fs-md);
+    color: var(--terciary-900);
+}
+.user-title p {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: var(--fs-xs);
+    color: var(--gray-900);
+}
+
 .contenedor-info-user {
     display: flex;
     flex-direction: column-reverse;
@@ -52,7 +71,6 @@
     border-radius: 1rem;
     font-size: var(--fs-xs);
     cursor: pointer;
-
 }
 
 
@@ -76,15 +94,13 @@
     box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400);
 }
 
-
-
 .foto-user-cuenta {
     background-image: url(/frontend/public/assets/vanagro/oficina.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-
+    
 }
 
 .foto-user-cuenta img {
@@ -129,6 +145,7 @@
     display: flex;
     align-items: start;
     width: 100%;
+    background-color: var(--gray-100);
 }
 
 .opciones-user input:hover{

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cuentaContainer = document.querySelector(".usuario-registrado");
+    const cuentaContainer = document.querySelector(".user-registred");
     
     if (cuentaContainer) {
         fetch("/frontend/public/views/components/cuenta-user.html")
