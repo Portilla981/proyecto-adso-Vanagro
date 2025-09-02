@@ -1,10 +1,10 @@
 /* El archivo main.css solo debe importar los demás para evitar múltiples solicitudes HTTP en producción: */
 
-@import url('reset.css');
+/* @import url('reset.css'); */
 @import url('variables.css');
 @import url('layout.css');
-@import url('pages/home.css');
-@import url('themes/dark-mode.css');
+/* @import url('pages/home.css'); */
+/* @import url('themes/dark-mode.css'); */
 
 /* Componentes de Vanagro */
 /* @import url('components/vanagro-navbar.css'); */
@@ -18,7 +18,9 @@
 @import url('components/shopping-cart.css');
 @import url('components/form-register.css');
 @import url('components/cuenta-user.css');
+
 @import url('components/edit-producter.css');
 @import url('components/about-us.css');
-/* @import url('components/product-create.css'); */
-/* @import url('components/product-edit.css'); */
+@import url('components/product-create.css');
+@import url('components/product-edit.css');
+

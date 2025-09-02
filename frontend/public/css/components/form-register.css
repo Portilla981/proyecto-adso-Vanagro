@@ -8,6 +8,14 @@
 
 }
 
+.form-register h2{
+    text-align: center;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+    font-size: var(--fs-md);
+    font-weight: bold;
+}
+
 .form-register-user{
     display: flex;
     flex-direction: column;
@@ -24,6 +32,9 @@
 .form-register-user input, select{
     width: 200px;
     height: 32px;
+    background-color: var(--secundary-400);
+    /* border: 1px solid var(--gray-900); */
+    border-radius: 5px;
 }
 
 .form-register-user p{
@@ -49,6 +60,7 @@
     padding: 5px;
     margin: 20px 10px;
     align-content: flex-end;
+    background-color: var(--white);
 
     /* margin-bottom: 200px; */
     
@@ -107,7 +119,7 @@
 
 @media (width > 768px){
 
-    .formulario-registro{
+    .form-register{
         display: grid;
         place-content: center;
         height: 100%;

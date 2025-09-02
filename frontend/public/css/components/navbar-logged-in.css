@@ -1,0 +1,89 @@
+.header-logged-in {
+  background-color: var(--primary-900);
+  color: var(--white);
+  width: 100%;
+}
+
+.navbar-logged-in__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+}
+
+/* Logout a la izquierda */
+.navbar-logged-in__logout {
+  position: absolute;
+  left: 1rem;
+}
+
+.navbar-logged-in__logout ion-icon {
+  font-size: 2rem;
+  color: var(--white);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-logged-in__logout ion-icon:hover {
+  color: var(--secundary-950);
+  transform: scale(1.2);
+}
+
+.navbar-logged-in__brand {
+  text-align: center;
+}
+
+.navbar-logged-in__title {
+  margin: 0;
+  font-size: var(--fs-xl);
+  color: var(--white);
+}
+
+.navbar-logged-in__subtitle {
+  display: block;
+  font-size: var(--fs-md);
+  color: var(--gray-600);
+  margin-top: 0.2rem;
+}
+
+.navbar-logged-in {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-900);
+}
+
+.navbar-logged-in__list {
+  display: flex;
+  flex-direction: column; /* mobile first: columna */
+  align-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+.navbar-logged-in__link {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--fs-xs);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover efecto Material Design */
+.navbar-logged-in__link:hover {
+  color: var(--secundary-950);
+  transform: scale(1.2); /* efecto crecer */
+}
+
+@media (width > 768px) {
+  .navbar-logged-in__list {
+    flex-direction: row;
+    gap: 40px; /* separación grande */
+    justify-content: center;
+  }
+}
+

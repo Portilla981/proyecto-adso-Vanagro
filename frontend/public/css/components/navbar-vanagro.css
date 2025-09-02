@@ -70,10 +70,6 @@
     scale: 1.5;    
 }
 
-p {
-    font-size: var(--fs-md);
-}
-
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
@@ -91,7 +87,8 @@ p {
         padding: 1rem 3rem;
         font-size: 48px;
         color: aliceblue;
-        position: relative;   
+        position: relative; 
+        z-index: 10;  
                 
     }
 
@@ -99,11 +96,6 @@ p {
     .header-vanagro ion-icon:hover{
         color: var(--secundary-950);
         scale: 1.2;        
-    }
-
-    .header__carrito:hover{
-        color: var(--secundary-950);
-        cursor: pointer;
     }
     
     .navbar-vanagro__list {
@@ -120,14 +112,4 @@ p {
         justify-content: space-evenly;
         /* Separación uniforme a lo ancho del elemento según el total de los elementos*/
     }
-
-    .sesion2 {
-        display: none;
-    }
-
-    .carrito {
-        display: none;
-    }
-
-    
 }

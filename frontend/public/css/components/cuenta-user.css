@@ -4,6 +4,7 @@
     /* place-content: center; */
     height: 100%;
     font-size: var(--fs-sm);
+    align-items: center;
 
 }
 
@@ -45,7 +46,7 @@
 }
 
 .info-user button {
-    align-items: center;
+    /* align-items: center; */
     padding: 0.5rem;
     width: 150px;
     border-radius: 1rem;
@@ -127,6 +128,7 @@
 .opciones-user input {
     display: flex;
     align-items: start;
+    width: 100%;
 }
 
 .opciones-user input:hover{
