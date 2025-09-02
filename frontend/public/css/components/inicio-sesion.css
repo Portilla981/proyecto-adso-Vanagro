@@ -1,4 +1,4 @@
-.sesion_inicio{
+.session__container{
     /* margin-bottom: -1rem; */
     padding: 0;
     background-image: url(/frontend/public/assets/vanagro/image1.png);
@@ -8,15 +8,16 @@
         
 }
 
-.sesion_inicio label{
-    display: none;    
+.session-beginer label{
+    display: flex;    
     width: 20rem;
     padding: 0 3rem;
     color: var(--white);
+    text-align: left;
 }
 
 
-.inicio-sesion-container{
+.session-container_beginer{
     /* forma de centrar objetos dentro del contenedor 
     display: flex;
     justify-content: center;
@@ -29,14 +30,14 @@
     
 }
 
-.inicio__subtitle{
+.session__subtitle{
     margin: 0;
     padding: 1rem;
-    color: var(--white);
+    color: var(--gray-700);
 }
 
 
-.inicio-sesion{
+.session-beginer{
     background-color: rgba(216, 248, 227, 0.5);
     position: relative;
     border: 2px solid black;
@@ -46,7 +47,8 @@
     margin:  3rem 1rem;
     padding: 2rem;
     width: 35rem;    
-    height: 40rem;
+    height: auto;
+    text-align: center;
     
     /* forma de centrar objetos pero q esten sobre los demas objetos
     position: absolute;
@@ -56,14 +58,20 @@
     /* z-index: 100; */    
 }
 
-.inicio-sesion input{
-    /* padding: 1rem; */
+.session-beginer input{
+    padding: 1rem;
     width: 90%;
     border-radius: 1rem;
     background-color: var(--gray-200);    
 }
 
-.inicio-button__enlaces{
+
+
+.beginner-form input{
+    height: 48px;
+}   
+
+.beginner-button__links{
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -73,55 +81,55 @@
     padding: 1rem 0; 
 }
 
-.inicio-button__enlaces button{
+.beginner-button__links button{
     padding: 1rem;
     width: 15rem;
+    height: 48px;
     border-radius: 1rem; 
     font-size: var(--fs-xs); 
     cursor: pointer;    
 }
 
-.btn-iniciar{
+.btn-beginner{
     background-color: var(--primary-950);
 }
 
-.btn-iniciar:hover{
+.btn-beginner:hover{
     background-color: var(--primary-800);
     color: var(--white);
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
 }
 
-.btn-crear{
+.btn-make{
     background-color: var(--secundary-950);
 }
 
-.btn-crear:hover{
+.btn-make:hover{
     background-color: var(--secundary-800);
     color: var(--gray-400);
     box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
 }
 
-
-
-a{
+.begin-lost_password{
     text-decoration: none;
-    color: rgb(45, 11, 201);    
+    color: var(--terciary-800); 
+    font-size: var(--fs-md);   
 }
 
-a:hover{
+.begin-lost_password:hover{
     color: var(--secundary-950);
 }
 
 @media (width > 768px) {
 
-    .inicio-sesion{
+    .session-beginer{
     margin: 2rem;
     padding: 3rem;
     width: 40rem;    
     height: 40rem;
     }
     
-    .inicio-button__enlaces{
+    .beginner-button__links{
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -130,15 +138,12 @@ a:hover{
     margin: 1rem 0;
     }
 
-    .sesion_inicio label{
+    .session-beginer label{
     display: flex;    
     width: 20rem;
     padding: 0 3rem;
     color: var(--white);
     }
 
-    a{    
-    font-size: var(--fs-md);   
-    }
-
+    
 }

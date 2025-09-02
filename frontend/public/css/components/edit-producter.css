@@ -1,0 +1,138 @@
+body {
+  background-color: var(--gray-50);
+  font-family: var(--main-font);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.edit_producter_section{  
+  display: grid;
+  place-content: center;
+}
+
+
+.form-container {
+  background-color: var(--white);
+  padding: 30px;
+  margin: 20px;
+  max-width: 760px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.form-edit{
+  display: grid;
+  gap: 20px;
+  align-items: start;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--gray-900);
+  border-radius: 4px;
+  background-color: var(--gray-100);
+  font-size: 12px;
+  width: 270px;
+}
+
+select {
+  height: 3.7rem;
+  
+}
+
+.p-id {
+  margin: 0%;
+  color: var(--terciary-900);
+  font-weight: bold;
+  text-align: left;
+}
+
+.box-image {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.box-image img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer; 
+}
+
+.btn-save {
+  background-color: var(--primary-900);
+  color: var(--black);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-save:hover {
+  background-color: var(--primary-800);
+  color: var(--black);
+  box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
+}
+
+.btn-cancel {
+  background-color: var(--secundary-900);
+  color: var(--black);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancel:hover {
+  background-color: var(--secundary-800);
+  color: var(--gray-400);
+  box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
+}
+
+
+@media (width > 768px) {
+  .form-edit {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*inputs a la izquierda (más anchos), imágenes a la derecha */
+    gap: 20px;
+  }
+
+  .input-group {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .box-image {
+    grid-column: 2;        /*manda las imágenes a la segunda columna */
+    grid-row: 1 / span 5;  /* que ocupen todo el alto */
+    justify-self: center;
+  }
+
+  .buttons {
+    grid-column: 1 / -3;   /*botones debajo, centrados */
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+}
+

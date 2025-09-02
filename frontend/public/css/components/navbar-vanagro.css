@@ -70,10 +70,6 @@
     scale: 1.5;    
 }
 
-p {
-    font-size: var(--fs-md);
-}
-
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
@@ -91,7 +87,8 @@ p {
         padding: 1rem 3rem;
         font-size: 48px;
         color: aliceblue;
-        position: relative;   
+        position: relative; 
+        z-index: 10;  
                 
     }
 

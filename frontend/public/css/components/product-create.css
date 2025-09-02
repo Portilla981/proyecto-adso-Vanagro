@@ -15,13 +15,16 @@
   font-size: var(--fs-lg);
   color: var(--primary-900);
   text-align: center;
+  margin: 10px;
+
+  
 }
 
 .product-form__subtitle {
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-sm);
   color: var(--gray-700);
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .product-form__container {
@@ -33,8 +36,9 @@
 /* Filas */
 .product-form__row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
+  
 }
 
 .product-form__label {
@@ -43,7 +47,11 @@
   font-weight: bold;
 }
 
-/* Inputs, selects y textarea Material Design */
+#product-name{
+  width: 100%;
+}
+
+/* inputs, selects y textarea */
 .product-form__input,
 .product-form__select,
 .product-form__textarea {
@@ -53,16 +61,20 @@
   border-radius: 4px;
   background-color: var(--white);
   font-size: var(--fs-xs);
-  transition: border-color 0.3s, box-shadow 0.3s;
+  height: auto;
 }
 
-.product-form__input:focus,
-.product-form__select:focus,
-.product-form__textarea:focus {
-  outline: none;
-  border-color: var(--primary-900);
-  box-shadow: 0 0 0 2px rgba(85, 180, 12, 0.2);
+.product-beginner{
+  display: flex;
+  /* flex-direction: row; */
+  /* width: 100px; */
+  flex-wrap: wrap;
 }
+
+.product-beginner input{
+  width: 200px;
+}
+
 
 /* Textarea */
 .product-form__textarea {
@@ -85,7 +97,7 @@
 .product-form__row--checkbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   align-items: flex-start; 
 }
 
@@ -115,6 +127,8 @@
   font-size: var(--fs-sm);
   color: var(--primary-800);
   font-weight: bold;
+  margin: 0;
+  padding: 10px;
 }
 
 /* Imagen */
@@ -145,9 +159,28 @@
   }
   .product-form__actions {
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .product-form__dates {
     flex-direction: row;
     justify-content: space-between;
+    
   }
+
+  .product-form__dates input{
+    height: auto;
+    width: 100%;
+  }
+
+  .product-form__input{
+    width: 200px;
+  }
+
+  #product-name{
+    width: 400px;
+  }
+
+
+
+
 }

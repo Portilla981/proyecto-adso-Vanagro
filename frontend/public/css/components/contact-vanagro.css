@@ -1,10 +1,10 @@
-body {
+/* body {
   background-color: var(--gray-50);
   font-family: var(--main-font);
   text-align: center;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Contenedor principal del formulario con fondo blanco, sombra, centrado y padding amplio. */
 .contact__section{  
@@ -22,14 +22,12 @@ body {
   border-radius: 8px;
 }
 
-h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  /* margin-bottom: 30px; */
-  font-size: 14px;
+.contact__container {
+  /* font-size: var(--fs-lg); */
   color: var(--black);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: var(--fs-sm);
 }
 
 .formulario-contacto{
@@ -45,7 +43,8 @@ p {
   gap: 30px;
 }
 
-input, textarea {
+
+.formulario-contacto input, .formulario-contacto textarea {
   flex: 1;
   padding: 10px;
   border: 1px solid var(--gray-900);
@@ -54,7 +53,7 @@ input, textarea {
   font-size: 14px;
 }
 
-textarea {
+.formulario-contacto textarea {
   height: 30rem;
   /* resize: none; */
 }
@@ -113,8 +112,6 @@ textarea {
   flex-direction: row;
   gap: 30px;
   }
-
-
 
 
 
