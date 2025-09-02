@@ -19,13 +19,16 @@
   font-size: var(--fs-lg);
   color: var(--primary-900);
   text-align: center;
+  margin: 10px;
+
+  
 }
 
 .product-form__subtitle {
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-sm);
   color: var(--gray-700);
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .product-form__container {
@@ -37,14 +40,19 @@
 /* filas generales */
 .product-form__row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
+  
 }
 
 .product-form__label {
   font-size: var(--fs-xs);
   color: var(--gray-900);
   font-weight: bold;
+}
+
+#product-name{
+  width: 100%;
 }
 
 /* inputs, selects y textarea */
@@ -56,7 +64,20 @@
   border-radius: 0.5rem;
   background-color: var(--gray-50);
   font-size: var(--fs-xs);
+  height: auto;
 }
+
+.product-beginner{
+  display: flex;
+  /* flex-direction: row; */
+  /* width: 100px; */
+  flex-wrap: wrap;
+}
+
+.product-beginner input{
+  width: 200px;
+}
+
 
 .product-form__textarea {
   resize: vertical;
@@ -68,7 +89,7 @@
 .product-form__row--checkbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   align-items: flex-start; /* evita que crezca con textarea */
 }
 
@@ -91,6 +112,8 @@
   font-size: var(--fs-sm);
   color: var(--primary-800);
   font-weight: bold;
+  margin: 0;
+  padding: 10px;
 }
 
 /* imagen */
@@ -160,9 +183,28 @@
   }
   .product-form__actions {
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .product-form__dates {
     flex-direction: row;
     justify-content: space-between;
+    
   }
+
+  .product-form__dates input{
+    height: auto;
+    width: 100%;
+  }
+
+  .product-form__input{
+    width: 200px;
+  }
+
+  #product-name{
+    width: 400px;
+  }
+
+
+
+
 }
