@@ -4,6 +4,8 @@
     gap: 1.2rem;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin: 20px;
 }
 
 .buttons__action {
@@ -30,7 +32,7 @@
 
 /* Secundario */
 .buttons__action--secondary {
-    padding: 10px 20px; 
+    padding: 12px 24px; 
     background-color: var(--secundary-900);
     color: var(--black);
 }
@@ -51,5 +53,11 @@
     .product-edit__dates {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .buttons{
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-evenly;
     }
 }

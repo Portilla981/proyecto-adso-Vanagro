@@ -1,5 +1,5 @@
 
-.cards__section {
+.cards-section__products {
     display: flex;
     flex-direction: column;      
     align-items: center;
@@ -72,7 +72,7 @@
 
 @media(width > 768px){
 
-    .cards__section {
+    .cards-section__products {
     /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;    

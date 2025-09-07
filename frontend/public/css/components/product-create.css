@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 2rem;
   font-family: var(--main-font);
+  height: auto;
 }
 
 .product-form__title {
@@ -73,6 +74,7 @@
 
 .product-beginner input{
   width: 200px;
+  height: 48px;
 }
 
 
@@ -85,18 +87,20 @@
 }
 
 /* Select */
-.product-form__select {
+/* .product-form__select {
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23676767' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 20px;
-}
+  height: 48px;
+} */
 
 /* Checkboxes */
 .product-form__row--checkbox {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  /* flex-wrap: wrap; */
   gap: 3rem;
   align-items: flex-start; 
 }
@@ -114,13 +118,23 @@
   font-size: var(--fs-xs);
   color: var(--gray-800);
   flex: none;
+  width: 150px;
 }
 
 /* Fechas */
 .product-form__dates {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1rem;  
+}
+
+.product-form__dates input{
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  background-color: var(--secundary-400);
+  font-size: var(--fs-xs);
 }
 
 .product-form__dates-title {
@@ -152,14 +166,12 @@
   background-color: var(--gray-100);
 }
 
+
 /* Responsive */
 @media (width > 768px) {
   .product-form__row {
     flex-direction: row;
-  }
-  .product-form__actions {
-    flex-direction: row;
-    justify-content: space-evenly;
+    
   }
   .product-form__dates {
     flex-direction: row;
@@ -180,6 +192,9 @@
     width: 400px;
   }
 
+  .product-form__row--checkbox {
+    grid-template-columns: repeat(3, 1fr);  
+  }
 
 
 

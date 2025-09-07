@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const registertContainer = document.querySelector(".form_regisrer_usuario");
+    const registertContainer = document.querySelector(".form-register__user");
     
     if (registertContainer) {
-        fetch("/frontend/public/views/components/form_registro.html")
+        fetch("/frontend/public/views/components/form-register.html")
             .then(response => response.text())
             .then(data => {
                 registertContainer.innerHTML = data;

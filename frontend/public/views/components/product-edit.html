@@ -9,35 +9,47 @@
         </div>
 
         <!-- Campos de entrada -->
-        <div class="product-edit__row">
-            <input type="text" value="Plátano Verde" class="product-edit__input" required>
-            <input type="number" value="3000" class="product-edit__input" required>
-        </div>
-
-        <div class="product-edit__row">
-            <textarea class="product-edit__textarea" required>Plátano Verde x 1 ud</textarea>
+        <div class="product-beginner">
+            <div class="product-edit__field">
+            <label >Nombre del producto </label>
+            <input id="product-name" type="text" value="Plátano Verde" class="product-edit__input" required>
+            </div>
+            <div class="product-edit__field">
+            <label >Unidad de medida </label>
             <select class="product-edit__select" required>
                 <option value="">Unidad de Medida</option>
                 <option value="kg">Kilogramos</option>
-                <option value="und" selected>Unidades</option>
+                <option value="und">Unidades</option>
                 <option value="lt">Litros</option>
             </select>
+            </div>
+            <div class="product-edit__field">
+            <label >Precio x unidad de medida </label>
+            <input type="number" value="3000" class="product-edit__input" required>
+            </div>           
+        </div>
+
+        <div class="product-edit__row-textarea">            
+            <label>Descripcion del producto</label>
+            <textarea class="product-edit__textarea" required>Plátano Verde x 1 ud</textarea>            
         </div>
 
         <!-- Tipo de producto -->
         <div class="product-edit__row product-edit__row--checkbox">
             <span class="product-edit__label">Tipo de Producto:</span>
-            <label><input type="checkbox"> Carne</label>
-            <label><input type="checkbox" checked> Frutas</label>
-            <label><input type="checkbox"> Granos</label>
-            <label><input type="checkbox"> Lácteos</label>
-            <label><input type="checkbox"> Verduras</label>
+            <label><input type="checkbox">Carne</label>
+            <label><input type="checkbox" checked >Frutas</label>
+            <label><input type="checkbox">Granos</label>
+            <label><input type="checkbox">Lácteos</label>
+            <label><input type="checkbox">Verduras</label>
         </div>
 
         <!-- Sección de fechas -->
         <div class="product-edit__dates">
             <h3 class="product-edit__dates-title">Caducidad</h3>
+            <p>Fecha de Elaboración</p>
             <input type="date" class="product-edit__input" value="2025-05-24" required>
+            <p>Fecha de Vencimiento</p>
             <input type="date" class="product-edit__input" value="2025-06-01" required>
         </div>
 
@@ -45,14 +57,14 @@
         <div class="product-edit__image">
             <span class="product-edit__label">ID_PRODUCTO: PR987654</span>
             <div class="product-edit__image-upload">
-                <img src="/frontend/public/img/platano-verde.jpg" alt="Plátano Verde" class="product-edit__image-preview">
+                <img src="/frontend/public/assets/banano.png" alt="Plátano Verde" class="product-edit__image-preview">
             </div>
         </div>
 
         <!-- Botones -->
-        <div class="product-edit__actions">
+        <!-- <div class="product-edit__actions">
             <button type="submit" class="product-edit__button product-edit__button--save">Guardar Cambios</button>
             <button type="reset" class="product-edit__button product-edit__button--cancel">Cancelar</button>
-        </div>
+        </div> -->
     </form>
 </div>
