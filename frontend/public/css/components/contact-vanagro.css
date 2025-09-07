@@ -13,7 +13,7 @@
 }
 
 
-.formulario-container {
+.form-container {
   background-color: var(--white);
   padding: 30px;
   margin: 20px;
@@ -23,28 +23,28 @@
 }
 
 .contact__container {
-  /* font-size: var(--fs-lg); */
+  /* font-size: var(--fs-xs); */
   color: var(--black);
   margin-bottom: 10px;
   text-align: center;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-xs);
 }
 
-.formulario-contacto{
+.form-contact{
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 /* Grupo de campos alineados horizontalmente con espacio entre ellos. */
-.grupo-input {
+.group-input {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 
-.formulario-contacto input, .formulario-contacto textarea {
+.form-contact input, .form-contact textarea {
   flex: 1;
   padding: 10px;
   border: 1px solid var(--gray-900);
@@ -53,12 +53,12 @@
   font-size: 14px;
 }
 
-.formulario-contacto textarea {
+.form-contact textarea {
   height: 30rem;
   /* resize: none; */
 }
 
-.botones {
+.buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +66,7 @@
   cursor: pointer; 
 }
 
-.btn-enviar {
+.btn-send {
   background-color: var(--primary-900);
   color: var(--white);
   padding: 10px 30px;
@@ -76,13 +76,13 @@
   font-weight: bold;
 }
 
-.btn-enviar:hover {
+.btn-send:hover {
   background-color: var(--primary-800);
   color: var(--black);
   box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
 }
 
-.btn-cancelar {
+.btn-cancel {
   background-color: var(--secundary-900);
   color: var(--black);
   padding: 10px 30px;
@@ -92,7 +92,7 @@
   font-weight: bold;
 }
 
-.btn-cancelar:hover {
+.btn-cancel:hover {
   background-color: var(--secundary-800);
   color: var(--gray-400);
   box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
@@ -101,14 +101,14 @@
 
 @media (width > 768px) {
 
-  .botones {
+  .buttons {
   /* display: flex; */
   flex-direction: row;
   justify-content: space-evenly; 
   
   }
   
-  .grupo-input {  
+  .group-input {  
   flex-direction: row;
   gap: 30px;
   }
