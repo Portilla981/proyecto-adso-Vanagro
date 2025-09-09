@@ -1,0 +1,27 @@
+[
+    {
+        "id": "ver-productos",
+        "title": "Ver Productos"
+
+    },
+    {
+        "id": "compras-pedidos",
+        "title": "Compras/Pedidos"
+
+    },
+    {
+        "id": "ver-eventos",
+        "title": "Ver Eventos"
+
+    },
+    {
+        "id": "reportes",
+        "title": "Reportes"
+
+    },
+    {
+        "id": "ajustes",
+        "title": "Ajustes"
+    
+    }
+]
