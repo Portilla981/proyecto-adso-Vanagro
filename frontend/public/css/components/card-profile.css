@@ -41,7 +41,7 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     width: 500px;
     border: 1px solid var(--gray-400);
-    box-shadow: rgb(0 0 0 ); 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .card-product:hover {
@@ -65,7 +65,7 @@
 
     .cards__section {
         margin-top: 1.5rem;
-        align-items: center; /* Centra las cards en móviles */
+        align-items: center; 
     }
 
     .card-product {

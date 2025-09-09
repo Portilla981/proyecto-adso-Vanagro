@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/frontend/public/views/components/buttons.html")
       .then(response => response.text())
       .then(html => {
-        buttonsContainer.innerHTML = html; // 👈 SOLO afecta a buttons
+        buttonsContainer.innerHTML = html;
       })
       .catch(error => console.error("Error al cargar los botones:", error));
   }
