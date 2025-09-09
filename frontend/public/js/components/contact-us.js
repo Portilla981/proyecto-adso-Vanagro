@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Esto es útil para mantener la modularidad y reutilización del código.
   // Además, permite que el contenido se cargue dinámicamente sin necesidad de recargar la  página.       
   if (contactContainer) {
-    fetch("/frontend/public/views/components/contactenos.html")
+    fetch("/frontend/public/views/components/contact-us.html")
       .then(response => response.text())
       .then(data => {
         contactContainer.innerHTML = data;

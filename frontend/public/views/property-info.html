@@ -11,7 +11,10 @@
 
     <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
-    <script src="/frontend/public/js/components/property-info.js" defer></script>
+    <script type="module">
+        import{loadCards} from "/frontend/public/js/components/property-info.js"
+        loadCards(".fincas__grid"); // Clase para cargar todas las card
+    </script>
 
 
 </head>
@@ -26,7 +29,7 @@
             </p>
             <div id="fincas-container" class="fincas__grid"></div>
             <a class="reference-product" href="/frontend/public/views/index_vanagro.html">
-                <button type="button">Ver mas</button>
+                <button class="buttons-container">Ver más</button>
             </a>
         </section>
 

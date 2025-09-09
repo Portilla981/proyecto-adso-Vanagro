@@ -28,7 +28,6 @@
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.531);
   text-align: center;
   margin: 10px;
-  width: 320px;
 }
 
 .card-property:hover {
@@ -90,7 +89,7 @@
   }
 
   .card-property {
-    width: 250px;
+    width: 200px;
     max-height: 350px;
   }
 

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "finca1",
+        "title": "Finca El Atardecer",
+        "property": "José Guillermo Ocampo López",
+        "img": "/frontend/public/assets/finca.jpeg"
+    },
+    {
+        "id": "finca2",
+        "title": "Finca La Valentina",
+        "property": "Valentina Toro Peña",
+        "img": "/frontend/public/assets/finca7.jpg"
+    },
+    {
+        "id": "finca3",
+        "title": "Finca La Natalia",
+        "property": "Angelly Natalia Agudelo Idárraga",
+        "img": "/frontend/public/assets/finca2.jpg"
+    },
+    {
+        "id": "finca4",
+        "title": "Finca Portones de David",
+        "property": "Johan David Portilla Zambrano",
+        "img": "/frontend/public/assets/finca6.jpg"
+    },
+    {
+        "id": "finca5",
+        "title": "Finca Las Bovinas",
+        "property": "Julio Armando Cifuentes Correa",
+        "img": "/frontend/public/assets/finca5.jpg"
+    },
+    {
+        "id": "finca6",
+        "title": "Finca La Montañera",
+        "property": "María Antonia Restrepo Palacios",
+        "img": "/frontend/public/assets/finca3.jpg"
+    }
+  ]
