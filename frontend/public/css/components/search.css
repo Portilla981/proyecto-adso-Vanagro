@@ -4,12 +4,24 @@
     justify-content: center;
     align-items: center; */
     padding: 1rem;
-    background-color: transparent;
+    background-color: transparent;    
+
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 0; 
+    margin: 0 auto; 
+    padding: 1rem;    
+    border-radius: 1rem; 
+    background-color: var(--white); 
+    box-shadow: 0.5rem 0.5rem 1rem var(--gray-300) ;
+
 }
 
 /* Campo de texto */
 .search-section input {
-    width: 200px;
+    width: 300px;
     padding: 10px;
     border: 1px solid var(--gray-300);
     border-radius: 5px 0 0 5px;

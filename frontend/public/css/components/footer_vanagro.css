@@ -5,16 +5,18 @@
   
 }
 
-.footer-vanagro__contenido {  
+.footer-vanagro__content {  
   display: grid;
   place-content: center;  
 }
 
-.footer-vanagro__texto {
+.footer-vanagro__text {
   margin-bottom: -1rem;
+  font-size: var(--fs-xs);
+  text-align: center;
 }
 
-.footer-vanagro__redes {
+.footer-vanagro__social {
   display: flex;
   flex-direction: column;  
   align-items: center;
@@ -23,7 +25,7 @@
   gap: 1rem;
 }
 
-.footer-vanagro__icono {
+.footer-vanagro__icon {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -33,19 +35,19 @@
   font-weight: 500;
 }
 
-.footer-vanagro__icono i {
+.footer-vanagro__icon i {
   font-size: 18px;
 }
 
 
 @media (width > 768px) {
 
-  .footer-vanagro__contenido {
+  .footer-vanagro__content {
     display: flex;
     justify-content: space-between;
   }
 
-  .footer-vanagro__redes {
+  .footer-vanagro__social {
     flex-direction: row;
     margin: 1rem;
     gap: 4rem;

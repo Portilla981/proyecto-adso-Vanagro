@@ -8,6 +8,14 @@
 
 }
 
+.form-register h2{
+    text-align: center;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+    font-size: var(--fs-md);
+    font-weight: bold;
+}
+
 .form-register-user{
     display: flex;
     flex-direction: column;
@@ -24,6 +32,9 @@
 .form-register-user input, select{
     width: 200px;
     height: 32px;
+    background-color: var(--secundary-400);
+    /* border: 1px solid var(--gray-900); */
+    border-radius: 5px;
 }
 
 .form-register-user p{
@@ -35,12 +46,7 @@
 
 }
 
-.foto-user input{
-    /* display: flex; */
-    /* align-items: end; */
-    /* flex-direction: column; */
-    
-    /* background-color: var(--gray-100); */
+.foto-user input{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -49,13 +55,10 @@
     padding: 5px;
     margin: 20px 10px;
     align-content: flex-end;
-
-    /* margin-bottom: 200px; */
-    
-
+    background-color: var(--white);
 }
 
-.form-container{
+.form-container__register{
     display: flex;    
     flex-direction: column;
     align-items: center;
@@ -79,9 +82,8 @@
     border-radius: 1rem; 
     font-size: var(--fs-xs); 
     cursor: pointer;
-
-
 }
+
 
 .btn-crear-user{
     background-color: var(--primary-950);
@@ -105,17 +107,86 @@
     box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
 }
 
+.info-producter {
+    font-size: var(--fs-xs);
+    width: 300px;
+    margin-left: 2rem;
+}
+
+.form-container__identification{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 90%;
+}
+
+.foto-farm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.foto-farm p{
+    width: 90%;
+    font-size: var(--fs-sm);
+    color: var(--gray-900);
+    text-align: center;
+    margin: 0 5px
+}
+
+.foto-farm input{    
+    background-image: url(/frontend/public/assets/vanagro/camara.svg);
+    background-repeat: no-repeat;
+    background-size: 128px;
+    width: 200px;
+    height: 150px;
+    /* padding: 5px; */
+    /* margin: 20px 10px; */
+    align-content: flex-end;
+    background-color: var(--white);
+}
+
+.location-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.location-map p{    
+    text-align: center;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem 0;
+}
+
+
 @media (width > 768px){
 
-    .formulario-registro{
+    .form-register{
         display: grid;
         place-content: center;
         height: 100%;
+        width: 100%;
     }
 
     .form-register-user{
-        height: 500px;
+        height: auto;
         width: 700px;
+        overflow: visible;
     }
 
     .form-register_fields{
@@ -125,10 +196,9 @@
     width: 90%;
     padding: 2rem;
     gap: 1.5rem;
+    }
 
-}
-
-.form-container{
+.form-container__register{
     flex-direction: row;
     align-items: flex-start;
 
@@ -140,16 +210,63 @@
     align-items: center;    
     justify-content:space-evenly ;
     width: 70%;
-
     gap: 4rem; 
     margin: 2rem 0;
     padding: 1rem 0;
 }
 
+.form-container__identification{
+    /* display: flex; */
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    width: 100%;
+}
 
 
 
+.foto-farm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 40%;
+}
 
+.foto-farm p{
+    text-align: start;
+
+}
+
+.foto-farm input{   
+    justify-content: center; 
+    background-image: url(/frontend/public/assets/vanagro/camara.svg);
+    background-repeat: no-repeat;
+    background-size: 128px;
+    width: 200px;
+    height: 150px;
+    /* padding: 5px; */
+    /* margin: 20px 10px; */
+    align-content: flex-end;
+    background-color: var(--white);
+}
+
+.form-register_producter-location{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.producter-location{
+    display: flex;
+    flex-direction: column;
+}
 
 
 

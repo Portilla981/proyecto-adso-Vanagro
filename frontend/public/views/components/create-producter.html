@@ -1,0 +1,74 @@
+<div class="form-register">
+    <h2>Registro como productor</h2>
+
+    <form class="form-register-user" action="">
+
+        <div class="form-container__identification">
+            <div class="info-producter">
+                <p>Id:</p>
+                <p>Nombre del Usuario</p>
+                <p>Identificacion</p>
+                <p>Ubicacion:</p>
+                <p>Telefono:</p>
+                <p>Direccion:</p>
+                <p>Ciudad:</p>
+            </div>
+
+            <div class="foto-farm" placeholder="Inserte foto de su finca">
+                <p>Foto de su finca</p>
+                <input type="file">
+            </div>
+        </div>
+
+
+
+        <div class="form-container__register">
+            <div class="form-register_producter-location">
+
+
+                <div class="form-register_fields producter-location">
+
+                    <input type="text" placeholder="Ingrese nombre de la finca">
+                    <input type="text" placeholder="Ingrese nombre de la vereda">
+
+                    <select name="departamento" id="departamento">
+                        <option value="caldas">Caldas</option>
+                        <option value="quindio">Quindio</option>
+                        <option value="risaralda">Risaralda</option>
+                    </select>
+
+                    <select name="municipio" id="municipio">
+                        <option value="pereira">Pereira</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+
+
+                </div>
+
+
+
+                <div class="location-map">
+                    <p>Ubicacion en el mapa</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.303573490634!2d-75.6959316241372!3d4.813611643326024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5e9b4f4d7f%3A0x8c6e6c5e6c5e6c5e!2sPereira%2C%20Risaralda%2C%20Colombia!5e0!3m2!1ses-419!2sus!4v1696356789012!5m2!1ses-419!2sus"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-button__accion">
+            <a href="">
+                <button type="button" class="buttons__action--primary  btn-crear-producter">Crear Productor</button>
+            </a>
+            <a href="">
+                <button type="button" class="buttons__action--secondary  btn-cancelar-producter">Cancelar</button>
+            </a>
+        </div>
+
+    </form>
+
+</div>

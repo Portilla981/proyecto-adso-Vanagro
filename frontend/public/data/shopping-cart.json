@@ -1,0 +1,26 @@
+[
+    {
+    "name": "Banano",
+    "measure": "Kg",
+    "price": 7800,
+    "quantity": 1,
+    "store": "Finca La Valentina",
+    "image": "/frontend/public/assets/banano.png"
+    },
+    {
+    "name": "Carne de res posta",
+    "measure": "Kg",
+    "price": 34200,
+    "quantity": 1,
+    "store": "Finca Las Bovinas",
+    "image": "/frontend/public/assets/posta.png"
+    },
+    {
+    "name": "Café",
+    "measure": "L",
+    "price": 21600,
+    "quantity": 1,
+    "store": "Finca La Natalia",
+    "image": "/frontend/public/assets/cafe.jpg"
+    }
+]

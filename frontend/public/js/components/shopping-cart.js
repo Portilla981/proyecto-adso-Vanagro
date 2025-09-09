@@ -1,30 +1,4 @@
-// Productos simulados
-const products = [
-  {
-    name: "Banano",
-    measure: "Kg",
-    price: 7800,
-    quantity: 1,
-    store: "Finca La Valentina",
-    image: "/frontend/public/assets/banano.png"
-  },
-  {
-    name: "Carne de res posta",
-    measure: "Kg",
-    price: 34200,
-    quantity: 1,
-    store: "Finca Las Bovinas",
-    image: "/frontend/public/assets/posta.png"
-  },
-  {
-    name: "Café",
-    measure: "L",
-    price: 21600,
-    quantity: 1,
-    store: "Finca La Natalia",
-    image: "/frontend/public/assets/cafe.jpg"
-  }
-];
+let products = []; // Ahora se llena desde el JSON
 
 // Renderizar productos
 const cartContainer = document.getElementById("cart-products");
@@ -43,7 +17,7 @@ function renderCart() {
 
     productCard.innerHTML = `
       <div>
-      <img src="${product.image}" alt="${product.name}" class="product-card__image">
+        <img src="${product.image}" alt="${product.name}" class="product-card__image">
       </div>
       <h3 class="product-card__title">${product.name}</h3>
       <p class="product-card__measure">${product.measure}</p>
@@ -81,4 +55,13 @@ function renderCart() {
   totalElement.textContent = `$${total.toLocaleString()}`;
 }
 
-renderCart();
+// 🔹 Cargar datos desde el JSON y renderizar
+
+fetch("/frontend/public/data/shopping-cart.json")
+  .then(response => response.json())
+  .then(data => {
+    products = data;
+    renderCart();
+  })
+  .catch(error => console.error("Error al cargar productos:", error));
+

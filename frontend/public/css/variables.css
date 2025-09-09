@@ -69,4 +69,16 @@
     --fs-xs: 1.6rem;  /* Extra pequeño */
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
+
+
+    /* ==== Breakpoints ====== */
+/* 
+Alias       max-width       uso tipico
+sm          640px           Telefonos grandes
+md          768px           Tablests
+lg          1024px          Laptos
+xl          1280px          Desktop
+2x1         1536px          BigScreem
+
+*/
 }

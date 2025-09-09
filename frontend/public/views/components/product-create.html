@@ -1,3 +1,4 @@
+
 <div class="product-form">
     <h2 class="product-form__title">Creación de Productos</h2>
     <p class="product-form__subtitle">Completa los campos requeridos y haz clic en Crear producto</p>
@@ -9,35 +10,39 @@
         </div>
 
         <!-- Campos de entrada -->
-        <div class="product-form__row">
-            <input type="text" placeholder="Nombre" class="product-form__input" required>
-            <input type="number" placeholder="Precio" class="product-form__input" required>
-        </div>
-
-        <div class="product-form__row">
-            <textarea placeholder="Descripción del producto" class="product-form__textarea" required></textarea>
+        <div class="product-form__row product-beginner">
+            <input id="product-name" type="text" placeholder="Nombre" class="product-form__input" required>
+            
             <select class="product-form__select" required>
                 <option value="">Unidad de Medida</option>
                 <option value="kg">Kilogramos</option>
                 <option value="und">Unidades</option>
                 <option value="lt">Litros</option>
             </select>
+
+            <input type="number" placeholder="Precio und" class="product-form__input" required>
+        </div>
+
+        <div class="product-form__row">
+            <textarea placeholder="Descripción del producto" class="product-form__textarea" required></textarea>            
         </div>
 
         <!-- Tipo de producto -->
         <div class="product-form__row product-form__row--checkbox">
-            <span class="product-form__label">Tipo de Producto:</span>
-            <label><input type="checkbox"> Carne</label>
-            <label><input type="checkbox"> Frutas</label>
-            <label><input type="checkbox"> Granos</label>
-            <label><input type="checkbox"> Lácteos</label>
-            <label><input type="checkbox"> Verduras</label>
+            <span class="product-form__label">Tipo de Producto:</span> 
+            <label><input type="checkbox">Carne</label>
+            <label><input type="checkbox">Frutas</label>
+            <label><input type="checkbox">Granos</label>
+            <label><input type="checkbox">Lácteos</label>
+            <label><input type="checkbox">Verduras</label>            
         </div>
 
         <!-- Sección de fechas -->
         <div class="product-form__dates">
             <h3 class="product-form__dates-title">Caducidad</h3>
+            <p>Fecha de Elaboración</p>
             <input type="date" class="product-form__input" placeholder="Fecha Elaboración" required>
+            <p>Fecha de Vencimiento</p>
             <input type="date" class="product-form__input" placeholder="Fecha Vencimiento" required>
         </div>
 

@@ -1,7 +1,7 @@
 .product-edit {
   background-color: var(--white);
-  padding: 3rem;
-  margin: 2rem auto;
+  padding: 1rem;
+  margin: 1rem auto;
   max-width: 1000px;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -9,12 +9,20 @@
   flex-direction: column;
   gap: 2rem;
   font-family: var(--main-font);
+  height: auto;
+}
+
+.product-edit__field{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .product-edit__title {
   font-size: var(--fs-lg);
   color: var(--primary-900);
   text-align: center;
+  margin: 10px;
 }
 
 .product-edit__subtitle {
@@ -28,9 +36,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  
 }
 
-.product-edit__row {
+.product-edit__row-textarea {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -42,6 +51,11 @@
   font-weight: bold;
 }
 
+#product-name{
+  width: 100%;
+}
+
+
 .product-edit__input,
 .product-edit__select,
 .product-edit__textarea {
@@ -51,8 +65,23 @@
   border-radius: 4px;
   background-color: var(--white);
   font-size: var(--fs-xs);
-  transition: border-color 0.3s, box-shadow 0.3s;
+  
 }
+
+.product-beginner{
+  display: flex;
+  flex-direction: column;
+  /* width: 100px; */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
+}
+
+.product-beginner input{
+  width: 200px;
+  height: 48px;
+}
+
 
 .product-edit__input:focus,
 .product-edit__select:focus,
@@ -66,30 +95,34 @@
 .product-edit__textarea {
   min-height: 120px;
   padding: 12px 16px;
-  resize: vertical;
+  resize: vertical;  
   flex: 1;
 }
 
-.product-edit__select {
+/* .product-edit__select {
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23676767' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 20px;
-}
+  height: 48px;
+} */
 
 /* Checkboxes con Material Design */
 .product-edit__row--checkbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
   align-items: flex-start;
+  /* width: 90%;
+  justify-content: space-between; */
 }
 
 .product-edit__row--checkbox input[type="checkbox"] {
   width: 18px;
   height: 18px;
   accent-color: var(--primary-900);
+  /* padding: 5px; */
 }
 
 .product-edit__row--checkbox label {
@@ -99,6 +132,8 @@
   font-size: var(--fs-xs);
   color: var(--gray-800);
   flex: none;
+  width: 150px;
+  justify-content: center;
 }
 
 /* Fechas */
@@ -106,15 +141,27 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: var(--primary-100);
+  /* background-color: var(--primary-100);
   padding: 1.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0.8rem; */
+}
+
+.product-edit__dates input{
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  background-color: var(--secundary-400);
+  font-size: var(--fs-xs);
 }
 
 .product-edit__dates-title {
   font-size: var(--fs-sm);
   color: var(--primary-800);
   font-weight: bold;
+  margin: 0;
+  padding: 10px;
+
 }
 
 /* Imagen */
@@ -135,9 +182,9 @@
 }
 
 .product-edit__image-preview {
-  max-width: 150px;
-  margin: 0 auto 1rem;
-  border-radius: 0.5rem;
+  max-width: 200px;
+  /* margin: 0 auto 1rem; */
+  /* border-radius: 0.5rem; */
 }
 
 .product-edit__icon {
@@ -147,16 +194,44 @@
   color: var(--gray-700);
 }
 
+
+
+
 /* Responsive */
-@media (width > 768px) {
-  .product-edit__row {
-    flex-direction: row;
-  }
+@media (width > 768px) {  
+
   .product-edit__actions {
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .product-edit__dates {
     flex-direction: row;
     justify-content: space-between;
   }
+  
+  .product-edit__dates input{
+    height: auto;
+    width: 100%;
+  }
+  
+  .product-edit__input{
+    width: 200px;
+  }
+
+  .product-beginner{
+    flex-direction: row;
+  }
+
+
+  #product-name{
+    width: 400px;
+  }
+
+  .product-edit__row--checkbox {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+
+ 
+
 }
