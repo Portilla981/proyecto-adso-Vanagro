@@ -6,6 +6,8 @@
     justify-content: center;
     position: relative;
     margin: 20px;
+    
+    
 }
 
 .buttons__action {
@@ -20,10 +22,11 @@
 
 /* Primario */
 .buttons__action--primary {
-    padding: 12px 24px;
+    padding: 12px 16px;
     background-color: var(--primary-900);
-    color: var(--white);
+    color: var(--white);    
 }
+
 .buttons__action--primary:hover {
     background-color: var(--primary-700);
     color: var(--black);
@@ -32,7 +35,7 @@
 
 /* Secundario */
 .buttons__action--secondary {
-    padding: 12px 24px; 
+    padding: 10px 16px; 
     background-color: var(--secundary-900);
     color: var(--black);
 }
@@ -56,8 +59,9 @@
     }
 
     .buttons{
+        margin: 0 20px;
         flex-direction: row;
-        gap: 2rem;
-        justify-content: space-evenly;
+        /* gap: 2rem; */
+        justify-content: space-between;
     }
 }
