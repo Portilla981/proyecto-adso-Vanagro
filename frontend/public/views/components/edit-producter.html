@@ -1,6 +1,6 @@
 <div class="section-contacto">
     <div>
-        <h2>EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
+        <h2 class="form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
         <p>Haga los cambios necesarios y luego de clic en <strong>Guardar Cambios</strong>, para hacer efectivos sus cambios.</p>
     </div>
     <p class="p-id">ID_PRODUCTOR: AB12345</p>
@@ -8,51 +8,71 @@
         <form action="#" method="" class="form-edit">
             
             <div class="input-group">
-            <input class="product-edit__row" type="text" placeholder="Finca Las Bovinas">
-                <input class="product-edit__row" type="text" placeholder="JULIO ARMANDO CIFUENTES CORREA">
+                <label class="edit-form__label">Finca Productora
+                    <input class="product-edit__row" type="text" placeholder="Finca Las Bovinas">
+                </label>
+                <label class="edit-form__label">Nombres/Apellidos
+                    <input class="product-edit__row" type="text" placeholder="JULIO ARMANDO CIFUENTES CORREA">
+                </label>
             </div>
 
             <div class="input-group">
-                <select class="product-edit__row">
-                    <option>Cédula</option>
-                    <option>Tarjeta de Identidad</option>
-                    <option>Pasaporte</option>
-                </select>
-                <input class="product-edit__row" type="number" placeholder="98562475">
+                <label class="edit-form__label">Tipo de documento
+                    <select class="product-edit__row">
+                        <option>Cédula</option>
+                        <option>Tarjeta de Identidad</option>
+                        <option>Pasaporte</option>
+                    </select>
+                </label>
+                <label class="edit-form__label">Número de identificación
+                    <input class="product-edit__row" type="number" placeholder="98562475">
+                </label>
             </div>
 
             <div class="input-group">
-                <select class="product-edit__row">
-                    <option>Risaralda</option>
-                    <option>Caldas</option>
-                    <option>Quindío</option>
-                </select>
-                <select class="product-edit__row">
-                    <option>Marsella</option>
-                    <option>Apía</option>
-                    <option>Balboa</option>
-                    <option>Belén de Umbría</option>
-                    <option>Dosquebradas</option>
-                    <option>Guática</option>
-                    <option>La Celia</option>
-                    <option>La Virginia</option>
-                    <option>Mistrató</option>
-                    <option>Pereira</option>
-                    <option>Pueblo Rico</option>
-                    <option>Quinchía</option>
-                    <option>Santa Rosa de Cabal</option>
-                    <option>Santuario</option>
-                </select>
+                <label class="edit-form__label">Departamento
+                    <select class="product-edit__row">
+                        <option>Risaralda</option>
+                        <option>Caldas</option>
+                        <option>Quindío</option>
+                    </select>
+                </label>
+                <label class="edit-form__label">Municipio
+                    <select class="product-edit__row">
+                        <option>Marsella</option>
+                        <option>Apía</option>
+                        <option>Balboa</option>
+                        <option>Belén de Umbría</option>
+                        <option>Dosquebradas</option>
+                        <option>Guática</option>
+                        <option>La Celia</option>
+                        <option>La Virginia</option>
+                        <option>Mistrató</option>
+                        <option>Pereira</option>
+                        <option>Pueblo Rico</option>
+                        <option>Quinchía</option>
+                        <option>Santa Rosa de Cabal</option>
+                        <option>Santuario</option>
+                    </select>
+                </label>
             </div>
 
             <div class="input-group">
-                <input class="product-edit__row" type="text" placeholder="Vereda las palmas">
-                <input class="product-edit__row" type="tel" placeholder="3054331178">
+                <label class="edit-form__label">Dirección
+                    <input class="product-edit__row" type="text" placeholder="Vereda las palmas">
+                </label>
+                <label class="edit-form__label">Teléfono
+                    <input class="product-edit__row" type="tel" placeholder="3054331178">
+                </label>    
             </div>
 
             <div class="input-group">
-                <input class="product-edit__row" type="password" placeholder="**************">
-                <input class="product-edit__row" type="password" placeholder="**************">
+                <label class="edit-form__label">Contraseña
+                    <input class="product-edit__row" type="password" placeholder="**************">
+                </label>
+                <label class="edit-form__label">Confirmar contraseña
+                    <input class="product-edit__row" type="password" placeholder="**************">
+                </label>
             </div>
 
             <div class="box-image">
@@ -69,4 +89,3 @@
         </form>
     </section>
 </div>
-
