@@ -1,53 +1,64 @@
-.search-section {
-    /* display: flex; */
-    /* flex-direction: column;   
-    justify-content: center;
-    align-items: center; */
-    padding: 1rem;
-    background-color: transparent;    
-
-    display: flex;   
-    justify-content: center;
+/* Bloque: .search */
+.search {
+    display: flex;
     align-items: center;
-    width: 80%;
-    gap: 0; 
-    margin: 0 auto; 
-    padding: 1rem;    
-    border-radius: 1rem; 
-    background-color: var(--white); 
-    box-shadow: 0.5rem 0.5rem 1rem var(--gray-300) ;
-
+    height: 56px; 
+    background-color: var(--white);
+    border-radius: 4px; 
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); 
+    padding: 0; 
+    width: 50%;
+    margin: 0 auto;
+    gap: 0;
+    margin-top: 10px;
 }
 
-/* Campo de texto */
-.search-section input {
-    width: 300px;
-    padding: 10px;
+/* Elemento: input */
+.search__input {
+    flex: 1; 
+    height: 100%; 
+    padding: 0 16px;
     border: 1px solid var(--gray-300);
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    font-size: var(--fs-xs); 
+    border-radius: 4px 0 0 4px;
+    font-size: 16px; 
+    line-height: 24px;
     font-family: var(--main-font);
     color: var(--gray-900);
+    outline: none;
+    box-sizing: border-box;
 }
 
-
-.searchButton{
-    padding: 10px;
-    border: 1px solid var(--gray-300);
-    width: 50px;
+/* Elemento: botón de búsqueda */
+.search__button {
+    height: 100%;
+    width: 56px; /* ancho suficiente, puede equivaler al height si es solo icono botón */
+    min-width: 48px; /* asegurando target táctil mínimo 48dp mínimo si botón visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--gray-200);
-    border-radius: 0 5px 5px 0;
+    border: 1px solid var(--gray-300);
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
-.searchButton:hover{
+/* Modificador: hover/estado activo del botón */
+.search__button:hover {
     background-color: var(--primary-600);
     color: var(--black);
-    box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
-    scale: 1.1;
-}
-.searchButton ion-icon{
-    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
+/* Icono dentro del botón */
+.search__button-icon {
+    font-size: 24px; /* icono típicamente 24dp */
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    /* Asegurar que esté centrado en el botón */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
