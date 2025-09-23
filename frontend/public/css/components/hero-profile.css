@@ -2,14 +2,14 @@
     background-image: url(/frontend/public/assets/vacas.jpg);
     background-position: center;
     background-size: cover;
-    height: 18rem;
+    height: 20rem;
     position: relative;
     text-align: center;
     color: var(--black);
 }
 
 .hero__content {
-    background-color: rgb(204 204 204 / 30%);
+    background-color: rgb(204 204 204 / 50%);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -25,6 +25,7 @@
 
 .hero__text {
     font-size: var(--fs-xs);
+    font-weight: bold;
 }
 
 

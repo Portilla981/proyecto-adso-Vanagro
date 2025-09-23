@@ -1,3 +1,4 @@
+
 <div>
     <div class="contact__container">
         <h2>CONTÁCTANOS</h2>
@@ -10,17 +11,24 @@
                 <input type="text" placeholder="Apellidos" required>
             </div>
 
-            <div class="group-input">
-                <input type="tel" placeholder="Teléfono" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-            </div>
 
-            <textarea class="form-contact__text_help" placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+        <label class="contact-form__label">
+            Mensaje
+            <textarea name="mensaje" class="contact-form__input contact-form__textarea" 
+            placeholder="Ingresa tu mensaje aquí..." required></textarea>
+        </label>
+            
 
             <div class="buttons">
+
                 <button type="submit" class="buttons__action--primary btn-send">Enviar</button>
                 <button type="button" class="buttons__action--secondary btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
+
             </div>
-        </form>
-    </section>
-</div>
+
+
+
+    </form><!-- contact-form__form -->
+
+</section>

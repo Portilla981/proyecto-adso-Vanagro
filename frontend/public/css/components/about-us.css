@@ -12,20 +12,20 @@
     border-radius: 4px;
     padding: 24px;
     text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card__title-about {
-    font-size: var(--fs-md);
-    color: var(--secundary-950);
+    font-size: var(--fs-sm);
+    color: var(--primary-950);
     font-weight: 600;
     margin-bottom: 16px;
 }
 
 .card__description {
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xs);
     line-height: 1.5;
 }
 
@@ -39,7 +39,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    gap: 50px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     padding: 24px;
