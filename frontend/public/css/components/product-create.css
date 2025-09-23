@@ -86,15 +86,15 @@
   flex: 1;
 }
 
-/* Select */
-/* .product-form__select {
+
+.product-form__select {
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23676767' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 20px;
   height: 48px;
-} */
+}
 
 /* Checkboxes */
 .product-form__row--checkbox {

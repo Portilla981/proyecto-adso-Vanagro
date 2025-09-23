@@ -70,6 +70,15 @@
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
 
+    /* Padding */
+    --pd-xs: 4px;      /* Espaciado muy pequeño */
+    --pd-sm: 8px;      /* Espaciado pequeño */
+    --pd-md: 16px;     /* Espaciado medio - Material */
+    --pd-lg: 24px;     /* Espaciado grande */
+    --pd-xl: 32px;     /* Espaciado extra grande */
+    --pd-xxl: 40px;    /* Muy grande */
+
+
 
     /* ==== Breakpoints ====== */
 /* 
