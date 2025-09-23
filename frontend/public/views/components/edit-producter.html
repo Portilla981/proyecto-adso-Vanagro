@@ -1,12 +1,13 @@
 <div class="section-contacto">
     <div>
         <h2 class="form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
-        <p>Haga los cambios necesarios y luego de clic en <strong>Guardar Cambios</strong>, para hacer efectivos sus cambios.</p>
+        <p>Haga los cambios necesarios y luego de clic en <strong>Guardar Cambios</strong>, para hacer efectivos sus
+            cambios.</p>
     </div>
     <p class="p-id">ID_PRODUCTOR: AB12345</p>
     <section class="form-container">
         <form action="#" method="" class="form-edit">
-            
+
             <div class="input-group">
                 <label class="edit-form__label">Finca Productora
                     <input class="product-edit__row" type="text" placeholder="Finca Las Bovinas">
@@ -63,7 +64,7 @@
                 </label>
                 <label class="edit-form__label">Teléfono
                     <input class="product-edit__row" type="tel" placeholder="3054331178">
-                </label>    
+                </label>
             </div>
 
             <div class="input-group">
@@ -80,11 +81,11 @@
                 <img src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca">
             </div>
 
-
-
             <div class="buttons">
-                <button type="submit" class="btn-save">Guardar Cambios</button>
-                <button type="button" class="btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
+                <a href="/frontend/public/views/account-user.html">
+                <button type="button" class="buttons__action--primary btn-save">Guardar Cambios</button>
+                </a>
+                <button type="button" class="buttons__action--secondary btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
             </div>
         </form>
     </section>
