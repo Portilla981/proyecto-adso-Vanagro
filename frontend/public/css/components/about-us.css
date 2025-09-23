@@ -13,6 +13,7 @@
     padding: 24px;
     text-align: center;
     width: 320px;
+    height: 460px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

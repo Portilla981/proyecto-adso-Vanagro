@@ -1,4 +1,55 @@
-<div>
+<script src="/frontend/public/js/components/buttons.js" defer></script>
+<h2 class="contact-form__title">CONTÁCTANOS</h2>
+<p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
+<section class="contact-form">
+
+    <form class="contact-form__form">
+        <div class="contact-form__row">
+            <label class="contact-form__label">
+                Nombre
+                <input type="text" class="contact-form__input" placeholder="Ingresa tu nombre" required>
+            </label>
+            <label class="contact-form__label">
+                Apellido
+                <input type="text" class="contact-form__input" placeholder="Ingresa tu apellido" required>
+            </label>
+        </div> <!-- contact-form__row -->
+
+
+        <div class="contact-form__row">
+            <label class="contact-form__label">
+                Teléfono
+                <input type="tel" class="contact-form__input" placeholder="Ingresa tu número de teléfono" required>
+            </label>
+            <label class="contact-form__label">
+                Correo Electrónico
+                <input type="email" class="contact-form__input" placeholder="Ingresa tu correo electrónico" required>
+            </label>
+        </div>
+
+
+        <div class="contact-form__row contact-form__row--full">
+            <label class="contact-form__label">
+                Mensaje
+                <textarea name="mensaje" class="contact-form__input contact-form__textarea"
+                    placeholder="Ingresa tu mensaje aquí..." required></textarea>
+            </label>
+        </div>
+
+
+        <div class="buttons">
+            <button type="submit" class="buttons__action buttons__action--primary">Enviar</button>
+            <button type="submit" class="buttons__action buttons__action--secondary" onclick="cancelarFormulario()">Cancelar</button>
+        </div>
+
+
+
+    </form><!-- contact-form__form -->
+
+</section>
+
+
+<!-- <div>
     <div class="contact__container">
         <h2>CONTÁCTANOS</h2>
         <p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
@@ -20,8 +71,8 @@
             </div>
         </form>
     </section>
-
-    <!-- <div class="section-contacto">
+ -->
+<!-- <div class="section-contacto">
         <div class="contact__container">
             <h2>CONTÁCTANOS</h2>
             <p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
