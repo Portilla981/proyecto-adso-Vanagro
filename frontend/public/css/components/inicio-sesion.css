@@ -42,11 +42,10 @@
     position: relative;
     border: 2px solid black;
     border-radius: 5rem;
-    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
-    
-    margin:  3rem 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);    
+    margin:  6rem 1rem;
     padding: 2rem;
-    width: 35rem;    
+    width: 400px;    
     height: auto;
     text-align: center;
     
@@ -90,7 +89,7 @@
     cursor: pointer;    
 }
 
-.btn-beginner{
+/* .btn-beginner{
     background-color: var(--primary-950);
 }
 
@@ -98,17 +97,17 @@
     background-color: var(--primary-800);
     color: var(--white);
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
-}
+} */
 
-.btn-make{
+/* .btn-make{
     background-color: var(--secundary-950);
-}
+} */
 
-.btn-make:hover{
+/* .btn-make:hover{
     background-color: var(--secundary-800);
     color: var(--gray-400);
     box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
-}
+} */
 
 .begin-lost_password{
     text-decoration: none;
@@ -122,13 +121,13 @@
 
 @media (width > 768px) {
 
-    .session-beginer{
+    /* .session-beginer{
     margin: 2rem;
     padding: 3rem;
     width: 40rem;    
     height: 40rem;
     }
-    
+     */
     .beginner-button__links{
     display: flex;
     flex-direction: row;

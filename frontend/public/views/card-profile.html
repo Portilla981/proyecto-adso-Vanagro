@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="/frontend/public/css/main.css">
-    <!-- script para los iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <!-- <script src="/frontend/public/js/components/form-contact-vanagro.js" defer></script> -->
     <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>    
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
-    <script src="/frontend/public/js/components/contact-us.js" defer></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-profile.js";
+        loadCards("#cards-dashboard");
+    </script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <div class="navbar-vanagro-container"></div>
     </header>
     
-    <section class="contact__section"></section>    
+    <section class="cards__section" id="cards-dashboard"></section>
 
     <footer class="footer-vanagro-container"></footer>
 

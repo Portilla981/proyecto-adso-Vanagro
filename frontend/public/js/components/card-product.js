@@ -10,7 +10,7 @@ export async function loadCards(containerSelector, cardIds = []) {
         const[templeateRest, datosRes] = await Promise.all([
             
             fetch("/frontend/public/views/components/cards-home.html"),
-            fetch("/frontend/public/data/productos.json"),
+            fetch("/frontend/public/data/products.json"),
 
         ]);
 

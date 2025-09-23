@@ -6,8 +6,8 @@
     width: 100%;
     z-index: 10;
     background-color: var(--primary-900);    
+    padding: 0.5rem;
 }
-
 
 .header-vanagro ion-icon {
     visibility: hidden;
@@ -18,7 +18,7 @@
 .navbar-vanagro__title {
     margin: 0;
     padding: 1rem;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@
         font-size: 48px;
         color: var(--white);
         position: relative; 
-        z-index: 10;                
+        z-index: 10;                        
     }
 
     

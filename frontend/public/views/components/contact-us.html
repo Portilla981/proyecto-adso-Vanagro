@@ -1,35 +1,16 @@
-<script src="/frontend/public/js/components/buttons.js" defer></script>
-<h2 class="contact-form__title">CONTÁCTANOS</h2>
-<p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
-<section class="contact-form">
 
-    <form class="contact-form__form">
-        <div class="contact-form__row">
-            <label class="contact-form__label">
-                Nombre
-                <input type="text" class="contact-form__input" 
-                placeholder="Ingresa tu nombre" required>
-            </label>
-            <label class="contact-form__label">
-                Apellido
-                <input type="text" class="contact-form__input" 
-                placeholder="Ingresa tu apellido" required>
-            </label>
-        </div> <!-- contact-form__row -->  
+<div>
+    <div class="contact__container">
+        <h2>CONTÁCTANOS</h2>
+        <p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
+    </div>
+    <section class="form-container">
+        <form action="#" method="" class="form-contact">
+            <div class="group-input">
+                <input type="text" placeholder="Nombres" required>
+                <input type="text" placeholder="Apellidos" required>
+            </div>
 
-        
-        <div class="contact-form__row">
-            <label class="contact-form__label">
-                Teléfono
-                <input type="tel" class="contact-form__input" 
-                placeholder="Ingresa tu número de teléfono" required>
-            </label>
-            <label class="contact-form__label">
-                Correo Electrónico
-                <input type="email" class="contact-form__input" 
-                placeholder="Ingresa tu correo electrónico" required>
-            </label>
-        </div>  
 
 
         <label class="contact-form__label">
@@ -40,8 +21,10 @@
             
 
             <div class="buttons">
-                <button type="submit" class="btn-send">Enviar</button>
-                <button type="submit" class="btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
+
+                <button type="submit" class="buttons__action--primary btn-send">Enviar</button>
+                <button type="button" class="buttons__action--secondary btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
+
             </div>
 
 
