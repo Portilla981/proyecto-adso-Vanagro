@@ -4,7 +4,7 @@ body {
   font-size: var(--fs-xs);
 }
 /* FINCAS */
-.property {
+.properties {
   text-align: center;
   padding: 40px;
 }
@@ -26,7 +26,7 @@ body {
 
 
 /* CARD */
-.card-property {
+.property-card {
   background: var(--gray-100);
   padding: 24px;
   width: 320px;
@@ -37,11 +37,11 @@ body {
   margin: 10px;
 }
 
-.card-property:hover {
+.property-card:hover {
   scale: 1.1;
 }
 
-.card__image {
+.property-card__image {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -77,16 +77,13 @@ body {
 
 @media (width > 768px) {
 
-  .botones {
+  .property-buttons {
     flex-direction: row;
     justify-content: space-evenly;
 
   }
 
-  .grupo-input {
-    flex-direction: row;
-    gap: 30px;
-  }
+
 
 
   .fincas__grid {
@@ -94,7 +91,7 @@ body {
     width: 98%;
   }
 
-  .card-property {
+  .property-card {
     width: 100%;
     max-width: 280px;
     max-height: 450px;
