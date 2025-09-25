@@ -11,7 +11,7 @@
 
 
 /* Card individual */
-.card-products {
+.card-product {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
@@ -26,25 +26,25 @@
     cursor: pointer;
 }
 
-.card-products:hover {
+.card-product:hover {
     scale: 1.1;
 }
 
 /* Imagen */
-.card-products__image {
+.card-product__image {
     width: 200px; 
     height: 140px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.card-products__title {
+.card-product__title {
     font-family: var(--main-font);
     font-size: var(--fs-xs);
 }
 
 /* Descripción */
-.card-products__description {
+.card-product__description {
     font-family: var(--main-font);
     margin: 6px 0;
     font-size: var(--fs-xs); 
@@ -54,7 +54,7 @@
 }
 
 /* Precio en negrilla */
-.card-products__price {
+.card-product__price {
     font-family: var(--main-font);
     font-weight: bold;
     color: var(--black);
