@@ -9,7 +9,9 @@
     padding: 0.5rem;
 }
 
-.header-vanagro ion-icon {
+.navbar-vanagro__icons--cart,
+.navbar-vanagro__icons--login,
+.navbar-vanagro__icons--back {
     visibility: hidden;
     display: none;
 }
@@ -82,7 +84,9 @@
     }
 
 
-    .header-vanagro ion-icon {
+    .navbar-vanagro__icons--cart,
+    .navbar-vanagro__icons--login,
+    .navbar-vanagro__icons--back {
         visibility: visible;
         display: block;
         padding: 1rem 5rem;
@@ -93,7 +97,9 @@
     }
 
     
-    .header-vanagro ion-icon:hover{
+    .navbar-vanagro__icons--cart:hover,
+    .navbar-vanagro__icons--login:hover, 
+    .navbar-vanagro__icons--back:hover {
         color: var(--secundary-950);
         scale: 1.2;
 
@@ -125,11 +131,9 @@
     }
 
 
-    .sesion2 {
-        display: none;
-    }
-
-    .carrito {
+    .navbar-vanagro__item--sesion2,
+    .navbar-vanagro__item--cart,
+    .navbar-vanagro__item--back {
         display: none;
     }
 

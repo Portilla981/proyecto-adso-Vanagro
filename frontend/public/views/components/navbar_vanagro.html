@@ -10,7 +10,7 @@
         <nav class="navbar-vanagro">
         
             <ul class="navbar-vanagro__list">
-                <li class="navbar-vanagro__item sesion2">
+                <li class="navbar-vanagro__item navbar-vanagro__item--sesion2">
                     <a href="/frontend/public/views/index_vanagro.html" class="navbar-vanagro__link">Iniciar Sesión</a>
                 </li>
                 <li class="navbar-vanagro__item">
@@ -29,22 +29,21 @@
                 <li class="navbar-vanagro__item">
                     <a href="/frontend/public/views/contact-vanagro.html" class="navbar-vanagro__link">Contacto</a>
                 </li>
-                <li class="navbar-vanagro__item carrito">
+                <li class="navbar-vanagro__item navbar-vanagro__item--cart">
                     <a href="/frontend/public/views/shopping-cart.html" class="navbar-vanagro__link">Carrito</a>
                 </li>
             </ul>
         </nav>
-        
-        <!-- <img class="header__carrito" src="/frontend/public/assets/vanagro/carrito2x48.png" alt=""> -->
+                
         <div class="navbar-vanagro__icons">
-            <div>
+            <div class="navbar-vanagro__icons--first">
                 <a href="/frontend/public/views/shopping-cart.html">
-                    <ion-icon name="cart-outline"></ion-icon>
+                    <ion-icon class="navbar-vanagro__icons--cart" name="cart-outline"></ion-icon>
                 </a>
             </div>
-            <div>
+            <div class="navbar-vanagro__icons--second">
                 <a href="/frontend/public/views/index_vanagro.html">
-                    <ion-icon name="log-in-outline"></ion-icon>
+                    <ion-icon class="navbar-vanagro__icons--login" name="log-in-outline"></ion-icon>
                 </a>
             </div>
         </div> <!--navbar-vanagro__icons-->
