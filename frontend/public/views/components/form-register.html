@@ -1,5 +1,4 @@
-<!-- <script src="/frontend/public/js/components/msj-confirm.js" defer></script> -->
-<!-- <script src="/frontend/public/js/components/view-msj.js" defer></script> -->
+
 <div class="form-register">
     <h2 class="form-register __title">Registro de Usuarios</h2>
 
@@ -10,50 +9,35 @@
 
             <div class="form-register__fields">
 
-                <!-- <label for="nombres">Nombres</label> -->
-                <input class="form-register__input"  id="nombres" type="text" placeholder="Ingrese sus nombres">
+                
+                <input class="form-register__input"  type="text" placeholder="Ingrese sus nombres">
+                <input class="form-register__input"  type="text" placeholder="Ingrese sus apellidos">
 
-                <!-- <label for="apellidos">Apellidos</label> -->
-                <input class="form-register__input"  id="apellidos" type="text" placeholder="Ingrese sus apellidos">
-
-                <!-- <label for="tipo_documento">Tipo de documento</label> -->
-                <select class="form-register__select" name="tipo-docuemnto" id="tipo_documento">
+                <select class="form-register__select" name="tipo-docuemnto" >
                     <option value="cedula">Cedula de ciudadania</option>
                     <option value="extranjero">Cedula de extranjeria</option>
                     <option value="nit">NIT</option>
                 </select>
 
-                <!-- <label for="numero-documento">Numero Documento</label> -->
                 <input class="form-register__input"  id="numero-documento" type="text" placeholder="Ingrese su numero de docuemnto">
 
-                <!-- <label for="departamento">Departamento</label> -->
-                <select class="form-register__select" name="departamento" id="departamento">
+                <select class="form-register__select" name="departamento">
                     <option value="caldas">Caldas</option>
                     <option value="quindio">Quindio</option>
                     <option value="risaralda">Risaralda</option>
                 </select>
-
-                <!-- <label for="municipio">Municipio</label> -->
+                
                 <select class="form-register__select" name="municipio" id="municipio">
                     <option value="pereira">Pereira</option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="manizales">Manizales</option>
+                    <option value="armenia">Armenia</option>
                 </select>
-
-                <!-- <label for="email">Correo electronico</label> -->
-                <input class="form-register__input"  id="email" type="email" placeholder="Ingrese su e-mail">
-
-                <!-- <label for="direccion">Direccion</label> -->
-                <input class="form-register__input"  id="direccion" type="text" placeholder="Ingrese su direccion">
-
-                <!-- <label for="telefono">Telefono 1</label> -->
-                <input class="form-register__input"  id="telefono" type="text" placeholder="Ingrese su numero de contacto">
-
-                <!-- <label for="telefono-2">Telefono 2</label> -->
-                <input class="form-register__input"  id="telefono-2" type="text" placeholder="Ingrese otro numero de contacto ">
-
-                <input class="form-register__input"  id="contraseña" type="password" placeholder="Ingrese una contraseña">
-                <input class="form-register__input"  id="contraseña-2" type="password" placeholder="Ingrese nuevamente la contraseña">
+                <input class="form-register__input" type="email" placeholder="Ingrese su e-mail">
+                <input class="form-register__input" type="text" placeholder="Ingrese su direccion">
+                <input class="form-register__input" type="text" placeholder="Ingrese su numero de contacto">
+                <input class="form-register__input" type="text" placeholder="Ingrese otro numero de contacto ">
+                <input class="form-register__input" type="password" placeholder="Ingrese una contraseña">
+                <input class="form-register__input" type="password" placeholder="Ingrese nuevamente la contraseña">
             </div>
 
             <div class="form-register__photo" aria-placeholder="Inserte foto">
@@ -62,17 +46,14 @@
             </div>
         </div>
 
-        <div class="form-register__button">
+        <div class="form-register__actions">
             <a href="#msj-confirm__save-user">
-            <button type="button" class=" form-register__button buttons__action--primary btn-crear-user" >Crear Usuario</button>
+            <button type="button" class="buttons__action--primary btn-crear-user" >Crear Usuario</button>
             </a>
             <a href="#msj-confirm">
-                <button type="button" id="btn-cancelar" class="form-register__button buttons__action--secondary btn-cancelar-user">Cancelar</button>
+                <button type="button" class="buttons__action--secondary btn-cancelar-user">Cancelar</button>
             </a>
         </div>
-
     </form>
-
 </div>
 
-<!-- <section class="msj-confirm-container"></section> -->

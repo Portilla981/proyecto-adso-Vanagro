@@ -1,4 +1,4 @@
-<script src="/frontend/public/js/components/buttons.js" defer></script>
+<!-- <script src="/frontend/public/js/components/buttons.js" defer></script> -->
 
 <div class="product-form">
     <h2 class="product-form__title">Creación de Productos</h2>
@@ -12,7 +12,7 @@
 
         <!-- Campos de entrada -->
         <div class="product-form__row product-beginner">
-            <input id="product-name" type="text" placeholder="Nombre" class="product-form__input" required>
+            <input type="text" placeholder="Nombre" class="product-form__input" required>
 
             <select class="product-form__select" required>
                 <option value="">Unidad de Medida</option>
@@ -31,20 +31,20 @@
         <!-- Tipo de producto -->
         <div class="product-form__row product-form__row--checkbox">
             <span class="product-form__label">Tipo de Producto:</span>
-            <label><input type="checkbox">Carne</label>
-            <label><input type="checkbox">Frutas</label>
-            <label><input type="checkbox">Granos</label>
-            <label><input type="checkbox">Lácteos</label>
-            <label><input type="checkbox">Verduras</label>
+            <label class="product-form__row--label"><input type="checkbox">Carne</label>
+            <label class="product-form__row--label"><input type="checkbox">Frutas</label>
+            <label class="product-form__row--label"><input type="checkbox">Granos</label>
+            <label class="product-form__row--label"><input type="checkbox">Lácteos</label>
+            <label class="product-form__row--label"><input type="checkbox">Verduras</label>
         </div>
 
         <!-- Sección de fechas -->
         <div class="product-form__dates">
             <h3 class="product-form__dates-title">Caducidad</h3>
-            <p>Fecha de Elaboración</p>
-            <input type="date" class="product-form__input" placeholder="Fecha Elaboración" required>
-            <p>Fecha de Vencimiento</p>
-            <input type="date" class="product-form__input" placeholder="Fecha Vencimiento" required>
+            <p class="product-form__dates-subtitle">Fecha de Elaboración</p>
+            <input type="date" class="product-form__input product-form__dates-input" placeholder="Fecha Elaboración" required>
+            <p class="product-form__dates-subtitle">Fecha de Vencimiento</p>
+            <input type="date" class="product-form__input product-form__dates-input" placeholder="Fecha Vencimiento" required>
         </div>
 
         <!-- Subida de imagen -->

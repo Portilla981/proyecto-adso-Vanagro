@@ -9,8 +9,8 @@ export async function loadCards(containerSelector, cardIds = []) {
         // intentar, await espere
         const[templeateRest, datosRes] = await Promise.all([
             
-            fetch("/frontend/public/views/components/cards-home.html"),
-            fetch("/frontend/public/data/products.json"),
+            fetch("/frontend/public/views/components/card-product.html"),
+            fetch("/frontend/public/data/product.json"),
 
         ]);
 
@@ -27,8 +27,8 @@ export async function loadCards(containerSelector, cardIds = []) {
             let html = template
             .replace("{{title}}",card.title)
             .replace("{{imgProd}}",card.imgProd)
-            .replace("{{breve}}",card.breve)
-            .replace("{{precio}}",card.precio)
+            .replace("{{description}}",card.description)
+            .replace("{{price}}",card.price)
 
             containerProd.innerHTML += html;
             
