@@ -28,13 +28,13 @@
   gap: 24px;
 }
 
-.input-group {
+.edit-form__group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 
-.product-edit__row {
+.edit-form__input {
   padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
@@ -47,7 +47,7 @@
   height: 54px;
 }
 
-.product-edit__row::placeholder {
+.edit-form__input::placeholder {
   color: var(--gray-800);
   font-size: var(--fs-xs);
 }
@@ -60,12 +60,12 @@
   text-align: center;
 }
 
-.form__title {
+.edit-form__title {
   font-size: var(--fs-sm);
   font-weight: bold;
 }
 
-.box-image {
+.edit-form__images {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -74,7 +74,7 @@
   margin-top: 64px;
 }
 
-.box-image img {
+.edit-form__images img {
   width: 150px;
   height: 200px;
   object-fit: cover;
@@ -82,7 +82,7 @@
 }
 
 /* Botones */
-.buttons {
+.edit-form__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +127,7 @@
   box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400);
 }
 
-.buttons button {
+.edit-form__actions button {
   width: 160px;
 }
 
@@ -149,31 +149,31 @@
     flex-direction: column;
   }
 
-  .input-group {
+  .edit-form__group {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
   }
 
-  .product-edit__row {
+  .edit-form__input {
     max-width: 100%;
     width: 100%;
   }
 
-  .box-image {
+  .edit-form__images {
     flex-direction: row;
     justify-content: center;
     gap: 12px;
     padding: 0;
   }
 
-  /* .box-image img {
+  /* .edit-form__images img {
     width: 80px;
     height: 90px;
   } */
 
-  .buttons {
+  .edit-form__actions {
     flex-direction: column;
     gap: 16px;
   }
@@ -188,14 +188,14 @@
     gap: 24px;
   }
 
-  .input-group {
+  .edit-form__group {
     grid-column: span 2; /* Campos ocupan las dos primeras columnas */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
 
-  .box-image {
+  .edit-form__images {
     grid-column: 3;
     grid-row: 1 / span 5;
     align-items: center;
@@ -203,7 +203,7 @@
     justify-self: center;
   }
 
-  .buttons {
+  .edit-form__actions {
     grid-column: 1 / span 3;
     flex-direction: row;
     justify-content: center;

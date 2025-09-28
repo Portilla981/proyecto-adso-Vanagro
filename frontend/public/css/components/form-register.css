@@ -1,14 +1,4 @@
-.form-register_fields{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 2rem;
-    gap: 1.5rem;
-
-}
-
-.form-register h2{
+.form-register__title{
     text-align: center;
     color: var(--gray-900);
     margin-bottom: 10px;
@@ -16,7 +6,7 @@
     font-weight: bold;
 }
 
-.form-register-user{
+.form-register__form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,11 +15,35 @@
     width: 90%;   
     height: 400px;
     /* margin-bottom: 10px; */
-    overflow: auto;   
-
+    overflow: auto;
 }
 
-.form-register-user input, select{
+.form-register__label{
+    text-align: left;
+    width: 80%;
+    font-size: var(--fs-xs);
+    color: var(--gray-900);
+    margin-bottom: 5px;
+}
+
+.form-register__container{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;  
+}
+
+.form-register__fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.form-register__input,
+.form-register__select
+ {
     width: 200px;
     height: 32px;
     background-color: var(--secundary-400);
@@ -37,16 +51,8 @@
     border-radius: 5px;
 }
 
-.form-register-user p{
-    text-align: left;
-    width: 80%;
-    font-size: var(--fs-xs);
-    color: var(--gray-900);
-    margin-bottom: 5px;
 
-}
-
-.foto-user input{    
+.form-register__file{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -58,71 +64,48 @@
     background-color: var(--white);
 }
 
-.form-container__register{
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    
-   
-}
 
-.form-button__accion{
+.form-register__actions{
     display: flex;
     flex-direction: column;
     align-items: center;    
-    justify-content: center;
+    /* justify-content: center; */
     gap: 2rem; 
     margin: 2rem 0;
     padding: 1rem 0;
+    text-decoration: none;
 }
 
-.form-button__accion button{
-    padding: 1rem;
-    width: 15rem;
-    border-radius: 1rem; 
-    font-size: var(--fs-xs); 
-    cursor: pointer;
-}
-
-
-.btn-crear-user{
-    background-color: var(--primary-950);
-    color: var(--gray-900);
-}
-
-.btn-crear-user:hover{
-    background-color: var(--primary-800);
-    color: var(--white);
-    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
-}
-
-.btn-cancelar-user{
-    background-color: var(--secundary-950);
-
-}
-
-.btn-cancelar-user:hover{
-    background-color: var(--secundary-800);
-    color: var(--gray-400);
-    box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
-}
-
-.info-producter {
-    font-size: var(--fs-xs);
-    width: 300px;
-    margin-left: 2rem;
-}
-
-.form-container__identification{
+.form-register__button{
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    /* border-radius: 2rem;  */
+    font-size: var(--fs-xs); 
+    cursor: pointer;
+    gap: 2rem;
+    
+}
+
+/* ---------------------------------------------------------------- */
+
+.form-register__identification{
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: baseline;
     justify-content: space-evenly;
     gap: 1rem;
     width: 90%;
 }
 
-.foto-farm{
+.form-register__info {
+    font-size: var(--fs-xs);
+    width: 300px;
+    margin-left: 2rem;
+}
+
+
+.form-register__photo{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -132,27 +115,31 @@
     width: 100%;
 }
 
-.foto-farm p{
-    width: 90%;
-    font-size: var(--fs-sm);
-    color: var(--gray-900);
-    text-align: center;
-    margin: 0 5px
-}
+.form-register__fields-farm{ 
+        display: grid;   
+        justify-content: center;
+        width: 90%;
+        padding: 2rem;
+        gap: 2rem;
+        align-items: center;
+    }
 
-.foto-farm input{    
+
+
+.form-register__file-farm{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
     width: 200px;
     height: 150px;
-    /* padding: 5px; */
-    /* margin: 20px 10px; */
+    padding: 5px;
+    margin: 20px 10px;
     align-content: flex-end;
+    text-align: center;
     background-color: var(--white);
 }
 
-.location-map{
+.form-register__location{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +152,7 @@
     text-align: center;
 }
 
-.map{
+.form-register__map{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,13 +171,13 @@
         width: 100%;
     }
 
-    .form-register-user{
+    .form-register__form{
         height: auto;
         width: 700px;
         overflow: visible;
     }
 
-    .form-register_fields{
+    .form-register__fields{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
@@ -199,78 +186,72 @@
     gap: 1.5rem;
     }
 
-.form-container__register{
+    .form-register__container{
     flex-direction: row;
     align-items: flex-start;
+    }
 
-}
+    .form-register__actions{
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.form-button__accion{
-    /* display: flex; */
+
+
+    .form-register__button{
+    display: flex;
     flex-direction: row;
     align-items: center;    
-    justify-content:space-evenly ;
+    justify-content:space-between;
     width: 70%;
     gap: 4rem; 
     margin: 2rem 0;
     padding: 1rem 0;
-}
+    }
 
-.form-container__identification{
-    /* display: flex; */
+/* --------------------------------------------------- */
+    .form-register__identification{
+    display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-evenly;
     gap: 1rem;
-
     width: 100%;
-}
+    }
+
+    .form-register__fields-farm{ 
+        display: grid;   
+        align-items: center;
+        width: 90%;
+        padding: 2rem;
+        gap: 2rem;
+    }
 
 
 
-.foto-farm{
-    display: flex;
-    flex-direction: column;
+
+    .form-register__file-farm{
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
     justify-content: center;
     gap: 1rem;
     width: 40%;
-}
+    }
 
-.foto-farm p{
-    text-align: start;
 
-}
 
-.foto-farm input{   
-    justify-content: center; 
-    background-image: url(/frontend/public/assets/vanagro/camara.svg);
-    background-repeat: no-repeat;
-    background-size: 128px;
-    width: 200px;
-    height: 150px;
-    /* padding: 5px; */
-    /* margin: 20px 10px; */
-    align-content: flex-end;
-    background-color: var(--white);
-}
 
-.form-register_producter-location{
+    .form-register__producter-location{
     display: flex;    
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-.producter-location{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
+    /* gap: 2rem; */
+    /* width: 100%; */
+    }
 
 
 }
