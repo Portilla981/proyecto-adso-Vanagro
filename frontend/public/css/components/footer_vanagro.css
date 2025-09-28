@@ -54,3 +54,17 @@
   }
 
 }
+
+@media (width > 768px) {
+  .footer-vanagro__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .footer-vanagro__social {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

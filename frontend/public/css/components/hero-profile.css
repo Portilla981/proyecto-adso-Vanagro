@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(/frontend/public/assets/vacas.jpg);
+    background-image: url(/frontend/public/assets/vanagro/vacas.jpg);
     background-position: center;
     background-size: cover;
     height: 20rem;
@@ -23,7 +23,7 @@
     font-size: var(--fs-sm);
 }
 
-.hero__text {
+.hero__description {
     font-size: var(--fs-xs);
     font-weight: bold;
 }
