@@ -1,0 +1,164 @@
+.account-user__title {
+    text-align: center;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    background-color:  rgb(204 204 204 / 80%);
+    height: auto;
+    border-radius: 2rem;    
+}
+
+.account-user__subtitle {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: var(--fs-md);
+    color: var(--terciary-900);
+    
+}
+.account-user__legend {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: var(--fs-sm);
+    color: var(--gray-900);
+}
+
+
+.account-user__hero {
+    background-image: url(/frontend/public/assets/vanagro/oficina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.account-user__img {
+    margin: 2rem 4rem;
+    display: flex;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid var(--black);
+    border-radius: 30%;
+    border-color: var(--secundary-400);
+    /* box-shadow: 0.5rem 0.5rem 1rem var(--primary-400); */
+}
+
+.account-user__info {
+    display: flex;
+    flex-direction: column-reverse;
+    place-content: center;
+    height: 100%;
+    font-size: var(--fs-xs);
+    align-items: center;
+
+}
+
+.account-user__info--data {
+    /* background-color: rgba(22, 55, 146, 0.5); */
+    background-color: var(--gray-100);
+    border: 2px solid var(--black);
+    border-radius: 5rem;
+    margin: 1rem 1rem;
+    padding: 0 5rem;
+    width: 80%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.account-user__name {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0 0.5rem 0;
+    color: var(--black);
+}
+
+
+.account-user__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.account-user__button--edit,
+.account-user__button--close {
+    border-radius: 1rem;
+}
+
+.account-user__button--edit:hover,
+.account-user__button--close:hover { 
+    cursor: pointer;
+}
+
+.account-user__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+.account-user__option {
+    display: flex;
+    width: 300px;
+    height: 5rem;
+    justify-content: end;
+
+}
+
+.account-user__icon {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.account-user__input {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    background-color: var(--gray-100);
+}
+
+.account-user__input:hover {
+    background-color: var(--secundary-400);
+    color: var(--primary-950);
+    scale: 1.1;  
+    cursor: pointer;  
+}
+
+
+@media (width > 768px) {
+
+    .account-user__hero {
+        flex-direction: row;
+        /* justify-content: space-between; */
+        padding: 2rem 4rem;
+    }
+    
+    .account-user__info {        
+        place-content: center;
+        flex-direction: row;
+        /* height: 100%; */
+        font-size: var(--fs-sm);
+    }
+
+    
+    .account-user__button {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }   
+
+    
+}

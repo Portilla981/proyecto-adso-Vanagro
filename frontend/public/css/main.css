@@ -13,7 +13,7 @@
 @import url('components/property-info.css');
 @import url('components/shopping-cart.css');
 @import url('components/form-register.css');
-@import url('components/cuenta-user.css');
+@import url('components/account-user.css');
 @import url('components/edit-producter.css');
 @import url('components/about-us.css');
 @import url('components/product-create.css');
@@ -22,4 +22,4 @@
 @import url('components/buttons.css');
 @import url('components/msj-view.css');
 @import url('components/hero-profile.css');
-/* @import url('components/card-profile.css'); */
+
