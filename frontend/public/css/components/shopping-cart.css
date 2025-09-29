@@ -9,6 +9,11 @@ body {
   cursor: pointer;
 }
 
+.cart__actions{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* ====== CART ====== */
 .cart {
@@ -54,22 +59,8 @@ body {
   margin-bottom: 15px;
 }
 
-.cart__button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-}
 
-.cart__button--buy {
-  background: var(--primary-900);
-  color: var(--white);
-  font-weight: bold;
-}
 
-.cart__button--continue {
-  background: var(--secundary-900);
-  font-weight: bold;
-}
 
 /* ====== PRODUCT CARD ====== */
 .product-card {
