@@ -22,13 +22,16 @@
 .buttons__action--primary {
     padding: 12px 16px;
     background-color: var(--primary-900);
-    color: var(--white);    
+    color: var(--white); 
+    border: none;
+    border-radius: 4px;   
 }
 
 .buttons__action--primary:hover {
     background-color: var(--primary-700);
     color: var(--black);
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 /* Secundario */
@@ -36,11 +39,14 @@
     padding: 10px 16px; 
     background-color: var(--secundary-900);
     color: var(--black);
+    border: none;
+    border-radius: 4px; 
 }
 .buttons__action--secondary:hover {
     background-color: var(--secundary-800);
     color: var(--gray-800);
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 /* Responsive */
