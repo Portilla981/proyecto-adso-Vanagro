@@ -13,12 +13,10 @@
 }
 
 .product-form__title {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   color: var(--primary-900);
   text-align: center;
-  margin: 10px;
-
-  
+  margin: 10px;  
 }
 
 .product-form__subtitle {
@@ -35,21 +33,16 @@
 }
 
 /* Filas */
-.product-form__row {
+/* .product-form__row {
   display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  
-}
+  flex-direction: column;
+  gap: 1.5rem;  
+} */
 
 .product-form__label {
   font-size: var(--fs-xs);
   color: var(--gray-900);
   font-weight: bold;
-}
-
-#product-name{
-  width: 100%;
 }
 
 /* inputs, selects y textarea */
@@ -61,22 +54,8 @@
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   background-color: var(--white);
-  font-size: var(--fs-xs);
-  height: auto;
+  font-size: var(--fs-xs);  
 }
-
-.product-beginner{
-  display: flex;
-  /* flex-direction: row; */
-  /* width: 100px; */
-  flex-wrap: wrap;
-}
-
-.product-beginner input{
-  width: 200px;
-  height: 48px;
-}
-
 
 /* Textarea */
 .product-form__textarea {
@@ -84,8 +63,8 @@
   padding: 12px 16px;
   resize: vertical;
   flex: 1;
+  width: 100%;
 }
-
 
 .product-form__select {
   appearance: none;
@@ -128,7 +107,7 @@
   gap: 1rem;  
 }
 
-.product-form__dates-input{
+.product-form__dates--input{
   height: 48px;
   padding: 0 16px;
   border: 1px solid var(--gray-400);
@@ -137,7 +116,7 @@
   font-size: var(--fs-xs);
 }
 
-.product-form__dates-title {
+.product-form__dates--title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +135,7 @@
   text-align: center;
 }
 
-.product-form__image-upload {
+.product-form__image--upload {
   border: 2px dashed var(--gray-400);
   border-radius: 0.5rem;
   padding: 4rem;
@@ -165,7 +144,7 @@
   cursor: pointer;
 }
 
-.product-form__image-upload:hover {
+.product-form__image--upload:hover {
   background-color: var(--gray-100);
 }
 
@@ -173,32 +152,26 @@
 /* Responsive */
 @media (width > 768px) {
   .product-form__row {
-    flex-direction: row;
+    display: grid;
     justify-items: center;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
+
   .product-form__dates {
     flex-direction: row;
     justify-content: space-between;
     
   }
 
-  .product-form__dates-input{
-    /* height: auto; */
+  .product-form__dates--input,
+  .product-form__input,
+  .product-form__select{
     width: 100%;
-  }
-
-  .product-form__input{
-    width: 200px;
-  }
-
-  #product-name{
-    width: 400px;
   }
 
   .product-form__row--checkbox {
     grid-template-columns: repeat(3, 1fr);  
   }
-
-
 
 }
