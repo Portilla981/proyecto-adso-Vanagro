@@ -9,16 +9,42 @@
         
 }
 
-.session-beginer label{
-    display: flex;    
-    width: 20rem;
-    padding: 0 3rem;
+.beginner-form__info{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.beginner-form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+}
+
+.beginner-form__credential{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 24px;
+}
+
+.beginner-form__label{
+    font-size: var(--fs-xxxs);
+    margin-bottom: 4px;    
     color: var(--white);
     text-align: left;
 }
 
+.beginner-form__input{
+    min-width: 320px;
+    padding: 1rem;
+    height: 48px;
+    border-radius: 1rem;
+    background-color: var(--white);    
+}
 
-.session-container_beginer{
+.session-container__beginer{
     /* forma de centrar objetos dentro del contenedor 
     display: flex;
     justify-content: center;
@@ -34,21 +60,24 @@
 .session__subtitle{
     margin: 0;
     padding: 1rem;
-    color: var(--gray-700);
+    color: var(--white);
+    font-size: var(--fs-md);
 }
 
-
 .session-beginer{
-    background-color: rgba(216, 248, 227, 0.5);
+    /* background-color: rgba(59, 59, 59, 0.8); */
+    background-color: rgba(var(--filter-gray-900-rgb), 0.8);
     position: relative;
     border: 2px solid black;
-    border-radius: 5rem;
+    border-radius: 2rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);    
-    margin:  6rem 1rem;
-    padding: 2rem;
-    width: 400px;    
-    height: auto;
+    margin:  1rem 0; 
+    padding: 24px 0;
+    width: 100%;    
+    height:auto;
     text-align: center;
+    /* opacity: 0.5; */
+    /* z-index: 1000; */
     
     /* forma de centrar objetos pero q esten sobre los demas objetos
     position: absolute;
@@ -58,92 +87,59 @@
     /* z-index: 100; */    
 }
 
-.session-beginer input{
-    padding: 1rem;
-    width: 90%;
-    border-radius: 1rem;
-    background-color: var(--gray-200);    
-}
 
-
-
-.beginner-form input{
-    height: 48px;
-}   
 
 .beginner-button__links{
     display: flex;
     flex-direction: column;
     align-items: center;    
     justify-content: center;
-    gap: 2rem; 
+    gap: 24px; 
     margin: 2rem 0;
     padding: 1rem 0; 
 }
 
-.beginner-button__links button{
-    padding: 1rem;
-    width: 15rem;
-    height: 48px;
-    border-radius: 1rem; 
-    font-size: var(--fs-xs); 
-    cursor: pointer;    
-}
-
-/* .btn-beginner{
-    background-color: var(--primary-950);
-}
-
-.btn-beginner:hover{
-    background-color: var(--primary-800);
-    color: var(--white);
-    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400) ;
-} */
-
-/* .btn-make{
-    background-color: var(--secundary-950);
-} */
-
-/* .btn-make:hover{
-    background-color: var(--secundary-800);
-    color: var(--gray-400);
-    box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400) ;
-} */
 
 .begin-lost_password{
     text-decoration: none;
-    color: var(--terciary-800); 
-    font-size: var(--fs-md);   
+    color: var(--white); 
+    font-size: var(--fs-xxs);   
 }
 
 .begin-lost_password:hover{
     color: var(--secundary-950);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
 
-    /* .session-beginer{
-    margin: 2rem;
-    padding: 3rem;
-    width: 40rem;    
-    height: 40rem;
+    .session-beginer{    
+    width: 640px;    
+    
     }
-     */
+    
     .beginner-button__links{
     display: flex;
     flex-direction: row;
     align-items: center;    
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;   
     margin: 1rem 0;
     }
 
-    .session-beginer label{
-    display: flex;    
-    width: 20rem;
-    padding: 0 3rem;
-    color: var(--white);
+    /* .beginner-form__info {
+        width: 640px;
+        align-items: center;
+    } */
+
+    /* .beginner-form__input{
+        max-width: 320px;
+    } */
+
+    .beginner-form__label{
+        text-align: left;
+
     }
 
+    
     
 }

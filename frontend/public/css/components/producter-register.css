@@ -1,4 +1,4 @@
-.form-register__title{
+.producter-register__title{
     text-align: center;
     color: var(--gray-900);
     margin-bottom: 10px;
@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 
-.form-register__form{
+.producter-register__form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
     overflow: auto;
 }
 
-.form-register__label{
+.producter-register__label{
     text-align: left;
     width: 80%;
     font-size: var(--fs-xs);
@@ -26,13 +26,13 @@
     margin-bottom: 5px;
 }
 
-.form-register__container{
+.producter-register__container{
     display: flex;    
     flex-direction: column;
     align-items: center;  
 }
 
-.form-register__fields{
+.producter-register__fields{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,8 +41,8 @@
     gap: 1.5rem;
 }
 
-.form-register__input,
-.form-register__select
+.producter-register__input,
+.producter-register__select
  {
     width: 200px;
     height: 32px;
@@ -52,7 +52,7 @@
 }
 
 
-.form-register__file{    
+.producter-register__file{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -65,7 +65,7 @@
 }
 
 
-.form-register__actions{
+.producter-register__actions{
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -76,7 +76,7 @@
     text-decoration: none;
 }
 
-.form-register__button{
+.producter-register__button{
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -89,7 +89,7 @@
 
 /* ---------------------------------------------------------------- */
 
-.form-register__identification{
+.producter-register__identification{
     /* display: flex; */
     /* flex-direction: column; */
     align-items: baseline;
@@ -98,14 +98,14 @@
     width: 90%;
 }
 
-.form-register__info {
+.producter-register__info {
     font-size: var(--fs-xs);
     width: 300px;
     margin-left: 2rem;
 }
 
 
-.form-register__photo{
+.producter-register__photo{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@
     width: 100%;
 }
 
-.form-register__fields-farm{ 
+.producter-register__fields-farm{ 
         display: grid;   
         justify-content: center;
         width: 90%;
@@ -126,7 +126,7 @@
 
 
 
-.form-register__file-farm{    
+.producter-register__file-farm{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -139,7 +139,7 @@
     background-color: var(--white);
 }
 
-.form-register__location{
+.producter-register__location{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +152,7 @@
     text-align: center;
 }
 
-.form-register__map{
+.producter-register__map{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,20 +164,20 @@
 
 @media (width > 768px){
 
-    .form-register{
+    .producter-register{
         display: grid;
         place-content: center;
         height: 100%;
         width: 100%;
     }
 
-    .form-register__form{
+    .producter-register__form{
         height: auto;
         width: 700px;
         overflow: visible;
     }
 
-    .form-register__fields{
+    .producter-register__fields{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
@@ -186,12 +186,12 @@
     gap: 1.5rem;
     }
 
-    .form-register__container{
+    .producter-register__container{
     flex-direction: row;
     align-items: flex-start;
     }
 
-    .form-register__actions{
+    .producter-register__actions{
         flex-direction: row;
         width: 80%;
         justify-content: space-around;
@@ -200,7 +200,7 @@
 
 
 
-    .form-register__button{
+    .producter-register__button{
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -212,7 +212,7 @@
     }
 
 /* --------------------------------------------------- */
-    .form-register__identification{
+    .producter-register__identification{
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -221,7 +221,7 @@
     width: 100%;
     }
 
-    .form-register__fields-farm{ 
+    .producter-register__fields-farm{ 
         display: grid;   
         align-items: center;
         width: 90%;
@@ -232,7 +232,7 @@
 
 
 
-    .form-register__file-farm{
+    .producter-register__file-farm{
     /* display: flex;
     flex-direction: column; */
     align-items: center;
@@ -244,7 +244,7 @@
 
 
 
-    .form-register__producter-location{
+    .producter-register__producter-location{
     display: flex;    
     flex-direction: row;
     align-items: center;

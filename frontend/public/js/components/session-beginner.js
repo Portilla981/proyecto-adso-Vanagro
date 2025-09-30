@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     
-    const sesionElement = document.querySelector(".session-container_beginer");    
+    const sesionElement = document.querySelector(".session-container__beginer");    
     if(sesionElement){        
         fetch('/frontend/public/views/components/session-beginner.html')    
         .then(response => response.text())    
