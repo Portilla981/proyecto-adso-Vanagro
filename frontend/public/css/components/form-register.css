@@ -42,8 +42,7 @@
 }
 
 .form-register__input,
-.form-register__select
- {
+.form-register__select{
     width: 200px;
     height: 32px;
     background-color: var(--secundary-400);
