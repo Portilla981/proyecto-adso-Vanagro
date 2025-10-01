@@ -41,9 +41,14 @@
     gap: 1.5rem;
 }
 
+<<<<<<< HEAD:frontend/public/css/components/producter-register.css
 .producter-register__input,
 .producter-register__select
  {
+=======
+.form-register__input,
+.form-register__select{
+>>>>>>> d9da102f65e36c9f1aaa64af62c229308274a091:frontend/public/css/components/form-register.css
     width: 200px;
     height: 32px;
     background-color: var(--secundary-400);
