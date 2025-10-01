@@ -71,8 +71,8 @@
   display: flex;
   flex-direction: column;
   /* width: 100; */
-  flex-wrap: wrap;
-  gap: 1.5rem;  
+  /* flex-wrap: wrap; */
+  gap: 16px;  
 }
 
 .product-edit__input:focus,
@@ -118,6 +118,9 @@
   background-color: var(--primary-100);
   /* padding: 1.5rem; */
   border-radius: 0.8rem;
+  /* justify-content: space-between; */
+    /* align-items: center; */
+
 }
 
 .product-edit__dates--input{
@@ -127,6 +130,7 @@
   border-radius: 4px;
   background-color: var(--secundary-400);
   font-size: var(--fs-xs);
+  margin: 0 16px;
 }
 
 .product-edit__dates--title {
@@ -156,9 +160,12 @@
   color: var(--gray-500);
   font-size: var(--fs-xs);
   cursor: pointer;
+  height: 200px;
 }
 
 .product-edit__image--preview {
+  background-repeat: no-repeat;
+  background-size: 200px;
   max-width: 200px;
   /* margin: 0 auto 1rem; */
   /* border-radius: 0.5rem; */
@@ -175,9 +182,9 @@
 @media (width > 768px) {
   
   .product-edit__form--container {
-    display: grid;
-    justify-items: center;    
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid; */
+    /* justify-items: center;     */
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 10px;
     }
 
@@ -193,6 +200,7 @@
   .product-edit__dates {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
     
   .product-edit__row--checkbox {

@@ -5,29 +5,30 @@
     <form action="#" method="post" class="product-edit__form">        
         <!-- Campos de entrada -->
         <div class="product-edit__form--container">
-            <div class="product-edit__field">
-                <label class="product-edit__label--row" >Nombre del producto </label>
-                <input class="product-edit__input" type="text" value="Plátano Verde"  required>
-            </div>
+            
+            <div class="product-form__name">
 
-            <div class="product-edit__field">            
-            <label class="product-edit__label--row">Unidad de medida </label>            
-            <select class="product-edit__select" required>
-                <option value="kg">Kilogramos</option>
-                <option value="und">Unidades</option>
-                <option value="lt">Litros</option>
-            </select>
-            </div>
-
-            <div class="product-edit__field">
-                <label class="product-edit__label--row">Precio x unidad de medida </label>
-                <input class="product-edit__input" type="number" value="3000"  required>
-            </div>
+            <label class="form-register__label">Nombre del producto
+                    <input class="form-register__input" type="text" placeholder="Platano verde" />
+                </label> 
+            </div> 
+            <div class="product-form__quantity">
+            <label class="form-register__label">Unidad de medida
+                    <select class="form-register__input">
+                        <option value="kg">Kilogramos</option>
+                        <option value="und">Unidades</option>
+                        <option value="lt">Litros</option>
+                    </select>
+            </label> 
+            <label class="form-register__label">Precio x unidad
+                    <input class="form-register__input" type="number" placeholder="3000" />
+                </label>
+                </div>
         
         </div>
 
         <div class="product-edit__textarea">            
-            <label class="product-edit__label--row">Descripción del producto</label>
+            <label class="form-register__label">Descripción del producto</label>
             <textarea class="product-edit__textarea--row" required>Plátano Verde x 1 ud</textarea>
         </div>
 
