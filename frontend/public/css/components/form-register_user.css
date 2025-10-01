@@ -129,7 +129,7 @@
   font-size: var(--fs-xxxs);
   color: var(--black);
   width: 100%;
-  max-width: 356px;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -184,6 +184,12 @@
     justify-content: center;
     width: 60%;
   }
+
+  .form-register__input {
+    max-width: 100%;
+    width: 100%;
+  }
+
 
   .form-register__add {
     flex-direction: column;

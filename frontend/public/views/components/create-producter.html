@@ -1,65 +1,70 @@
 <div class="producter-register">
-    <h2 class="producter-register __title">Registro como productor</h2>
+    <h2 class="producter-register__title">Registro como productor</h2>
 
-    <form class="producter-register__producter" action="">
+    <form class="producter-register__form" action="">
 
-<<<<<<< HEAD
         <div class="producter-register__identification">
             <div class="producter-register__info">
-                <p class="producter-register__label" >Identificación:</p>
-                <p class="producter-register__label">Nombre del Usuario</p>
-                <p class="producter-register__label">Identificación</p>
+                <p class="producter-register__label">Nombre de Usuario:</p>
+                <p class="producter-register__label">Identificación:</p>
                 <p class="producter-register__label">Ubicación:</p>
                 <p class="producter-register__label">Teléfono:</p>
                 <p class="producter-register__label">Dirección:</p>
                 <p class="producter-register__label">Ciudad:</p>
-=======
-        <div class="form-register__identification">
-            <div class="form-register__info">
-                <p class="form-register__label">Nombre de Usuario</p>
-                <p class="form-register__label">Identificación</p>
-                <p class="form-register__label">Ubicación:</p>
-                <p class="form-register__label">Teléfono:</p>
-                <p class="form-register__label">Dirección:</p>
-                <p class="form-register__label">Ciudad:</p>
->>>>>>> d9da102f65e36c9f1aaa64af62c229308274a091
             </div>
 
             <div class="producter-register__photo" placeholder="Inserte foto de su finca">
                 <p class="producter-register__label-farm">Foto de su finca</p>
+                <img class="producter-register__image" src="/frontend/public/assets/vanagro/camara.svg" alt="">
                 <input class="producter-register__file-farm" type="file">
             </div>
         </div>
 
-
-
         <div class="producter-register__container">
-            <div class="producter-register__producter-location">
-
-
+            <div class="producter-register__farm-location">
                 <div class="producter-register__fields-farm">
-                    <input class="producter-register__input" type="text" placeholder="Ingrese nombre de la finca">
-                    <input class="producter-register__input" type="text" placeholder="Ingrese nombre de la vereda">
 
-                    <select class="producter-register__select" name="departamento">
-                        <option value="">Seleccione un departamento</option>
-                        <option value="caldas">Caldas</option>
-                        <option value="quindio">Quindío</option>
-                        <option value="risaralda">Risaralda</option>
-                    </select>
+                    <label class="form-register__label">Nombre Finca
+                        <input class="form-register__input" type="text" placeholder="Ingrese el nombre de la finca">
+                    </label>
 
-                    <select class="producter-register__select" name="municipio" >
-                        <!-- <option value="pereira">Pereira</option> -->
-                        <option value="">Seleccione un municipio</option>                        
-                    </select>
+                    <label class="form-register__label">Departamento
+                        <select class="form-register__input">
+                            <option>Risaralda</option>
+                            <option>Caldas</option>
+                            <option>Quindío</option>
+                        </select>
+                    </label>
+                    <label class="form-register__label">Municipio
+                        <select class="form-register__input">
+                            <option>Marsella</option>
+                            <option>Apía</option>
+                            <option>Balboa</option>
+                            <option>Belén de Umbría</option>
+                            <option>Dosquebradas</option>
+                            <option>Guática</option>
+                            <option>La Celia</option>
+                            <option>La Virginia</option>
+                            <option>Mistrató</option>
+                            <option>Pereira</option>
+                            <option>Pueblo Rico</option>
+                            <option>Quinchía</option>
+                            <option>Santa Rosa de Cabal</option>
+                            <option>Santuario</option>
+                        </select>
+                    </label>
+
+                    <label class="form-register__label">Vereda
+                        <input class="form-register__input" type="text" placeholder="Ingrese el nombre de la vereda">
+                    </label>
                 </div>
 
                 <div class="producter-register__location">
-                    <p class="producter-register__label" >Ubicación en el mapa</p>
+                    <p class="producter-register__label-farm">Ubicación en el mapa</p>
                     <div class="producter-register__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.303573490634!2d-75.6959316241372!3d4.813611643326024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5e9b4f4d7f%3A0x8c6e6c5e6c5e6c5e!2sPereira%2C%20Risaralda%2C%20Colombia!5e0!3m2!1ses-419!2sus!4v1696356789012!5m2!1ses-419!2sus"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -68,10 +73,10 @@
         </div>
         <div class="producter-register__actions">
             <a href="/frontend/public/views/producter-profile.html">
-                <button type="button" class="buttons__action--primary  btn-crear-producter">Crear Productor</button>
+                <button type="button" class="buttons__action--primary">Crear Productor</button>
             </a>
             <a href="">
-                <button type="button" class="buttons__action--secondary  btn-cancelar-producter">Cancelar</button>
+                <button type="button" class="buttons__action--secondary"  >Cancelar</button>
             </a>
         </div>
 

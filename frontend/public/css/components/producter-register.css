@@ -1,261 +1,167 @@
-.producter-register__title{
-    text-align: center;
-    color: var(--gray-900);
-    margin-bottom: 10px;
-    font-size: var(--fs-md);
+.producter-register {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    gap: 24px;
+}
+
+.producter-register__title {
+    color: var(--black);
+    margin-top: 24px;
+    font-size: var(--fs-xs);
     font-weight: bold;
 }
 
-.producter-register__form{
+.producter-register__form {
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 1px solid var(--gray-800);
-    margin: 2rem;
-    width: 90%;   
-    height: 400px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 24px;
     overflow: auto;
 }
 
-.producter-register__label{
-    text-align: left;
-    width: 80%;
-    font-size: var(--fs-xs);
-    color: var(--gray-900);
-    margin-bottom: 5px;
-}
-
-.producter-register__container{
-    display: flex;    
-    flex-direction: column;
-    align-items: center;  
-}
-
-.producter-register__fields{
+.producter-register__identification {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 2rem;
-    gap: 1.5rem;
-}
-
-<<<<<<< HEAD:frontend/public/css/components/producter-register.css
-.producter-register__input,
-.producter-register__select
- {
-=======
-.form-register__input,
-.form-register__select{
->>>>>>> d9da102f65e36c9f1aaa64af62c229308274a091:frontend/public/css/components/form-register.css
-    width: 200px;
-    height: 32px;
-    background-color: var(--secundary-400);
-    /* border: 1px solid var(--gray-900); */
-    border-radius: 5px;
-}
-
-
-.producter-register__file{    
-    background-image: url(/frontend/public/assets/vanagro/camara.svg);
-    background-repeat: no-repeat;
-    background-size: 128px;
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    margin: 20px 10px;
-    align-content: flex-end;
-    background-color: var(--white);
-}
-
-
-.producter-register__actions{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    /* justify-content: center; */
-    gap: 2rem; 
-    margin: 2rem 0;
-    padding: 1rem 0;
-    text-decoration: none;
-}
-
-.producter-register__button{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    /* border-radius: 2rem;  */
-    font-size: var(--fs-xs); 
-    cursor: pointer;
-    gap: 2rem;
-    
-}
-
-/* ---------------------------------------------------------------- */
-
-.producter-register__identification{
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: baseline;
-    justify-content: space-evenly;
-    gap: 1rem;
-    width: 90%;
+    flex-direction: column-reverse;
+    gap: 16px;
+    width: 100%;
 }
 
 .producter-register__info {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.producter-register__label {
+    text-align: left;
     font-size: var(--fs-xs);
-    width: 300px;
-    margin-left: 2rem;
+    color: var(--gray-900);
 }
 
-
-.producter-register__photo{
+.producter-register__photo {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    width: 100%;
+    gap: 4px;
 }
 
-.producter-register__fields-farm{ 
-        display: grid;   
-        justify-content: center;
-        width: 90%;
-        padding: 2rem;
-        gap: 2rem;
-        align-items: center;
-    }
+.producter-register__image {
+    width: 128px;
+}
 
-
-
-.producter-register__file-farm{    
-    background-image: url(/frontend/public/assets/vanagro/camara.svg);
-    background-repeat: no-repeat;
-    background-size: 128px;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
-    margin: 20px 10px;
-    align-content: flex-end;
+.producter-register__file-farm {
+    width: 90%;
+    font-size: var(--fs-xxs);
     text-align: center;
-    background-color: var(--white);
+    margin: 16px;
 }
 
-.producter-register__location{
+.producter-register__farm-location {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    margin: 24px 0;
+    gap: 24px;
     width: 100%;
 }
 
-.location-map p{    
-    text-align: center;
+.producter-register__fields-farm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 16px;
 }
 
-.producter-register__map{
+
+
+.producter-register__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producter-register__button {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px;     */
+    /* gap: 2rem; */
+
+}
+
+
+.producter-register__map {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 1rem 0;
     border: 2px solid var(--black);
 }
 
 
-@media (width > 768px){
+@media (width >=768px) {
 
-    .producter-register{
-        display: grid;
+    .producter-register {
         place-content: center;
-        height: 100%;
-        width: 100%;
     }
 
-    .producter-register__form{
+    .producter-register__form {
         height: auto;
         width: 700px;
         overflow: visible;
     }
 
-    .producter-register__fields{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    width: 90%;
-    padding: 2rem;
-    gap: 1.5rem;
+    .producter-register__fields-farm {
+        padding-left: 24px;
+        align-items: start;
     }
 
-    .producter-register__container{
-    flex-direction: row;
-    align-items: flex-start;
+    .producter-register__location {
+        margin: 0 16px;
     }
 
-    .producter-register__actions{
+    .producter-register__farm-location {
         flex-direction: row;
-        width: 80%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .producter-register__actions {
+        flex-direction: row;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
     }
 
 
 
-    .producter-register__button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    justify-content:space-between;
-    width: 70%;
-    gap: 4rem; 
-    margin: 2rem 0;
-    padding: 1rem 0;
-    }
-
-/* --------------------------------------------------- */
-    .producter-register__identification{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-evenly;
-    gap: 1rem;
-    width: 100%;
-    }
-
-    .producter-register__fields-farm{ 
-        display: grid;   
+    .producter-register__button {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        width: 90%;
-        padding: 2rem;
-        gap: 2rem;
+        justify-content: space-between;
+        width: 70%;
+        gap: 4rem;
+        margin: 2rem 0;
+        padding: 1rem 0;
     }
 
 
-
-
-    .producter-register__file-farm{
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 40%;
+    .producter-register__identification {
+        flex-direction: row;
     }
 
-
-
-
-    .producter-register__producter-location{
-    display: flex;    
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* gap: 2rem; */
-    /* width: 100%; */
+    .producter-register__file-farm {
+        text-align: center;
     }
 
 

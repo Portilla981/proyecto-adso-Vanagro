@@ -1,4 +1,4 @@
-.hero {
+.hero__image {
     background-image: url(/frontend/public/assets/vanagro/vacas.jpg);
     background-position: center;
     background-size: cover;
@@ -26,6 +26,33 @@
 .hero__description {
     font-size: var(--fs-xs);
     font-weight: bold;
+}
+
+.hero__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.hero__options--ref{
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+@media (width > 768px) {
+    
+    .hero__options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        /* flex-direction: row; */
+        gap: 24px;
+        margin: 24px;
+    }
 }
 
 

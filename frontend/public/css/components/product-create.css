@@ -33,11 +33,11 @@
 }
 
 /* Filas */
-/* .product-form__row {
+.product-form__row {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;  
-} */
+  gap: 16px;  
+}
 
 .product-form__label {
   font-size: var(--fs-xs);
@@ -55,6 +55,12 @@
   border-radius: 4px;
   background-color: var(--white);
   font-size: var(--fs-xs);  
+}
+
+.product-form__quantity{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* Textarea */
@@ -151,12 +157,18 @@
 
 /* Responsive */
 @media (width > 768px) {
-  .product-form__row {
-    display: grid;
-    justify-items: center;    
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+
+  .product-form__name{
+    width: 100%;
   }
+
+  .product-form__quantity{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+  }
+
 
   .product-form__dates {
     flex-direction: row;
