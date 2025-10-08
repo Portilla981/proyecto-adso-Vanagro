@@ -7,34 +7,37 @@
 </div>
 
 <div class="hero__options">
-    <div class="account-user__option">
-        <input class="account-user__input" type="button" value="Tus productos">
-        <ion-icon class="account-user__icon" name="eye-outline"></ion-icon>
-    </div>
-    <div class="account-user__option">
-        <input class="account-user__input" type="button" value="Pedidos">
-        <ion-icon class="account-user__icon" name="cart-outline"></ion-icon>
-    </div>
-    <div class="account-user__option">
-        <input class="account-user__input" type="button" value="Ver Eventos">
-        <ion-icon class="account-user__icon" name="calendar-outline"></ion-icon>
-    </div>
-    <div class="account-user__option">
-        <a class="hero__options--ref" href="/frontend/public/views/create-product.html">
-        <input class="account-user__input" type="button" value="Crear Producto">
-        </a>
-        <ion-icon class="account-user__icon" name="storefront-outline"></ion-icon>
-        
-    </div>
-    <div class="account-user__option">
-        <input class="account-user__input" type="button" value="Reportes">
-        <ion-icon class="account-user__icon" name="cash-outline"></ion-icon>
-    </div>
-    <div class="account-user__option">
-        <a class="hero__options--ref" href="/frontend/public/views/edit-product.html">
-        <input class="account-user__input" type="button" value="Editar Producto">
-        </a>
-        <ion-icon class="account-user__icon" name="build-outline"></ion-icon>
+
+        <button class="profile__action" onclick="location.href='/frontend/public/views/create-product.html'">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <span>Agregar Producto</span>
+        </button>
+
+
+        <button class="profile__action" onclick="location.href='/frontend/public/views/edit-product.html'">
+            <ion-icon name="create-outline"></ion-icon>
+            <span>Editar Producto</span>
+        </button>
+
+      <button class="profile__action">
+        <ion-icon name="business-outline"></ion-icon>
+        <span>Ver Empresas</span>
+      </button>
+
+      <button class="profile__action">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>Ver Eventos</span>
+      </button>
+
+      <button class="profile__action">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <span>Reportes</span>
+      </button>
+
+      <button class="profile__action">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Ajustes</span>
+      </button>
         
     </div>
 </div>

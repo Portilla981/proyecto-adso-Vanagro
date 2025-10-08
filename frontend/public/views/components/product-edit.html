@@ -1,74 +1,83 @@
 <div class="product-edit">
     <h2 class="product-edit__title">Edición de Productos</h2>
-    <p class="product-edit__subtitle">Haga los cambios necesarios y luego dé clic en <strong>Guardar Cambios</strong> para hacer efectivos sus cambios.</p>
+    <p class="product-edit__subtitle">
+        Realiza los cambios necesarios y haz clic en <strong>Guardar cambios</strong> para actualizarlos.
+    </p>
 
-    <form action="#" method="post" class="product-edit__form">        
-        <!-- Campos de entrada -->
-        <div class="product-edit__form--container">
-            
-            <div class="product-form__name">
+    <form action="#" method="post" class="product-edit__form" enctype="multipart/form-data">
 
-            <label class="form-register__label">Nombre del producto
-                    <input class="form-register__input" type="text" placeholder="Platano verde" />
-                </label> 
-            </div> 
-            <div class="product-form__quantity">
-            <label class="form-register__label">Unidad de medida
-                    <select class="form-register__input">
-                        <option value="kg">Kilogramos</option>
-                        <option value="und">Unidades</option>
-                        <option value="lt">Litros</option>
-                    </select>
-            </label> 
-            <label class="form-register__label">Precio x unidad
-                    <input class="form-register__input" type="number" placeholder="3000" />
-                </label>
-                </div>
-        
+        <!-- Nombre, unidad y precio -->
+        <div class="product-edit__row">
+            <label class="product-edit__label">
+                Nombre del producto
+                <input class="product-edit__input" type="text" placeholder="Plátano verde" required />
+            </label>
+
+            <label class="product-edit__label">
+                Unidad de medida
+                <select class="product-edit__select product-edit__select--unit" required>
+                <option value="kg">Kilogramos</option>
+                <option value="und">Unidades</option>
+                <option value="lt">Litros</option>
+                <option value="lb">Libras</option>
+                </select>
+            </label>
+
+            <label class="product-edit__label">
+                Precio por unidad
+                <input class="product-edit__input" type="number" placeholder="3000" required />
+            </label>
         </div>
 
-        <div class="product-edit__textarea">            
-            <label class="form-register__label">Descripción del producto</label>
-            <textarea class="product-edit__textarea--row" required>Plátano Verde x 1 ud</textarea>
+        <!-- Descripción -->
+        <div class="product-edit__row product-edit__row--full">
+            <label class="product-edit__label">
+                Descripción del producto
+                <textarea class="product-edit__textarea" required>Plátano Verde x 1 ud</textarea>
+            </label>
         </div>
 
         <!-- Tipo de producto -->
-        <div class="product-edit__row--checkbox">
-            <span class="product-edit__label">Tipo de Producto:</span>
-            <label class="product-edit__label--row"><input type="checkbox">Carne</label>
-            <label class="product-edit__label--row"><input type="checkbox" checked >Frutas</label>
-            <label class="product-edit__label--row"><input type="checkbox">Granos</label>
-            <label class="product-edit__label--row"><input type="checkbox">Lácteos</label>
-            <label class="product-edit__label--row"><input type="checkbox">Verduras</label>
+        <div class="product-edit__row product-edit__row--checkbox">
+            <span class="product-edit__label">Tipo de producto:</span>
+            <label><input type="checkbox" /> Carne</label>
+            <label><input type="checkbox" checked /> Frutas</label>
+            <label><input type="checkbox" /> Granos</label>
+            <label><input type="checkbox" /> Lácteos</label>
+            <label><input type="checkbox" /> Verduras</label>
         </div>
 
-        <!-- Sección de fechas -->
+        <!-- Fechas -->
         <div class="product-edit__dates">
             <h3 class="product-edit__dates--title">Caducidad</h3>
-            <p class="product-edit__subtitle">Fecha de Elaboración</p>
-            <input type="date" class="product-edit__input product-edit__dates--input" value="2025-05-24" required>
-            <p class="product-edit__subtitle">Fecha de Vencimiento</p>
-            <input type="date" class="product-edit__input product-edit__dates--input" value="2025-06-01" required>
+
+            <div class="product-edit__dates--group">
+                <p class="product-edit__subtitle">Fecha de elaboración</p>
+                <input type="date" class="product-edit__dates--input" value="2025-05-24" required />
+            </div>
+
+            <div class="product-edit__dates--group">
+                <p class="product-edit__subtitle">Fecha de vencimiento</p>
+                <input type="date" class="product-edit__dates--input" value="2025-06-01" required />
+            </div>
         </div>
 
-        <!-- Subida de imagen -->
+        <!-- Imagen -->
+        <!-- Imagen -->
         <div class="product-edit__image">
-            <!-- <span class="product-edit__label">ID_PRODUCTO: PR987654</span> -->
-            <div class="product-edit__image-upload">
-                <img class="product-edit__image-preview" src="/frontend/public/assets/products/platano_verde.png" alt="Plátano Verde" >
-            </div>
+            <label class="product-edit__image-upload">
+                <span>Imagen del producto</span>
+                <div class="product-edit__image-preview">
+                
+                </div>
+            </label>
         </div>
 
+
+        <!-- Botones -->
         <div class="product-edit__actions">
-            <!-- <div class="buttons-container"></div> -->
-            <div class="buttons">
-                <button class="buttons__action--primary" type="submit">
-                    Guardar
-                </button>
-                <button class="buttons__action--secondary" type="reset">
-                    Cancelar
-                </button>
-            </div>
+            <button type="reset" class="buttons__action buttons__action--secondary">Cancelar</button>
+            <button type="submit" class="buttons__action buttons__action--primary">Guardar cambios</button>
         </div>
     </form>
 </div>

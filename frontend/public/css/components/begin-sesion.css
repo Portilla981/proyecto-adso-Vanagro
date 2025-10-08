@@ -1,5 +1,172 @@
-.session__container{
-    /* margin-bottom: -1rem; */
+.session__login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-50);
+}
+
+.session__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.session__left {
+    flex: 0.9;
+    position: relative;
+    background: url(/frontend/public/assets/vanagro/fondo.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    clip-path: ellipse(75% 100% at left center);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.session__info {
+    margin-right: 320px;
+    
+}
+
+.session__info-title {
+    font-size: var(--fs-md);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+
+.session__info-text {
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+
+.session__form-container {
+    flex-direction: column;
+    margin-top: 56px;
+    height: 620px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background: var(--white);
+}
+
+
+
+.beginner-form__info{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.beginner-form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+}
+
+.beginner-form__credential{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 24px;
+}
+
+.beginner-form__label{
+    font-size: var(--fs-xxxs);
+    margin-bottom: 4px;    
+    color: var(--black);
+    text-align: left;
+}
+
+.beginner-form__input{
+    min-width: 320px;
+    padding: 1rem;
+    height: 48px;
+    border-radius: 1rem;
+    background-color: var(--white);    
+}
+
+
+.beginner-button__links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    gap: 24px; 
+    margin: 2rem 0;
+    padding: 1rem 0; 
+}
+
+
+.begin-lost_password{
+    text-decoration: none;
+    color: var(--black); 
+    font-size: var(--fs-xxs);   
+}
+
+.begin-lost_password:hover{
+    color: var(--terciary-700);
+}
+
+
+@media (max-width: 768px) {
+    .session__login {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .session__content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .session__form-container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 2rem 1rem;
+    }
+
+    .beginner-form__input {
+        width: 320px;
+        min-width: 320px;  
+        max-width: 320px;
+    }
+
+    .session__left {
+        width: 100%;
+        height: 300px;
+        clip-path: none;
+        padding: 1rem;
+    }
+
+    .session__info {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+/*.session__container{
+    margin-bottom: -1rem; COMENTARIO
     padding: 0;
     background-image: url(/frontend/public/assets/vanagro/image1.png);
     background-position: center center;
@@ -12,13 +179,13 @@
 .beginner-form__info{
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    width: 100%; COMENTARIO
 }
 
 .beginner-form{
     display: flex;
     flex-direction: column;
-    /* gap: 24px; */
+    gap: 24px; COMENTARIO
 }
 
 .beginner-form__credential{
@@ -45,11 +212,11 @@
 }
 
 .session-container__beginer{
-    /* forma de centrar objetos dentro del contenedor 
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
-    /* otra forma es asi  */
+    forma de centrar objetos dentro del contenedor COMENTARIO
+    display: flex;COMENTARIO
+    justify-content: center;COMENTARIO
+    align-items: center;COMENTARIO
+    otra forma es asi COMENTARIO
     display: grid;
     place-content: center;
     height: 100%;
@@ -65,7 +232,7 @@
 }
 
 .session-beginer{
-    /* background-color: rgba(59, 59, 59, 0.8); */
+    background-color: rgba(59, 59, 59, 0.8); COMENTARIO
     background-color: rgba(var(--filter-gray-900-rgb), 0.8);
     position: relative;
     border: 2px solid black;
@@ -76,15 +243,15 @@
     width: 100%;    
     height:auto;
     text-align: center;
-    /* opacity: 0.5; */
-    /* z-index: 1000; */
+    opacity: 0.5; COMENTARIO
+    z-index: 1000; COMENTARIO
     
-    /* forma de centrar objetos pero q esten sobre los demas objetos
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-    /* z-index: 100; */    
+    forma de centrar objetos pero q esten sobre los demas objetos COMENTARIO
+    position: absolute; COMENTARIO
+    left: 50%; COMENTARIO
+    top: 50%; COMENTARIO
+    transform: translate(-50%, -50%); COMENTARIO
+    z-index: 100; COMENTARIO   
 }
 
 
@@ -126,14 +293,14 @@
     margin: 1rem 0;
     }
 
-    /* .beginner-form__info {
-        width: 640px;
-        align-items: center;
-    } */
+    .beginner-form__info {COMENTARIO
+        width: 640px;COMENTARIO
+        align-items: center;COMENTARIO
+    } COMENTARIO
 
-    /* .beginner-form__input{
-        max-width: 320px;
-    } */
+    .beginner-form__input{COMENTARIO
+        max-width: 320px;COMENTARIO
+    }COMENTARIO
 
     .beginner-form__label{
         text-align: left;
@@ -142,4 +309,8 @@
 
     
     
-}
+}*/
+
+
+
+/**************************************************************************/

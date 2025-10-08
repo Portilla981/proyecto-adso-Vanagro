@@ -1,0 +1,52 @@
+[
+    { 
+        "id": 1,
+        "nombre": "Carlos Pérez",
+        "correo": "carlos@gmail.com",
+        "rol": "CLIENTE",
+        "activo": true 
+    },
+
+
+    { 
+        "id": 2,
+        "nombre": "Julio Armando Cifuentes",
+        "correo": "jacifuentes@gmail.com",
+        "rol": "PRODUCTOR",
+        "activo": true 
+    },
+
+
+    { 
+        "id": 3,
+        "nombre": "Luis Gómez",
+        "correo": "luis@gmail.com",
+        "rol": "REPRESENTANTE",
+        "activo": false
+    },
+
+
+    { 
+        "id": 4,
+        "nombre": "María López",
+        "correo": "maria@gmail.com",
+        "rol": "CLIENTE",
+        "activo": true 
+    },
+
+    { 
+        "id": 5,
+        "nombre": "Sofía Cardona",
+        "correo": "sofia@gmail.com",
+        "rol": "CLIENTE",
+        "activo": true 
+    },
+
+    { 
+        "id": 6,
+        "nombre": "Sebastian Giraldo",
+        "correo": "sebastian@gmail.com",
+        "rol": "CLIENTE",
+        "activo": true 
+    }
+]

@@ -1,4 +1,5 @@
-.account-user__title {
+
+/*.account-user__title {
     text-align: center;
     margin: 2rem 1rem;
     padding: 1rem;
@@ -42,7 +43,7 @@
     border: 3px solid var(--black);
     border-radius: 30%;
     border-color: var(--secundary-400);
-    /* box-shadow: 0.5rem 0.5rem 1rem var(--primary-400); */
+    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400); COMENTARIO
 }
 
 .account-user__info {
@@ -56,14 +57,14 @@
 }
 
 .account-user__info--data {
-    /* background-color: rgba(22, 55, 146, 0.5); */
+    background-color: rgba(22, 55, 146, 0.5); COMENTARIO
     background-color: var(--gray-100);
     border: 2px solid var(--black);
     border-radius: 5rem;
     margin: 1rem 1rem;
     padding: 0 5rem;
     width: 80%;
-    /* height: 400px; */
+    height: 400px; COMENTARIO
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -109,8 +110,8 @@
 
 .account-user__option {
     display: flex;
-    /* width: 300px; */
-    /* height: 5rem; */
+    /width: 300px; COMENTARIO
+    height: 5rem; COMENTARIO
     justify-content: end;
 
 }
@@ -143,14 +144,14 @@
 
     .account-user__hero {
         flex-direction: row;
-        /* justify-content: space-between; */
+        justify-content: space-between; COMENTARIO
         padding: 2rem 4rem;
     }
     
     .account-user__info {        
         place-content: center;
         flex-direction: row;
-        /* height: 100%; */
+        height: 100%; COMENTARIO
         font-size: var(--fs-sm);
     }
 
@@ -162,13 +163,150 @@
     }   
 
     .account-user__input {
-    /* display: flex; */
+    display: flex; COMENTARIO
     align-items: center;
     width: 100%;
-    /* height: 48px; */
-    /* background-color: var(--gray-100); */
+    height: 48px; COMENTARIO
+    background-color: var(--gray-100); COMENTARIO
+}
+}*/
+/************************************************************************************************/
+.profile__container {
+    width: 100%;
+    background: var(--gray-50);
+    font-family: var(--main-font, sans-serif);
+}
+
+.profile__hero {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: url(/frontend/public/assets/vanagro/cielo.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__legend {
+    text-align: center;
+    color: var(--black);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    max-width: 90%;
+}
+
+.profile__role {
+    font-size: var(--fs-md);
+    font-weight: bold;
+    margin: 1;
+}
+
+.profile__message {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+}
+
+/* === CONTENIDO PRINCIPAL (dos columnas) === */
+.profile__content {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+@media (min-width: 768px) {
+  .profile__content {
+        flex-direction: row;
+        align-items: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+    .profile__actions {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
 }
 
 
+
+.profile__info {
+    flex: 1;
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 3px 3px var(--gray-500);
+}
+
+.profile__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-950);
+    border-radius: 100%; 
+    margin-bottom: 1rem;
+}
+
+.profile__name {
+    font-size: var(--fs-sm);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.profile__joined {
+    font-size: var(--fs-xs);
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+}
+
+.profile__detail {
+    font-size: var(--fs-xs);
+    margin: 1.25rem 0;
+}
+
+
+.profile__actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    justify-content: center;
     
+}
+
+.profile__action {
+    box-shadow: 0 1px 4px var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    height: 52px;
+    max-width: 700px;
+    background: var(--gray-200);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: var(--fs-xs);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.profile__action:hover {
+  background: var(--primary-500);
+  color: var(--black);
+}
+
+.profile__action ion-icon {
+  font-size: var(--fs-sm);
+  
 }
