@@ -1,7 +1,7 @@
 
 <div>
     <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
-    <p>Haga los cambios necesarios y luego de clic en <strong>Guardar Cambios</strong>, para hacer efectivos sus
+    <p>Haga los cambios necesarios y luego de clic en <strong>guardar cambios</strong>, para hacer efectivos sus
         cambios.</p>
 </div>
 
@@ -13,7 +13,7 @@
                 <input class="edit-form__input" type="text" placeholder="Finca Las Bovinas">
             </label>
             <label class="edit-form__label">Nombres/Apellidos
-                <input class="edit-form__input" type="text" placeholder="JULIO ARMANDO CIFUENTES CORREA">
+                <input class="edit-form__input" type="text" placeholder="Julio Armando Cifuentes Correa">
             </label>
         </div>
 
@@ -82,10 +82,11 @@
         </div>
 
         <div class="edit-form__actions">
+            <button type="button" class="buttons__action--secondary btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
             <a href="/frontend/public/views/producter-profile.html">
             <button type="button" class="buttons__action--primary btn-save">Guardar Cambios</button>
             </a>
-            <button type="button" class="buttons__action--secondary btn-cancel" onclick="cancelarFormulario()">Cancelar</button>
+            
         </div>
     </form>
 </section>

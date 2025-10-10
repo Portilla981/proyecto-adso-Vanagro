@@ -71,7 +71,7 @@
   gap: 12px;
   align-items: center;
   padding: 12px;
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .edit-form__images img {
@@ -208,5 +208,11 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-form__images{
+    display: none;
   }
 }

@@ -1,22 +1,20 @@
 <div class="form-register">
     <h2 class="form-register __title">Registro de Usuarios</h2>
 
-    <p class="form-register__label">Id:</p>
-
     <div class="form-register__block">
         <form action="#" method="" class="form-register__add">
 
             <div class="form-register__group">
                 <label class="form-register__label">Nombres
-                    <input class="form-register__input" type="text" placeholder="Ingrese sus nombres" />
+                    <input class="form-register__input" type="text" placeholder="Pablo Alberto" />
                 </label>
                 <label class="form-register__label">Apellidos
-                    <input class="form-register__input" type="text" placeholder="Ingrese sus apellidos">
+                    <input class="form-register__input" type="text" placeholder="Trujillo Salazar">
                 </label>
             </div>
 
             <div class="form-register__group">
-                <label class="form-register__label">Tipo de documento
+                <label class="form-register__label">Tipo de identificación
                     <select class="form-register__input">
                         <option>Cédula</option>
                         <option>Tarjeta de Identidad</option>
@@ -24,7 +22,7 @@
                     </select>
                 </label>
                 <label class="form-register__label">Número de identificación
-                    <input class="form-register__input" type="number" placeholder="Ingrese el numero">
+                    <input class="form-register__input" type="number" placeholder="32514321">
                 </label>
             </div>
 
@@ -58,37 +56,39 @@
 
             <div class="form-register__group">
                 <label class="form-register__label">Dirección
-                    <input class="form-register__input" type="text" placeholder="Ingrese su dirección">
+                    <input class="form-register__input" type="text" placeholder="Calle 10 #15-24, Las Risas">
                 </label>
                 <label class="form-register__label">Correo Electrónico
-                    <input class="form-register__input" type="email" placeholder="Ingrese su correo">
+                    <input class="form-register__input" type="email" placeholder="usuario@example.com">
                 </label>
             </div>
 
             <div class="form-register__group">
-                <label class="form-register__label">Teléfono principal
-                    <input class="form-register__input" type="tel" placeholder="Ingrese su teléfono">
+                <label class="form-register__label">Teléfono Principal
+                    <input class="form-register__input" type="tel" placeholder="3146949167">
                 </label>
-                <label class="form-register__label">Teléfono secundario
-                    <input class="form-register__input" type="tel" placeholder="Ingrese otro teléfono">
+                <label class="form-register__label">Teléfono Secundario
+                    <input class="form-register__input" type="tel" placeholder="3137655443">
                 </label>
             </div>
 
             <div class="form-register__group">
                 <label class="form-register__label">Contraseña
-                    <input class="form-register__input" type="password" placeholder="">
+                    <input class="form-register__input" type="password" placeholder="********************">
                 </label>
-                <label class="form-register__label">Confirmar contraseña
-                    <input class="form-register__input" type="password" placeholder="">
+                <label class="form-register__label">Confirmar Contraseña
+                    <input class="form-register__input" type="password" placeholder="********************">
                 </label>
             </div>
 
             <div class="form-register__actions">
-                <a href="/frontend/public/views/account-user.html">
-                    <button type="button" class="buttons__action--primary btn-save">Guardar Cambios</button>
-                </a>
-                <button type="button" class="buttons__action--secondary btn-cancel"
+                <button type="button" class="buttons__action buttons__action--secondary"
                     onclick="cancelarFormulario()">Cancelar</button>
+                    
+                <a href="/frontend/public/views/account-user.html">
+                    <button type="button" class="buttons__action buttons__action--primary">Registrar</button>
+                </a>
+                
             </div>
         </form>
     </div>

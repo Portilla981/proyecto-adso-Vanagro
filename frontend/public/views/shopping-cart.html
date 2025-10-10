@@ -12,6 +12,7 @@
     <script src="/frontend/public/js/components/vanagro-navbar2.js" defer></script>    
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
     <script src="/frontend/public/js/components/shopping-cart.js" defer></script>
+    <script src="/frontend/public/js/components/payment.js" defer></script>
         
 </head>
 
@@ -47,11 +48,11 @@
         <br>
         <div class="cart__actions">
             <a href="/frontend/public/views/products.html">
-            <button class=" buttons__action--secondary  ">Seguir Viendo</button></a>
-            <a href="/frontend/public/views/index_vanagro.html">
-            <button class=" buttons__action--primary ">¡Comprar!</button></a>
+            <button class="buttons__action buttons__action--secondary">Seguir Viendo</button></a>
             
+            <button id="open-payment" class="buttons__action buttons__action--primary">¡Comprar!</button>
         </div>
+        <div id="payment-container"></div>
     </main>
     
     
