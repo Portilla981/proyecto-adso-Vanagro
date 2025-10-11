@@ -1,19 +1,23 @@
 .footer-vanagro {
-  background-color: var(--primary-900);
-  color: var(--black);
-  padding: 1rem;
-  
+  background-color: var(--primary-900);  
 }
 
 .footer-vanagro__content {  
-  display: grid;
-  place-content: center;  
+  display: flex;
+  flex-direction: column;
+  /* place-content: center;   */
 }
 
 .footer-vanagro__text {
-  margin-bottom: 0.5rem;
-  font-size: var(--fs-xxs);
+  /* padding: 8px 0; */
+  /* font-size: var(--fs-xxs); */
   text-align: center;
+}
+
+.footer-vanagro__parafo {
+  /* padding: 8px 0; */
+  font-size: var(--fs-xxs);
+  /* text-align: center; */
 }
 
 .footer-vanagro__social {
@@ -21,15 +25,14 @@
   flex-direction: column;  
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
-  gap: 1rem;
+  /* gap: 24px; */
 }
 
 .footer-vanagro__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 8px;
   color: var(--on-primary);
   text-decoration: none;
   font-size: var(--fs-xxs);
@@ -61,9 +64,9 @@
   font-size: 18px;
 } */
 
-@media (min-width: 600px) {
+@media (width >= 768px) {
   .footer-vanagro__content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
@@ -71,8 +74,9 @@
 
   .footer-vanagro__social {
     flex-direction: row;
-    margin: 1rem;
-    gap: 2rem;
+    margin: 4px 0;
+    /* padding: 8px 0; */
+    gap: 24px;
   }
 }
 

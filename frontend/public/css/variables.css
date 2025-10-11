@@ -112,4 +112,12 @@ xl          1280px          Desktop
 2x1         1536px          BigScreem
 
 */
+
+--scream-A: 640px;   /*Telefonos grandes*/
+--scream-B: 768px;   /*Tablests*/
+--scream-C: 1024px;  /*Laptos*/
+--scream-D: 1280px;  /*Desktop*/
+--scream-E: 1536px;  /*BigScreem*/
+
+
 }
