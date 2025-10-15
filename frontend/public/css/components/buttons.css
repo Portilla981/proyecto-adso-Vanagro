@@ -48,6 +48,7 @@
     background-color: var(--secundary-900);
     color: var(--black);
     border-radius: 4px;
+    border: none;
 }
 
 .buttons__action--secondary:hover {

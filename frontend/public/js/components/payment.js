@@ -21,9 +21,9 @@ fetch("components/payment.html")
       });
     }
 
-    if (overlay) {
-      overlay.addEventListener("click", () => {
-        modal.classList.remove("active");
-      });
-    }
+    // if (overlay) {
+    //   overlay.addEventListener("click", () => {
+    //     modal.classList.remove("active");
+    //   });
+    // }
   });

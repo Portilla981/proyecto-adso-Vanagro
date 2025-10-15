@@ -6,6 +6,7 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
+
 }
 
 .payment-modal.active {
@@ -16,13 +17,16 @@
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .payment-modal__content {
   background: var(--white);
   width: 90%;
   max-width: 400px;
-  margin: 60px auto;
+  /* margin: 10px; */
   padding: 20px;
   border-radius: 12px;
   position: relative;

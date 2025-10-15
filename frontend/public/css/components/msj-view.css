@@ -1,4 +1,5 @@
-.confirm-msj__view{    visibility: hidden;
+.confirm-msj__view{  
+    visibility: hidden;
     opacity: 0;
     position: absolute;
     top: 0;

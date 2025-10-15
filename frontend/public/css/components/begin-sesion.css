@@ -1,16 +1,8 @@
-/* .session__login {
-    width: 100%;
-    height: 100vh;
+.session__login {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gray-50);
-} */
-
-.session__content {
-    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
 
 .session__left {
@@ -20,305 +12,103 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 16px;
     color: var(--white);
-    clip-path: ellipse(75% 100% at left center);
-    /* padding: 2rem; */
     text-align: center;
-}
-
-.session__info {
-    margin-right: 320px;
-    
-}
-
-.session__info-title {
-    font-size: var(--fs-md);
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--white);
-}
-
-.session__info-text {
-    font-size: var(--fs-xs);
-    line-height: 1.5;
-    font-weight: bold;
-    color: var(--white);
 }
 
 .session__form-container {
     display: flex;
-    flex-direction: column;
-    padding: 16px 0  ;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);    
+    align-items: center;
     justify-content: center;
-    align-items: center;    
-    background: var(--white);
+    margin: 16px 8px;
 }
 
-.beginner-form__info{
+.session__subtitle {
+    font-size: var(--fs-md);
+    padding: 8px;
+    margin: 8px;
+}
+
+.beginner-form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
+    background: var(--white);
+    height: auto;
+    /* gap: 16px; */
+    width: auto;
+}
+
+.beginner-form__info {
     display: flex;
     flex-direction: column;
     /* width: 100%; */
 }
 
-.beginner-form{
-    display: flex;
-    flex-direction: column;
-    /* gap: 24px; */
-}
 
-.beginner-form__credential{
+.beginner-form__credential {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
-    margin: 24px;
+    margin: 8px;
 }
 
-.beginner-form__label{
+.beginner-form__label {
     font-size: var(--fs-xxxs);
-    margin-bottom: 4px;    
+    margin-bottom: 4px;
     color: var(--black);
     text-align: left;
 }
 
-.beginner-form__input{
+.beginner-form__input {
     min-width: 320px;
     padding: 1rem;
     height: 48px;
     border-radius: 1rem;
-    background-color: var(--white);    
+    background-color: var(--white);
 }
 
-.beginner-button__links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    justify-content: center;
-    gap: 24px; 
-    margin: 16px 0;
-    /* padding: 1rem 0;  */
-}
-
-.begin-lost_password{
+.begin-lost_password {
     text-decoration: none;
-    color: var(--black); 
-    font-size: var(--fs-xxs);  
-    margin: 16px 0; 
+    color: var(--terciary-950);
+    font-size: var(--fs-xxs);
+    margin: 16px;
 }
 
-.begin-lost_password:hover{
-    color: var(--terciary-700);
+.beginner-button__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 1rem 0;
 }
 
-.session__login {
-        height: auto;
-        
-        /* padding: 1rem; */
-    }
+@media (width > 768px) {
 
-@media (max-width > 768px) {
-
-    .session__form-container {
-        width: 100%;
-        /* max-width: 100%; */
-        height: auto;
-        margin-top: 0;
-        box-shadow: none;
-        border-radius: 0;
-        /* padding: 2rem 1rem; */
-    }
-    
-    .beginner-button__links{
-        flex-direction: column;
-    }
-
-    
-    /* .session__login {
-        height: auto;
-        
-        padding: 1rem;
-    } */
-
-    .session__content {
-        flex-direction: column;
-        
-       
-        /* margin: 16px 0; */
-        /* height: 100%; */
-        /* height: auto; */
-    }
-
-    
-    .beginner-form__input {
-        width: 320px;
-        min-width: 320px;  
-        max-width: 320px;
+    .session__login {
+        flex-direction: row;
     }
 
     .session__left {
-        width: 100%;
-        height: 300px;
-        clip-path: none;
-        padding: 1rem;
+        clip-path: ellipse(75% 100% at left center);
     }
 
     .session__info {
-        margin: 0 auto;
-        text-align: center;
-    }
-}
-
-
-
-/*.session__container{
-    margin-bottom: -1rem; COMENTARIO
-    padding: 0;
-    background-image: url(/frontend/public/assets/vanagro/image1.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9; 
-        
-}
-
-.beginner-form__info{
-    display: flex;
-    flex-direction: column;
-    width: 100%; COMENTARIO
-}
-
-.beginner-form{
-    display: flex;
-    flex-direction: column;
-    gap: 24px; COMENTARIO
-}
-
-.beginner-form__credential{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    margin: 24px;
-}
-
-.beginner-form__label{
-    font-size: var(--fs-xxxs);
-    margin-bottom: 4px;    
-    color: var(--white);
-    text-align: left;
-}
-
-.beginner-form__input{
-    min-width: 320px;
-    padding: 1rem;
-    height: 48px;
-    border-radius: 1rem;
-    background-color: var(--white);    
-}
-
-.session-container__beginer{
-    forma de centrar objetos dentro del contenedor COMENTARIO
-    display: flex;COMENTARIO
-    justify-content: center;COMENTARIO
-    align-items: center;COMENTARIO
-    otra forma es asi COMENTARIO
-    display: grid;
-    place-content: center;
-    height: 100%;
-    font-size: var(--fs-sm);
-    
-}
-
-.session__subtitle{
-    margin: 0;
-    padding: 1rem;
-    color: var(--white);
-    font-size: var(--fs-md);
-}
-
-.session-beginer{
-    background-color: rgba(59, 59, 59, 0.8); COMENTARIO
-    background-color: rgba(var(--filter-gray-900-rgb), 0.8);
-    position: relative;
-    border: 2px solid black;
-    border-radius: 2rem;
-    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);    
-    margin:  1rem 0; 
-    padding: 24px 0;
-    width: 100%;    
-    height:auto;
-    text-align: center;
-    opacity: 0.5; COMENTARIO
-    z-index: 1000; COMENTARIO
-    
-    forma de centrar objetos pero q esten sobre los demas objetos COMENTARIO
-    position: absolute; COMENTARIO
-    left: 50%; COMENTARIO
-    top: 50%; COMENTARIO
-    transform: translate(-50%, -50%); COMENTARIO
-    z-index: 100; COMENTARIO   
-}
-
-
-
-.beginner-button__links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    gap: 24px; 
-    margin: 2rem 0;
-    padding: 1rem 0; 
-}
-
-
-.begin-lost_password{
-    text-decoration: none;
-    color: var(--white); 
-    font-size: var(--fs-xxs);   
-}
-
-.begin-lost_password:hover{
-    color: var(--secundary-950);
-}
-
-@media (width >= 768px) {
-
-    .session-beginer{    
-    width: 640px;    
-    
+        width: 70%;
     }
     
-    .beginner-button__links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    justify-content: space-around;
-    gap: 2rem;   
-    margin: 1rem 0;
+    .beginner-button__links {
+        flex-direction: row;       
     }
 
-    .beginner-form__info {COMENTARIO
-        width: 640px;COMENTARIO
-        align-items: center;COMENTARIO
-    } COMENTARIO
-
-    .beginner-form__input{COMENTARIO
-        max-width: 320px;COMENTARIO
-    }COMENTARIO
-
-    .beginner-form__label{
-        text-align: left;
+    .beginner-form{
+        padding: 16px 48px;
 
     }
 
-    
-    
-}*/
-
-
-
-/**************************************************************************/
+}
