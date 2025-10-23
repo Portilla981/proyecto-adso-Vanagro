@@ -7,7 +7,7 @@ fetch("components/payment.html")
     const modal = document.querySelector(".payment-modal");
     const openBtn = document.getElementById("open-payment");
     const closeBtn = document.getElementById("close-payment");
-    const overlay = modal.querySelector(".payment-modal__overlay");
+    // const overlay = modal.querySelector(".payment-modal__overlay");
 
     if (openBtn) {
       openBtn.addEventListener("click", () => {
