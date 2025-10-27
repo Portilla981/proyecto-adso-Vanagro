@@ -1,8 +1,8 @@
-body {
+/* body {
   background-color: var(--gray-50);
   font-family: var(--main-font);
   text-align: center;
-}
+} */
 
 .user-list {
   width: 90%;
@@ -61,11 +61,11 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .user-list__table,
   .user-list__row,
   .user-list__cell {
-    display: block;
+    /* display: block; */
     width: 100%;
   }
 
@@ -95,6 +95,10 @@ body {
     font-size: var(--fs-xxs);
     display: flex;
     justify-content: space-between;
+  }
+
+  .user-list__hr{
+    display: hidden;
   }
 
   .user-list__cell::before {

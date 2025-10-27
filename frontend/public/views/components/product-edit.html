@@ -66,9 +66,9 @@
         <!-- Imagen -->
         <div class="product-edit__image">
             <label class="product-edit__image-upload">
-                <span>Imagen del producto</span>
+                <!-- <span>Imagen del producto</span> -->
                 <div class="product-edit__image-preview">
-                
+                    <img src="/frontend/public/assets/products/platano_verde.png" alt="Imagen del producto" />             
                 </div>
             </label>
         </div>
@@ -76,8 +76,8 @@
 
         <!-- Botones -->
         <div class="product-edit__actions">
-            <button type="reset" class="buttons__action buttons__action--secondary">Cancelar</button>
-            <button type="submit" class="buttons__action buttons__action--primary">Guardar cambios</button>
+            <button type="reset" class="buttons__action buttons__action--secondary" onclick="location.href='javascript:history.back()'">Cancelar</button>
+            <button type="submit" class="buttons__action buttons__action--primary" onclick="location.href='javascript:history.back()'">Guardar cambios</button>
         </div>
     </form>
 </div>

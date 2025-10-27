@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Script de javaScript para el llamado de la clase navbar y render automáticamente con el defer -->
+    <script src="/frontend/public/js/components/navbar-simple.js" defer></script>
+    <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script src="/frontend/public/js/components/product_details-only.js" defer></script>
+    
+
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-product.js";
+        loadCards(".card-section__product");
+        // esta la clase para cargar todas las clases 
+    </script>
+
+</head>
+
+<body>
+    <!-- Sección de la barra de navegación -->
+    <section class="navbar-simple"></section>
+
+    <section class="search-section__product">
+        <div class="search-bar-container"></div>
+        <!-- Sección de las cards -->
+        <section class="card-section__product"></section>
+
+        <div class="product-details__container"></div>
+
+    </section>
+
+    <footer class="footer-vanagro-container"></footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

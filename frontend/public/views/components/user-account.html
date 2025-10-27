@@ -5,7 +5,8 @@
     <div class="profile__legend">
       <h2 class="profile__role">CLIENTE</h2>
       <p class="profile__message">
-        ¡Tu visita nos alegra el día! Gracias por apoyar a nuestros campesinos y por ser parte de este mercado con alma rural.
+        ¡Tu visita nos alegra el día! Gracias por apoyar a nuestros campesinos y por ser parte de este mercado con alma
+        rural.
       </p>
     </div>
   </div>
@@ -15,30 +16,22 @@
 
     <!-- Columna izquierda: datos del productor -->
     <div class="profile__info">
-        <img class="profile__avatar" src="/frontend/public/assets/vanagro/avatar.png" alt="Foto del productor">
-        <h3 class="profile__name">Johan David Portilla Zambrano</h3>
-        <p class="profile__joined">Se unió en 2025</p>
-        <p class="profile__detail"><strong>UBICACIÓN:</strong> Marsella, Risaralda</p>
-        <p class="profile__detail"><strong>CORREO:</strong> johandp@gmail.com</p>
-        <p class="profile__detail"><strong>TELÉFONO:</strong> 3054331178</p>
-        <div class="account-user__button">
-          <!-- <a href="/frontend/public/views/index_vanagro.html">
-                <button class="buttons__action--secondary account-user__button--close" type="submit">Cerrar
-                    Sesión</button>
-            </a> -->
-          <a href="/frontend/public/views/edit-producter.html">
-              <button class="buttons__action buttons__action--primary" type="submit">Editar Perfil</button>
-          </a>
-        </div>
+      <img class="profile__avatar" src="/frontend/public/assets/vanagro/avatar.png" alt="Foto del productor">
+      <h3 class="profile__name">Johan David Portilla Zambrano</h3>
+      <p class="profile__joined">Se unió en 2025</p>
+      <p class="profile__detail"><strong>UBICACIÓN:</strong> Marsella, Risaralda</p>
+      <p class="profile__detail"><strong>CORREO:</strong> johandp@gmail.com</p>
+      <p class="profile__detail"><strong>TELÉFONO:</strong> 3054331178</p>
     </div>
+
 
     <!-- Columna derecha: opciones -->
     <div class="profile__actions">
-      <button class="profile__action">
+      <button class="profile__action" onclick="location.href='/frontend/public/views/products-list.html'">
         <ion-icon name="eye-outline"></ion-icon>
         <span>Ver Productos</span>
       </button>
-      <button class="profile__action">
+      <button class="profile__action" onclick="location.href='/frontend/public/views/list-buies.html'"">
         <ion-icon name="bag-add-outline"></ion-icon>
         <span>Compras/Pedidos</span>
       </button>
@@ -46,65 +39,36 @@
         <ion-icon name="calendar-outline"></ion-icon>
         <span>Ver Eventos</span>
       </button>
-      <button class="profile__action">
+      <button class="profile__action" onclick="location.href='#report'">
         <ion-icon name="document-text-outline"></ion-icon>
         <span>Reportes</span>
       </button>
-      <button class="profile__action">
-        <ion-icon name="settings-outline"></ion-icon>
-        <span>Ajustes</span>
-      </button>
+      <a class="profile__link" href="/frontend/public/views/edit-producter.html">
+        <button type="button" class="profile__action">
+          <ion-icon name="settings-outline"></ion-icon>
+          <span>Editar Perfil</span>
+        </button>
+      </a>
     </div>
   </div>
-</div>
 
-
-
-<!--<div class="account-user__container">
-    <div class="account-user__hero">
-        <div class="account-user__title">
-            <h2 class="account-user__subtitle">Cliente</h2>
-            <p class="account-user__legend">¡Tu visita nos alegra el día! Gracias por apoyar a nuestros campesinos y por ser parte de este mercado con alma rural.</p>
+  <div class="profile__report" id="report">
+    <div class="profile__report--photo">
+      <div class="profile__report--phpto-head">
+        <img class="profile__report--img" src="/frontend/public/assets/vanagro/reporte.jpg" alt="">
+        <div class="profile__report--close">
+        <ion-icon onclick="location.href='javascript:history.back()'"  name="close-outline"></ion-icon>
         </div>
-        <img class="account-user__img" src="/frontend/public/assets/vanagro/avatar1.jpg" alt="Foto de usuario">
+      </div>
+      <div class="profile__buttons">
+        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'">
+          <ion-icon name="print-outline"></ion-icon>
+          <span>Imprimir</span>
+        </button>
+        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'"> 
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Descargar</span>
+        </button>
+      </div>
     </div>
-
-    <div class="account-user__info">
-        <div class="account-user__info--data">
-            <h3 class="account-user__name">Nombre de Usuario</h3>
-            <p class="account-user__legend">Ubicación:</p>
-            <p class="account-user__legend">Teléfono:</p>
-            <div class="account-user__button">
-                <a href="/frontend/public/views/edit-producter.html">
-                    <button class="buttons__action--primary  account-user__button--edit" type="submit">Editar Perfil</button>
-                </a>
-                <a href="/frontend/public/views/index_vanagro.html">
-                    <button class="buttons__action--secondary account-user__button--close" type="submit">Cerrar
-                        Sesión</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="account-user__actions">
-            <div class="account-user__option">
-                <input class="account-user__input" type="button" value="Ver productos">
-                <ion-icon class="account-user__icon" name="eye-outline"></ion-icon>
-            </div>
-            <div class="account-user__option">
-                <input class="account-user__input" type="button" value="Compras/Pedidos">
-                <ion-icon class="account-user__icon" name="cart-outline"></ion-icon>
-            </div>
-            <div class="account-user__option">
-                <input class="account-user__input" type="button" value="Ver Eventos">
-                <ion-icon class="account-user__icon" name="calendar-outline"></ion-icon>
-            </div>
-            <div class="account-user__option">
-                <input class="account-user__input" type="button" value="Reportes">
-                <ion-icon class="account-user__icon" name="reader-outline"></ion-icon>
-            </div>
-            <div class="account-user__option">
-                <input class="account-user__input" type="button" value="Ajustes">
-                <ion-icon class="account-user__icon" name="settings-outline"></ion-icon>
-            </div>
-        </div>
-    </div>-->
+  </div>
