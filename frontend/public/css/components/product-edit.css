@@ -3,7 +3,7 @@
   padding: 24px;
   border-radius: 2px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
-  max-width: 712px;
+  width: max-content;
   margin: 32px auto;
   display: grid;
   gap: 24px;
@@ -232,17 +232,6 @@
   box-shadow: 0.3rem 0.3rem 0.8rem var(--primary-400);
 }
 
-/* Botón secundario */
-.product-edit__button--cancel {
-  background-color: var(--secundary-900);
-  color: var(--black);
-}
-
-.product-edit__button--cancel:hover {
-  background-color: var(--secundary-800);
-  color: var(--gray-700);
-  box-shadow: 0.3rem 0.3rem 0.8rem var(--secundary-400);
-}
 
 /* Responsive */
 @media (width >= 768px) {
@@ -269,5 +258,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
+  }
+}
+
+@media (width > 1024px) {
+  .product-edit__row {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
   }
 }

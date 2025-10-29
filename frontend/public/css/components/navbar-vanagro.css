@@ -5,8 +5,8 @@
     /* Altura Total*/
     width: 100%;
     z-index: 10;
-    background-color: var(--primary-900);    
-    padding: 16px;
+    background-color: var(--primary-900);
+    padding: 8px;
 }
 
 .navbar-vanagro__icons--cart,
@@ -28,7 +28,7 @@
 }
 
 .navbar-vanagro__subtitle {
-    font-size: var(--fs-md);
+    font-size: var(--fs-xs);
     color: var(--gray-600);
 }
 
@@ -79,16 +79,16 @@
 @media (width > 768px) {
     .navbar-vanagro{
         /* display: flex; */
-        justify-content: end;
+        justify-content: center;
         align-items: center;
     }
 
     
     .navbar-vanagro__container{
-    display: grid;    
+    display: grid;
     grid-template-columns: repeat(3, 20% 60% 20%);
     /* justify-content: space-between;*/
-    align-items: end;
+    /* align-items: end; */
     }
 
 
@@ -117,7 +117,7 @@
         display: flex;
         height: 56px;
         justify-content: space-around;
-        align-items: end;
+        align-items: center;
     }
     
     
@@ -134,8 +134,5 @@
     .navbar-vanagro__item--back {
         display: none;
     }
-
-
-
 
 }

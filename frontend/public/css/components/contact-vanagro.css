@@ -2,6 +2,10 @@ body {
     background-color: var(--gray-50);
     font-family: var(--main-font);
     text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* evita scroll horizontal */
+    min-height: 100vh; /* asegura que ocupe toda la pantalla */
 }
 
 .contact-form {
@@ -10,11 +14,10 @@ body {
     border-radius: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     max-width: 712px;
-    margin: auto;
+    margin: 40px auto; /* centrado con espacio superior */
     display: grid;
     gap: 24px;
     font-size: var(--fs-xs);
-    margin-bottom: 24px;
 }
 
 .contact-form__title {
@@ -43,7 +46,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .btn-send {
@@ -54,24 +57,37 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+.btn-send:hover {
+    background-color: var(--primary-950);
+}
 
-
-
+/* ---- RESPONSIVO ---- */
 @media (width > 768px) {
     .contact-form__row {
         grid-template-columns: 1fr 1fr;
     }
 
     .buttons {
-        /* display: flex; */
         flex-direction: row;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
     }
-
 }
 
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .btn-send {
+        width: 100%;
+    }
+}
+
+/* ---- LABELS E INPUTS ---- */
 .contact-form__label {
     display: flex;
     flex-direction: column;
@@ -81,27 +97,26 @@ body {
     color: var(--black);
 }
 
-
-.contact-form__input {
-    padding: 16px 16px;
+.contact-form__input,
+.contact-form__textarea {
+    padding: 16px;
     border-radius: 4px;
     background-color: var(--white);
     border: 1px solid var(--black);
     width: 100%;
     font-size: var(--fs-xs);
+    transition: all 0.3s ease;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    border-color: var(--primary-900);
+    outline: none;
 }
 
 .contact-form__textarea {
-    padding: 16px 16px;
-    border-radius: 4px;
-    background-color: var(--white);
-    border: 1px solid var(--black);
-    font-size: var(--fs-xs);
     min-height: 100px;
-    /* Permite redimensionar la caja de texto solo en vertical, si no se le
-    coloca permite modificar la dimesión n vertical y horizontal*/
     resize: vertical;
-    
 }
 
 .contact-form__input::placeholder,
@@ -109,4 +124,3 @@ body {
     color: var(--gray-800);
     font-size: var(--fs-xs);
 }
-
