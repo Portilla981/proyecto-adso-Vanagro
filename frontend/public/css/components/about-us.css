@@ -43,8 +43,8 @@
     gap: 24px;
     justify-content: center;
     align-items: center;
-    padding: 24px;
-    margin: 24px; 
+    /* padding: 24px; */
+    /* margin: 24px;  */
 
 }
 
@@ -53,7 +53,7 @@
         flex-direction: row;
         /* grid-template-columns: repeat(3, 1fr); */
         /* max-width: 90%; */
-        margin: 30px auto 50px;
+        /* margin: 30px auto 50px; */
     }
 }
 

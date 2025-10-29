@@ -1,92 +1,98 @@
-
-<div>
+<div class="edit-form__head">
     <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
-    <p>Haga los cambios necesarios y luego de clic en <strong>guardar cambios</strong>, para hacer efectivos sus
+    <p>Haga los cambios necesarios y luego de clic en <strong>Guardar cambios</strong>, para hacer efectivos sus
         cambios.</p>
 </div>
 
-<section class="form-container">
-    <form action="#" method="" class="form-edit">
+<section class="edit-form__block">
+    <div class="edit-form__block--form">
+        <form action="#" method="" class="edit-form__form">
+            <div class="edit-form__group">
+                <label class="edit-form__label">Finca Productora
+                    <input class="edit-form__input" type="text" placeholder="Finca Las Bovinas">
+                </label>
+                <label class="edit-form__label">Nombres/Apellidos
+                    <input class="edit-form__input" type="text" placeholder="Julio Armando Cifuentes Correa">
+                </label>
+            </div>
 
-        <div class="edit-form__group">
-            <label class="edit-form__label">Finca Productora
-                <input class="edit-form__input" type="text" placeholder="Finca Las Bovinas">
-            </label>
-            <label class="edit-form__label">Nombres/Apellidos
-                <input class="edit-form__input" type="text" placeholder="Julio Armando Cifuentes Correa">
-            </label>
-        </div>
+            <div class="edit-form__group">
+                <label class="edit-form__label">Tipo de documento
+                    <select class="edit-form__input">
+                        <option>Cédula</option>
+                        <option>Tarjeta de Identidad</option>
+                        <option>Pasaporte</option>
+                    </select>
+                </label>
+                <label class="edit-form__label">Número de identificación
+                    <input class="edit-form__input" type="number" placeholder="98562475">
+                </label>
+            </div>
 
-        <div class="edit-form__group">
-            <label class="edit-form__label">Tipo de documento
-                <select class="edit-form__input">
-                    <option>Cédula</option>
-                    <option>Tarjeta de Identidad</option>
-                    <option>Pasaporte</option>
-                </select>
-            </label>
-            <label class="edit-form__label">Número de identificación
-                <input class="edit-form__input" type="number" placeholder="98562475">
-            </label>
-        </div>
+            <div class="edit-form__group">
+                <label class="edit-form__label">Departamento
+                    <select class="edit-form__input">
+                        <option>Risaralda</option>
+                        <option>Caldas</option>
+                        <option>Quindío</option>
+                    </select>
+                </label>
+                <label class="edit-form__label">Municipio
+                    <select class="edit-form__input">
+                        <option>Marsella</option>
+                        <option>Apía</option>
+                        <option>Balboa</option>
+                        <option>Belén de Umbría</option>
+                        <option>Dosquebradas</option>
+                        <option>Guática</option>
+                        <option>La Celia</option>
+                        <option>La Virginia</option>
+                        <option>Mistrató</option>
+                        <option>Pereira</option>
+                        <option>Pueblo Rico</option>
+                        <option>Quinchía</option>
+                        <option>Santa Rosa de Cabal</option>
+                        <option>Santuario</option>
+                    </select>
+                </label>
+            </div>
 
-        <div class="edit-form__group">
-            <label class="edit-form__label">Departamento
-                <select class="edit-form__input">
-                    <option>Risaralda</option>
-                    <option>Caldas</option>
-                    <option>Quindío</option>
-                </select>
-            </label>
-            <label class="edit-form__label">Municipio
-                <select class="edit-form__input">
-                    <option>Marsella</option>
-                    <option>Apía</option>
-                    <option>Balboa</option>
-                    <option>Belén de Umbría</option>
-                    <option>Dosquebradas</option>
-                    <option>Guática</option>
-                    <option>La Celia</option>
-                    <option>La Virginia</option>
-                    <option>Mistrató</option>
-                    <option>Pereira</option>
-                    <option>Pueblo Rico</option>
-                    <option>Quinchía</option>
-                    <option>Santa Rosa de Cabal</option>
-                    <option>Santuario</option>
-                </select>
-            </label>
-        </div>
+            <div class="edit-form__group">
+                <label class="edit-form__label">Dirección
+                    <input class="edit-form__input" type="text" placeholder="Vereda las palmas">
+                </label>
+                <label class="edit-form__label">Teléfono
+                    <input class="edit-form__input" type="tel" placeholder="3054331178">
+                </label>
+            </div>
 
-        <div class="edit-form__group">
-            <label class="edit-form__label">Dirección
-                <input class="edit-form__input" type="text" placeholder="Vereda las palmas">
-            </label>
-            <label class="edit-form__label">Teléfono
-                <input class="edit-form__input" type="tel" placeholder="3054331178">
-            </label>
-        </div>
-
-        <div class="edit-form__group">
-            <label class="edit-form__label">Contraseña
-                <input class="edit-form__input" type="password" placeholder="**************">
-            </label>
-            <label class="edit-form__label">Confirmar contraseña
-                <input class="edit-form__input" type="password" placeholder="**************">
-            </label>
-        </div>
+            <div class="edit-form__group">
+                <label class="edit-form__label">Contraseña
+                    <input class="edit-form__input" type="password" placeholder="**************">
+                </label>
+                <label class="edit-form__label">Confirmar contraseña
+                    <input class="edit-form__input" type="password" placeholder="**************">
+                </label>
+            </div>
+        </form>
 
         <div class="edit-form__images">
-            <img src="/frontend/public/assets/vanagro/campesino.jpg" alt="Foto productor">
-            <img src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca">
+            <img class="edit-form__images--img" src="/frontend/public/assets/vanagro/campesino.jpg" alt="Foto productor">
+            <!-- <img src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca"> -->
+            <label class="edit-form__label">Actualizar fotografia
+                    <input class="edit-form__file" type="file" >
+            </label>
         </div>
+    </div>
 
-        <div class="edit-form__actions">
-            <button type="button" class="buttons__action--secondary btn-cancel" onclick="location.href='javascript:history.back()'">Cancelar</button>
-            <a href="/frontend/public/views/producter-profile.html">
-            <button type="button" class="buttons__action--primary btn-save">Guardar Cambios</button>
-            </a>
-            
-        </div>
-    </form>
+
+    <div class="edit-form__actions">
+        <button type="button" class="buttons__action--secondary btn-cancel"
+            onclick="location.href='javascript:history.back()'">Cancelar</button>
+        <a href="/frontend/public/views/producter-profile.html">
+            <button type="button" class="buttons__action--primary btn-save">Guardar cambios</button>
+        </a>
+
+    </div>
+
 </section>

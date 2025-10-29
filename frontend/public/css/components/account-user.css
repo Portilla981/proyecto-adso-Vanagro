@@ -275,7 +275,9 @@
     align-items: center;
     gap: 16px;
     height: 52px;
-    width: 320px;
+    min-width: 320px;
+    /* width: px; */
+    
     background: var(--gray-200);
     border: none;
     padding: 16px;
@@ -368,6 +370,10 @@
     width: 50vw;   
 } */
 
+.profile__action{
+        width: 450px;
+    }
+
     .profile__content {
         flex-direction: row;
         align-items: stretch;
@@ -375,6 +381,9 @@
 }
 
 @media (max-width: 768px) {
+    /* .profile__action{
+        width: 450px;
+    } */
     
     .profile__actions {
         max-width: 320px;
