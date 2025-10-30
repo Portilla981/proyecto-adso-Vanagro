@@ -16,7 +16,7 @@
 
 .footer-vanagro__parafo {
   /* padding: 8px 0; */
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xxxs);
   /* text-align: center; */
 }
 
@@ -35,7 +35,7 @@
   gap: 8px;
   color: var(--on-primary);
   text-decoration: none;
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xxxs);
   font-weight: 500;
   min-width: 48px;
   min-height: 48px;
