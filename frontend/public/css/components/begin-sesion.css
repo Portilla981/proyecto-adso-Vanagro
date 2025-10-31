@@ -6,13 +6,14 @@
 }
 
 .session__left {
-    flex: 0.9;
+    flex: 0.8;
     position: relative;
     background: url(/frontend/public/assets/vanagro/fondo.jpg) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 16px;
+    width: auto;
     color: var(--white);
     text-align: center;
 }
@@ -21,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 16px 8px;
+    /* margin: 16px 8px; */
 }
 
 .session__subtitle {
@@ -33,7 +34,8 @@
 .beginner-form {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 24px;
+    margin: 24px;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     background: var(--white);
@@ -85,7 +87,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
 }
 
 @media (width > 768px) {
@@ -107,8 +109,13 @@
     }
 
     .beginner-form{
-        padding: 16px 48px;
-
+        margin: 24px 0;
     }
 
+}
+
+@media (width > 1024px) {
+    .beginner-form {
+        margin: 0;
+    }
 }

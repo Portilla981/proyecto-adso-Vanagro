@@ -15,6 +15,7 @@
 /* Títulos y subtítulos */
 .product-edit__title {
   text-align: center;
+  margin: 0;
   color: var(--black);
   font-size: var(--fs-sm);
 }

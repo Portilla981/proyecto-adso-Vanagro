@@ -1,9 +1,9 @@
 <div class="product-edit">
-    <h2 class="product-edit__title">Edición de Productos</h2>
+    <h2 class="product-edit__title">Actualizar Produco</h2>
 
-    <form action="#" method="post" class="product-edit__form" enctype="multipart/form-data">
-
-        <!-- Nombre, unidad y precio -->
+    <form action="#" method="post" class="product-edit__container" enctype="multipart/form-data">
+        
+        <!-- Nombre, unidad, precio, pago, método -->
         <div class="product-edit__row">
             <label class="product-edit__label">
                 Nombre del producto
@@ -13,10 +13,10 @@
             <label class="product-edit__label">
                 Unidad de medida
                 <select class="product-edit__select product-edit__select--unit" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="kg">Kilogramos</option>
-                <option value="lt">Litros</option>
-                <option value="lb">Libras</option>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="kg">Kilogramos</option>
+                    <option value="lt">Litros</option>
+                    <option value="lb">Libras</option>
                 </select>
             </label>
 
@@ -25,22 +25,22 @@
                 <input class="product-edit__input" placeholder="Ingres el precio" required />
             </label>
 
-            <label class="product-form__label">
-            Método de envío
-                <select class="product-form__select product-form__select--unit" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="domicilio">Domicilio</option>
-                <option value="recoger">Recoger en punto de entrega</option>
+            <label class="product-edit__label">
+                Método de envío
+                <select class="product-edit__select product-edit__select--unit" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="domicilio">Domicilio</option>
+                    <option value="recoger">Recoger en punto de entrega</option>
                 </select>
             </label>
 
-            <label class="product-form__label">
+            <label class="product-edit__label">
                 Método de pago
-                <select class="product-form__select product-form__select--unit" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="efectivo">Efectivo</option>
-                <option value="transferencia">Transferencia bancaria</option>
-                <option value="tarjeta">Tarjeta débito / crédito</option>
+                    <select class="product-edit__select product-edit__select--unit" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                    <option value="tarjeta">Tarjeta débito / crédito</option>
                 </select>
             </label>
         </div>
@@ -51,45 +51,10 @@
             <textarea class="product-edit__textarea" placeholder="Ingrese la descripción" required></textarea>
         </label>
 
-        <!-- Tipo de producto -->
-        <div class="product-edit__row product-edit__row--checkbox">
-            <span class="product-edit__label">Tipo de Producto:</span>
-            <label><input type="checkbox" /> Carnes</label>
-            <label><input type="checkbox" /> Frutas</label>
-            <label><input type="checkbox" /> Granos</label>
-            <label><input type="checkbox" /> Lácteos</label>
-            <label><input type="checkbox" /> Verduras</label>
-        </div>
-
-        <!-- Fechas -->
-        <div class="product-edit__dates">
-            <h3 class="product-edit__dates-title">Caducidad</h3>
-
-            <div>
-                <p class="product-edit__label">Fecha de elaboración</p>
-                <input type="date" class="product-edit__dates-input" required/>
-            </div>
-
-            <div>
-                <p class="product-edit__label">Fecha de vencimiento</p>
-                <input type="date" class="product-edit__dates-input" required />
-            </div>
-        </div>
-
-        <!-- Imagen -->
-        <div class="product-edit__image">
-            <label class="product-edit__image-upload">
-                <!-- <span>Imagen del producto</span> -->
-                <div class="product-edit__image-preview">
-                    <img src="/frontend/public/assets/products/platano_verde.png" alt="Imagen del producto" />
-                </div>
-            </label>
-        </div>
-
         <!-- Botones -->
-        <div class="product-edit__actions">
-            <button type="reset" class="buttons__action buttons__action--secondary" onclick="location.href='javascript:history.back()'">Cancelar</button>
-            <button type="submit" class="buttons__action buttons__action--primary" onclick="location.href='javascript:history.back()'">Guardar cambios</button>
+        <div class="beginner-button__links">
+            <button type="reset" class="buttons__action--secondary" onclick="location.href='javascript:history.back()'">Cancelar</button>
+            <button type="submit" class="buttons__action--primary" onclick="location.href='javascript:history.back()'">Siguiente</button>
         </div>
     </form>
 </div>

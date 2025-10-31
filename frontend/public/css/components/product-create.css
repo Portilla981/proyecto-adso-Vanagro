@@ -98,7 +98,7 @@
 
 /* Textarea */
 .product-form__textarea {
-  min-height: 100px;
+  /* min-height: 100px; */
   resize: vertical;
 }
 
@@ -262,6 +262,11 @@
 @media (width > 1024px) {
   .product-form__row {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-form__row--checkbox {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
   }
 }
