@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title>Listar Productos</title>
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Script de javaScript para el llamado de la clase navbar y renderizar automaticacminet con el defer -->
+
+    <script src="/frontend/public/js/components/navbar-simple.js" defer></script>
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
-    <script src="/frontend/public/js/components/user-account.js" defer></script>
-    <script src="/frontend/public/js/components/producter-profile.js" defer></script>
-    <script src="/frontend/public/js/components/navbar-profile.js" defer></script>
+    <script src="/frontend/public/js/components/list-products.js" defer></script>
 
 </head>
 
 <body>
-
-    <section class="navbar-profile"></section>
-    
-    <section class="producter-profile"></section>
+    <section class="navbar-simple"></section>
+    <!-- Importar componente -->
+    <main>
+        <section id="list-products-container"></section>
+    </main>
 
     <footer class="footer-vanagro-container"></footer>
+
 
 </body>
 
