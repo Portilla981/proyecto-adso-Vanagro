@@ -1,0 +1,41 @@
+[
+    { 
+        "id": "PRD-001",
+        "nombre": "Banano",
+        "unidad_medida": "gr",
+        "precio": "2.079 COP",
+        "stock": "14 kg",
+        "estado": true 
+    },
+
+
+    { 
+        "id": "PRD-002",
+        "nombre": "Café",
+        "unidad_medida": "gr",
+        "precio": "17.500 COP",
+        "stock": "13 uds",
+        "estado": true 
+    },
+
+
+    { 
+        "id": "PRD-003",
+        "nombre": "Carne de res posta",
+        "unidad_medida": "kg",
+        "precio": "34.200 COP",
+        "stock": "52 kg",
+        "estado": false
+    },
+
+
+    { 
+        "id": "PRD-004",
+        "nombre": "Queso",
+        "unidad_medida": "lb",
+        "precio": "6.800 COP",
+        "stock": "32 lb",
+        "estado": true 
+    }
+
+]

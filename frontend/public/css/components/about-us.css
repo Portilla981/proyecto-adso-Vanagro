@@ -9,7 +9,7 @@
 .card {
     border: 2px solid var(--primary-900);
     background-color: var(--terciary-100);
-    border-radius: 4px;
+    border-radius: 1rem;
     padding: 24px;
     text-align: center;
     width: 320px;
@@ -43,8 +43,8 @@
     gap: 24px;
     justify-content: center;
     align-items: center;
-    padding: 24px;
-    margin: 24px; 
+    /* padding: 24px; */
+    /* margin: 24px;  */
 
 }
 
@@ -53,7 +53,7 @@
         flex-direction: row;
         /* grid-template-columns: repeat(3, 1fr); */
         /* max-width: 90%; */
-        margin: 30px auto 50px;
+        /* margin: 30px auto 50px; */
     }
 }
 

@@ -11,7 +11,7 @@ body {
 .contact-form {
     background-color: var(--white);
     padding: 24px;
-    border-radius: 2px;
+    border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     max-width: 712px;
     margin: 40px auto; /* centrado con espacio superior */

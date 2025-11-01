@@ -1,46 +1,44 @@
-
-/************************************************************************************************/
-.profile__container {
+.profile_producter--container {
     width: 100%;
     height: auto;
     background: var(--gray-50);
     font-family: var(--main-font, sans-serif);
 }
 
-.profile__hero {
+.profile_producter--hero {
     position: relative;
     width: 100%;
     height: auto;
     /* overflow: hidden; */
-    background: url(/frontend/public/assets/vanagro/cielo.jpg) no-repeat center center/cover;
+    background: url(/frontend/public/assets/vanagro/vacas.jpg) no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
 }
 
-.profile__legend {
+.profile_producter--legend {
     text-align: center;
-    color: var(--black);
+    color: var(--white);
     padding: 16px;
     border-radius: 1rem;
     max-width: 90%;
 }
 
-.profile__role {
+.profile_producter--role {
     font-size: var(--fs-md);
     font-weight: bold;
     margin: 1;
 }
 
-.profile__message {
+.profile_producter--message {
     font-size: var(--fs-sm);
     font-weight: 600;
     margin: 0.5rem 0 0;
 }
 
 /* === CONTENIDO PRINCIPAL (dos columnas) === */
-.profile__content {
+.profile_producter--content {
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -49,7 +47,7 @@
 
 }
 
-.profile__info {
+.profile_producter--info {
     flex: 1;
     background: var(--white);
     border-radius: 1rem;
@@ -57,7 +55,7 @@
     box-shadow: 0 3px 3px var(--gray-500);
 }
 
-.profile__avatar {
+.profile_producter--avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -67,25 +65,25 @@
     margin-bottom: 1rem;
 }
 
-.profile__name {
+.profile_producter--name {
     font-size: var(--fs-sm);
     font-weight: bold;
     margin: 0.5rem 0;
 }
 
-.profile__joined {
+.profile_producter--joined {
     font-size: var(--fs-xs);
     color: var(--gray-700);
     margin-bottom: 1rem;
 }
 
-.profile__detail {
+.profile_producter--detail {
     font-size: var(--fs-xs);
     margin: 1.25rem 0;
 }
 
 
-.profile__actions {
+.profile_producter--actions {
     /* flex: 1; */
     display: flex;
     flex-direction: column;
@@ -94,20 +92,18 @@
     align-items: center;
 }
 
-.profile__link {
+.profile_producter--link {
     text-decoration: none;
 }
 
-.profile__action {
+.profile_producter--action {
     box-shadow: 0 1px 4px var(--black);
     display: flex;
     /* justify-content: center; */
     align-items: center;
     gap: 16px;
     height: 52px;
-    min-width: 320px;
-    /* width: px; */
-    
+    width: 320px;
     background: var(--gray-200);
     border: none;
     padding: 16px;
@@ -118,12 +114,12 @@
     transition: background 0.3s ease;
 }
 
-.profile__action:hover {
+.profile_producter--action:hover {
     background: var(--primary-500);
     color: var(--black);
 }
 
-.profile__action ion-icon {
+.profile_producter--action ion-icon {
     font-size: var(--fs-sm);
 
 }
@@ -200,25 +196,15 @@
     width: 50vw;   
 } */
 
-.profile__action{
-        width: fit-content;
-    }
-
-    .profile__content {
-        display: grid;
-        grid-template-columns: repeat(2, 60% 40%);
-
-        /* flex-direction: row;
-        align-items: stretch; */
+    .profile_producter--content {
+        flex-direction: row;
+        align-items: stretch;
     }
 }
 
 @media (max-width: 768px) {
-    /* .profile__action{
-        width: 450px;
-    } */
     
-    .profile__actions {
+    .profile_producter--actions {
         max-width: 320px;
         width: 100%;
         margin: 0 auto;

@@ -81,6 +81,12 @@
     margin: 16px;
 }
 
+.begin-lost_password:hover {
+    color: var(--terciary-900);
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .beginner-button__links {
     display: flex;
     flex-direction: column;
