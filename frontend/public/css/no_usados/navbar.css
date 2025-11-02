@@ -76,12 +76,9 @@
     width: 150px;
 }
 
-
-
 p {
     font-size: var(--fs-md);
 }
-
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
@@ -114,5 +111,3 @@ p {
     font-size: var(--fs-xs);
     /* color: var(--gray-700); 
 } */
-
-

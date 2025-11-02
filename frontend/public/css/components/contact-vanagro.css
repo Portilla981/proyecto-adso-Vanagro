@@ -11,10 +11,10 @@ body {
 .contact-form {
     background-color: var(--white);
     padding: 24px;
-    border-radius: 1rem;
+    border-radius: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
     max-width: 712px;
-    margin: 40px auto; /* centrado con espacio superior */
+    margin: 20px auto; /* centrado con espacio superior */
     display: grid;
     gap: 24px;
     font-size: var(--fs-xs);
@@ -41,28 +41,6 @@ body {
     grid-template-columns: 1fr !important;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    cursor: pointer;
-}
-
-.btn-send {
-    background-color: var(--primary-900);
-    color: var(--white);
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn-send:hover {
-    background-color: var(--primary-950);
-}
 
 /* ---- RESPONSIVO ---- */
 @media (width > 768px) {
@@ -70,10 +48,10 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    .buttons {
+    /* .buttons {
         flex-direction: row;
         justify-content: space-evenly;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -82,9 +60,9 @@ body {
         gap: 16px;
     }
 
-    .btn-send {
+    /* .btn-send {
         width: 100%;
-    }
+    } */
 }
 
 /* ---- LABELS E INPUTS ---- */
