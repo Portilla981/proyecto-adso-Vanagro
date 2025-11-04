@@ -3,7 +3,7 @@
   padding: 24px;
   border-radius: 2px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
-  max-width: 712px;
+  width: max-content;
   margin: 32px auto;
   display: grid;
   gap: 24px;
@@ -12,6 +12,7 @@
   color: var(--black);
 }
 
+/* Títulos y subtítulos */
 .product-form__title {
   text-align: center;
   color: var(--black);
@@ -24,7 +25,7 @@
   font-size: var(--fs-xxs);
 }
 
-
+/* Contenedores principales */
 .product-form__container,
 .product-form__form {
   display: flex;
@@ -53,6 +54,7 @@
   color: var(--black);
 }
 
+/* Inputs, selects y textarea */
 .product-form__input,
 .product-form__select,
 .product-form__textarea {
@@ -67,6 +69,7 @@
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Foco */
 .product-form__input:focus,
 .product-form__select:focus,
 .product-form__textarea:focus {
@@ -95,7 +98,7 @@
 
 /* Textarea */
 .product-form__textarea {
-  min-height: 100px;
+  /* min-height: 100px; */
   resize: vertical;
 }
 
@@ -107,7 +110,7 @@
   font-size: var(--fs-xs);
 }
 
-
+/* Checkboxes */
 .product-form__row--checkbox {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +133,7 @@
   color: var(--gray-800);
 }
 
+/* Fechas */
 .product-form__dates {
   display: flex;
   flex-direction: column;
@@ -170,7 +174,7 @@
   box-shadow: 0 0 0 2px var(--primary-500);
 }
 
-
+/* Imagen */
 .product-form__image {
   display: flex;
   flex-direction: column;
@@ -228,19 +232,6 @@
   box-shadow: 0.3rem 0.3rem 0.8rem var(--primary-400);
 }
 
-/* Botón secundario */
-.product-form__button--cancel {
-  background-color: var(--secundary-900);
-  color: var(--black);
-}
-
-.product-form__button--cancel:hover {
-  background-color: var(--secundary-800);
-  color: var(--gray-700);
-  box-shadow: 0.3rem 0.3rem 0.8rem var(--secundary-400);
-}
-
-
 @media (width > 768px) {
   .product-form__row {
     grid-template-columns: 1fr 1fr;
@@ -265,5 +256,17 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
+  }
+}
+
+@media (width > 1024px) {
+  .product-form__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-form__row--checkbox {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
   }
 }

@@ -33,12 +33,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--on-primary);
+  color: var(--black);
   text-decoration: none;
   font-size: var(--fs-xxxs);
   font-weight: 500;
-  min-width: 48px;
-  min-height: 48px;
   border-radius: 50%; /* MD3: toque amigable */
 }
 /* .footer-vanagro__icon {

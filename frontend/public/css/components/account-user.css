@@ -206,6 +206,10 @@
 	margin: 8px;
 }
 
+@media (min-width: 768px) {   
+    /* .profile__report--img {
+    width: 50vw;   
+} */
 .profile__info--label{
     font-size: var(--fs-xxs);
     font-weight: bolder;
