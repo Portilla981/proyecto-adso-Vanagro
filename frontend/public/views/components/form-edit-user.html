@@ -1,0 +1,107 @@
+<div class="form-register__head">
+    <h2 class="form-register__title">EDITAR USUARIO</h2>
+    <p>Edite los campos requeridos y haga clic en <strong>Guardar cambios</strong>.</p>
+</div>
+
+<section class="form-register__block">
+    <div class="form-register__block--form">
+        <form action="#" method="" class="form-register__form">
+            <div class="form-register__group">
+                <label class="form-register__label">Nombres
+                    <input class="form-register__input" type="text" value="Johan David">
+                </label>
+                <label class="form-register__label">Apellidos
+                    <input class="form-register__input" type="text" value="Portilla Zambrano">
+                </label>
+            </div>
+
+            <div class="form-register__group">
+                <label class="form-register__label">Tipo de documento
+                    <select class="form-register__input">
+                        <option>Cédula</option>
+                        <option>Tarjeta de Identidad</option>
+                        <option>Pasaporte</option>
+                    </select>
+                </label>
+                <label class="form-register__label">Número de identificación
+                    <input class="form-register__input" type="number" value="1154123145">
+                </label>
+            </div>
+
+            <div class="form-register__group">
+                <label class="form-register__label">Departamento
+                    <select class="form-register__input">
+                        <option>Risaralda</option>
+                        <option>Caldas</option>
+                        <option>Quindío</option>
+                    </select>
+                </label>
+                <label class="form-register__label">Municipio
+                    <select class="form-register__input">
+                        <option>Marsella</option>
+                        <option>Apía</option>
+                        <option>Balboa</option>
+                        <option>Belén de Umbría</option>
+                        <option>Dosquebradas</option>
+                        <option>Guática</option>
+                        <option>La Celia</option>
+                        <option>La Virginia</option>
+                        <option>Mistrató</option>
+                        <option>Pereira</option>
+                        <option>Pueblo Rico</option>
+                        <option>Quinchía</option>
+                        <option>Santa Rosa de Cabal</option>
+                        <option>Santuario</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-register__group">
+                <label class="form-register__label">Dirección
+                    <input class="form-register__input" type="text"
+                        value="calle 58 # 42-12 B/ El carme de dd d ld misiones">
+                </label>
+                <label class="form-register__label">Correo Electronico
+                    <input class="form-register__input" type="email" value="johandp@gmail.com">
+                </label>
+            </div>
+
+            <div class="form-register__group">
+                <label class="form-register__label">Teléfono
+                    <input class="form-register__input" type="tel" value="3252152545">
+                </label>
+                <label class="form-register__label">Teléfono Alterno
+                    <input class="form-register__input" type="tel" placeholder="Ingrese su numero telefonico alterno">
+                </label>
+            </div>
+
+            <div class="form-register__group">
+                <label class="form-register__label">Contraseña
+                    <input class="form-register__input" type="password" value="***************">
+                </label>
+                
+                <div class="btn__password">
+                    <button type="button" class="btn__password--link" onclick="location.href='javascript:history.back()'">Cambiar Contraseña</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="form-register__images">
+            <img class="form-register__images--img" src="/frontend/public/assets/vanagro/campesino.jpg"
+                alt="Foto productor">
+            <label class="form-register__label">Cargar fotografia de perfil
+                <input class="form-register__file" type="file">
+            </label>
+        </div>
+    </div>
+
+
+    <div class="form-register__actions">
+        <button type="button" class="buttons__action--secondary btn-cancel"
+            onclick="location.href='javascript:history.back()'">Cancelar</button>
+        <a href="/frontend/public/views/account-user.html">
+            <button type="button" class="buttons__action--primary btn-save">Guardar cambios</button>
+        </a>
+    </div>
+
+</section>

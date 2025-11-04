@@ -18,7 +18,7 @@
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
   width: 100%;
-  margin: 24px auto;
+  margin: 0 auto 24px;
   gap: 16px;
   font-size: var(--fs-xs);
 }
@@ -80,7 +80,7 @@
 }
 
 .form-register__images--img {
-  width: 150px;
+  width: 200px;
   height: 200px;
   /* background-image: url(/frontend/public/assets/vanagro/avatar.png); */
   background-repeat: no-repeat;
@@ -113,6 +113,15 @@
   cursor: pointer;
 }
 
+.btn__password{
+  display: flex;
+  align-items: center;  
+}
+
+.btn__password--link{
+  height: 32px;
+  background-color: var(--terciary-300);
+}
 
 
 @media (max-width: 1024px) {
@@ -140,7 +149,7 @@
 @media (min-width: 1024px) {
   .form-register__actions {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /* gap: 24px; */
   }
 

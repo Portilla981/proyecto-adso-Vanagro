@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Script de javaScript para el llamado de la clase navbar y render automáticamente con el defer -->
-    <script src="/frontend/public/js/components/navbar-simple.js" defer></script>
+    <script src="/frontend/public/js/components/navbar-logged.js" defer></script>
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
     <script src="/frontend/public/js/components/search.js" defer></script>
-    <script src="/frontend/public/js/components/product_details-only.js" defer></script>
+    <script src="/frontend/public/js/components/product_details-user.js" defer></script>
     
 
     <script type="module">
-        import { loadCards } from "/frontend/public/js/components/card-product.js";
+        import { loadCards } from "/frontend/public/js/components/card-product_user.js";
         loadCards(".card-section__product");
         // esta la clase para cargar todas las clases 
     </script>
