@@ -73,7 +73,19 @@
   transform: scale(1.2); /* efecto crecer */
 }
 
+/* .navbar-vanagro__link--simple{
+  display: block;
+} */
+
 @media (width > 768px) {
+
+  .navbar-vanagro__link--simple{
+    display: none;
+  }
+
+  /* .navbar-logged-in{
+
+  } */
 
   .navbar-logged-in__list {
     flex-direction: row;

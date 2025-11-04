@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products list</title>
+    <title>Registrate</title>
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <script src="/frontend/public/js/components/navbar-logged.js" defer></script>
+    <!-- Script de javaScript para el llamado de la clase navbar y renderizar automaticacminet con el defer -->
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
-    <script src="/frontend/public/js/components/list-buys-orders.js" defer></script>
+    <script src="/frontend/public/js/components/edit-user.js" defer></script>
+    <script src="/frontend/public/js/components/msj-confirm.js" defer></script>
+    <script src="/frontend/public/js/components/navbar-logged.js" defer></script>
 
 </head>
 
-<body>
+<body>    
+
     <section class="navbar-simple"></section>
-    <!-- Importar componente -->
-    <section id="product-list-container"></section>
+
+    <section class="form-register__user"></section>
+
+    <section class="msj-confirm-container"></section>
+
     <footer class="footer-vanagro-container"></footer>
+
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
