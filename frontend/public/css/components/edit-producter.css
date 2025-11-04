@@ -36,9 +36,9 @@
 }
 
 .edit-form__group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .edit-form__label {
@@ -123,12 +123,12 @@
     flex-direction: column;
   }
 
-  .edit-form__group {
+  /* .edit-form__group {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-  }
+  } */
 
 }
 
@@ -162,13 +162,13 @@
     gap: 24px;
   }
 
-  .edit-form__group {
-    grid-column: span 2;
+  /* .edit-form__group { */
+    /* grid-column: span 2; */
     /* Campos ocupan las dos primeras columnas */
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
+    gap: 24px; */
+  /* } */
 
   .edit-form__file {
     width: 200px;
