@@ -1,3 +1,4 @@
+/* ========================================================= */
 .header-vanagro {
     position: static;
     /* Posición fija */
@@ -71,24 +72,24 @@
 .navbar-vanagro__link:hover {
     color: var(--secundary-950);
     /* scale: 1.5; */
-    transform: translateY(-10px) scale(1.3);   
+    transform: translateY(-10px) scale(1.3);
 }
 
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
-    .navbar-vanagro{
+    .navbar-vanagro {
         /* display: flex; */
         justify-content: center;
         align-items: center;
     }
 
-    
-    .navbar-vanagro__container{
-    display: grid;
-    grid-template-columns: repeat(3, 20% 60% 20%);
-    /* justify-content: space-between;*/
-    /* align-items: end; */
+
+    .navbar-vanagro__container {
+        display: grid;
+        grid-template-columns: repeat(3, 20% 60% 20%);
+        /* justify-content: space-between;*/
+        /* align-items: end; */
     }
 
 
@@ -100,13 +101,13 @@
         /* padding: 16px; */
         font-size: 32px;
         color: var(--white);
-        position: relative; 
+        position: relative;
         /* z-index: 10;                         */
     }
 
-    
+
     .navbar-vanagro__icons--cart:hover,
-    .navbar-vanagro__icons--login:hover, 
+    .navbar-vanagro__icons--login:hover,
     .navbar-vanagro__icons--back:hover {
         color: var(--secundary-950);
         scale: 1.2;
@@ -119,13 +120,13 @@
         justify-content: space-around;
         align-items: center;
     }
-    
-    
+
+
     .navbar-vanagro__list {
         flex-direction: row;
         justify-content: space-around;
         margin: 0 16px;
-        
+
     }
 
 
