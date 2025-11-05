@@ -119,8 +119,24 @@
 }
 
 .btn__password--link{
-  height: 32px;
-  background-color: var(--terciary-300);
+    padding: 0 16px;
+    height: 40px;
+    background-color: var(--terciary-800);
+    color: var(--white); 
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.btn__password--link:hover {
+    background-color: var(--terciary-700);
+    color: var(--white);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.btn__password--link:focus {
+    outline: 2px solid var(--primary-500);
+    outline-offset: 2px;
 }
 
 

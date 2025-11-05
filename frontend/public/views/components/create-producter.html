@@ -1,5 +1,5 @@
 <div class="producter-register">
-    <h2 class="producter-register__title">Registro como productor</h2>
+    <p class="producter-register__title"><strong>Registro</strong> como productor</p>
 
     <form class="producter-register__form" action="">
 
@@ -8,10 +8,10 @@
             <div class="profile__info--block">
                 <div class="profile__info--space">
                     <label class="profile__info--label" for="">Tipo Documento</label>
-                    <p class="profile__info--name">Cedula</p>
+                    <p class="profile__info--name">Cédula</p>
                 </div>
                 <div class="profile__info--space">
-                    <label class="profile__info--label" for="">Numero Documento</label>
+                    <label class="profile__info--label" for="">NÚmero Documento</label>
                     <p class="profile__info--name">1.154.123.145</p>
                 </div>
                 <div class="profile__info--space">
@@ -23,19 +23,19 @@
                     <p class="profile__info--name">Marsella</p>
                 </div>
                 <div class="profile__info--space">
-                    <label class="profile__info--label" for="">Direccion</label>
-                    <p class="profile__info--name">calle 58 # 42-12 B/ El carme de dd d ld misiones</p>
+                    <label class="profile__info--label" for="">Dirección</label>
+                    <p class="profile__info--name">calle 58 # 42-12 B/ El carmen misiones</p>
                 </div>
                 <div class="profile__info--space">
                     <label class="profile__info--label" for="">Correo electronico</label>
                     <p class="profile__info--name">johandp@gmail.com</p>
                 </div>
                 <div class="profile__info--space">
-                    <label class="profile__info--label" for="">Telefono</label>
+                    <label class="profile__info--label" for="">Teléfono</label>
                     <p class="profile__info--name">3252152545</p>
                 </div>
                 <div class="profile__info--space">
-                    <label class="profile__info--label" for="">Telefono alterno</label>
+                    <label class="profile__info--label" for="">Teléfono alterno</label>
                     <p class="profile__info--name"></p>
                 </div>
             </div>
@@ -102,11 +102,18 @@
                 <button type="button" class="buttons__action--secondary">Cancelar</button>
             </a>
             <a href="/frontend/public/views/producter-profile.html">
-                <button type="button" class="buttons__action--primary">Crear Productor</button>
+                <button type="button" class="buttons__action--primary create-producter-alert">Crear Productor</button>
             </a>
-
         </div>
-
     </form>
-
+    <div class="popup" id="popupMessage">
+        <div class="popup__header">
+            <i class="fa-solid fa-check popup__icon"></i>
+        </div>
+        <div class="popup__body">
+            <h3 class="popup__title">¡PRODUCTOR CREADO!</h3>
+            <p class="popup__message">¡El productor ha sido creado exitosamente!</p>
+            <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+        </div>
+    </div>
 </div>

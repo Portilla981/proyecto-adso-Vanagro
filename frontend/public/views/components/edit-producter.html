@@ -1,7 +1,6 @@
 <div class="edit-form__head">
-    <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2>
-    <p>Haga los cambios necesarios y luego de clic en <strong>Guardar cambios</strong>, para hacer efectivos sus
-        cambios.</p>
+    <!-- <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2> -->
+    <p>Edite los campos requeridos y haga clic en <strong>Guardar cambios.</strong></p>
 </div>
 
 <section class="edit-form__block">
@@ -58,10 +57,19 @@
     <div class="edit-form__actions">
         <button type="button" class="buttons__action--secondary btn-cancel"
             onclick="location.href='javascript:history.back()'">Cancelar</button>
-        <a href="/frontend/public/views/producter-profile.html">
-            <button type="button" class="buttons__action--primary btn-save">Guardar cambios</button>
-        </a>
+            <button type="button" class="buttons__action--primary btn-save edit-producter-alert">Guardar cambios</button>
 
+
+    </div>
+    <div class="popup" id="popupMessage">
+        <div class="popup__header">
+            <i class="fa-solid fa-check popup__icon"></i>
+        </div>
+        <div class="popup__body">
+            <h3 class="popup__title">¡PRODUCTOR ACTUALIZADO!</h3>
+            <p class="popup__message">¡Los cambios han sido actualizados exitosamente!</p>
+            <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+        </div>
     </div>
 
 </section>

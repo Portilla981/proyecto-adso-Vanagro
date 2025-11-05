@@ -30,10 +30,18 @@
                 <a href="/frontend/public/views/register-user.html">
                     <button type="button" class="buttons__action--secondary">Crear Cuenta</button>
                 </a>
-                <a href="/frontend/public/views/account-user.html">
-                    <button class="buttons__action--primary" type="button">Iniciar Sesión</button>
-                </a>
+                <button class="buttons__action--primary session-alert" type="button">Iniciar Sesión</button>
             </div>
         </form>
+        <div class="popup" id="popupMessage">
+            <div class="popup__header">
+                <i class="fa-solid fa-check popup__icon"></i>
+            </div>
+            <div class="popup__body">
+                <h3 class="popup__title">¡BIENVENIDO!</h3>
+                <p class="popup__message">¡Has iniciado sesión correctamente!</p>
+                <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+            </div>
+        </div>
     </div>
 </div>
