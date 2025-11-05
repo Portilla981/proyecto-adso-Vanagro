@@ -1,5 +1,5 @@
 <div class="form-register__head">
-    <h2 class="form-register__title">EDITAR USUARIO</h2>
+    <!-- <h2 class="form-register__title">EDITAR USUARIO</h2> -->
     <p>Edite los campos requeridos y haga clic en <strong>Guardar cambios</strong>.</p>
 </div>
 
@@ -59,7 +59,7 @@
             <div class="form-register__group">
                 <label class="form-register__label">Dirección
                     <input class="form-register__input" type="text"
-                        value="calle 58 # 42-12 B/ El carme de dd d ld misiones">
+                        value="calle 58 # 42-12 B/ El carmen misiones">
                 </label>
                 <label class="form-register__label">Correo Electronico
                     <input class="form-register__input" type="email" value="johandp@gmail.com">
@@ -99,9 +99,17 @@
     <div class="form-register__actions">
         <button type="button" class="buttons__action--secondary btn-cancel"
             onclick="location.href='javascript:history.back()'">Cancelar</button>
-        <a href="/frontend/public/views/account-user.html">
-            <button type="button" class="buttons__action--primary btn-save">Guardar cambios</button>
-        </a>
+            <button type="button" class="buttons__action--primary btn-save edit-user-alert">Guardar cambios</button>
+    </div>
+    <div class="popup" id="popupMessage">
+        <div class="popup__header">
+            <i class="fa-solid fa-check popup__icon"></i>
+        </div>
+        <div class="popup__body">
+            <h3 class="popup__title">¡USUARIO ACTUALIZADO!</h3>
+            <p class="popup__message">¡Los cambios han sido actualizados exitosamente!</p>
+            <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+        </div>
     </div>
 
 </section>

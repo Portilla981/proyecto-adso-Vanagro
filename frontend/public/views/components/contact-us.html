@@ -39,9 +39,17 @@
 
         <div class="buttons">
             <button type="submit" class="buttons__action--secondary" onclick="cancelarFormulario()">Cancelar</button>
-            <button type="submit" class="buttons__action--primary">Enviar</button>
+            <button type="submit" class="buttons__action--primary sent-alert">Enviar</button>
         </div>
-
     </form>
-
+    <div class="popup" id="popupMessage">
+        <div class="popup__header">
+            <i class="fa-solid fa-check popup__icon"></i>
+        </div>
+        <div class="popup__body">
+            <h3 class="popup__title">¡MENSAJE ENVIADO!</h3>
+            <p class="popup__message">¡El mensaje ha sido enviado, gracias por contactarnos!</p>
+            <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+        </div>
+    </div>
 </section>

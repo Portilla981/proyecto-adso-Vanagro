@@ -1,184 +1,184 @@
 .producter-register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height: 100%; */
-    /* width: 100%; */
-    /* gap: 24px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .producter-register__title {
-    color: var(--black);
-    margin-top: 24px;
-    font-size: var(--fs-xs);
-    font-weight: bold;
+  color: var(--black);
+  margin-bottom: 8px; /* antes 20px */
+  font-size: var(--fs-xs);
 }
+
+
 
 .producter-register__form {
-    background-color: var(--white);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--gray-800);
-    margin: 0 16px 24px;
-    /* overflow: auto; */
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
+/* --- Bloque superior (datos + foto) --- */
 .producter-register__identification {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding:16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
 }
 
-.producter-register__info {
-    width: 100%;
-    margin-left: 16px;
+/* Datos del productor */
+.profile__info--block {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
 }
 
-.producter-register__label {
-    text-align: left;
-    font-size: var(--fs-xs);
-    color: var(--gray-900);
+.profile__info--space {
+  display: flex;
+  flex-direction: column;
 }
 
+.profile__info--label {
+  font-weight: bold;
+  color: var(--black);
+  font-size: var(--fs-xxs);
+}
+
+.profile__info--name {
+  color: var(--gray-800);
+  font-size: var(--fs-xxs);
+
+}
+
+/* Foto más pequeña y equilibrada */
 .producter-register__photo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+  flex: 1;
+  border: 2px dashed var(--gray-400);
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  background-color: var(--white);
+}
+
+.producter-register__label-farm {
+  font-weight: bold;
+  font-size: var(--fs-xxs);
+  margin-bottom: 4px;
 }
 
 .producter-register__image {
-    width: 128px;
+  width: 80px;
+  opacity: 0.9;
+  margin-bottom: 6px;
 }
 
 .producter-register__file-farm {
-    width: 90%;
-    font-size: var(--fs-xxs);
-    text-align: center;
-    margin: 16px;
+  font-size: var(--fs-xxs);
+  width: 100%;
 }
 
+/* --- Campos de finca y mapa --- */
 .producter-register__farm-location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 24px 0;
-    gap: 24px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
 }
 
 .producter-register__fields-farm {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* width: 90%; */
-    gap: 16px;
+  flex: 1.2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
 }
 
+.form-register__label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-xxs);
+  color: var(--gray-900);
+  font-weight: 500;
+}
+
+.form-register__input {
+  padding: 6px 8px;
+  border: 1px solid var(--gray-400);
+  border-radius: 6px;
+  font-size: var(--fs-xxs);
+}
+
+/* --- Mapa más pequeño --- */
+.producter-register__map iframe {
+  width: 260px;
+  height: 120px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+}
+
+/* --- Botones --- */
 .producter-register__actions {
-    display: flex;
+  display: flex;
+  justify-content: space-between; /* Antes estaba en flex-end */
+  align-items: center;
+  padding-top: 8px;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .producter-register__identification,
+  .producter-register__farm-location {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    gap: 24px;
-}
+  }
 
-.producter-register__button {
-    display: flex;
+  .profile__info--block {
+    grid-template-columns: 1fr;
+  }
+
+  .producter-register__fields-farm {
+    grid-template-columns: 1fr;
+  }
+
+  .producter-register__actions {
     flex-direction: column;
-    /* margin: 10px;     */
-    /* gap: 2rem; */
-
+    width: 100%;
+    align-items: center;
+  }
 }
 
+/* --- Responsivo para tablets --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .producter-register__farm-location {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
 
-.producter-register__map {
+  .producter-register__fields-farm {
+    flex: 1.5;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .producter-register__map iframe {
+    width: 220px;
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  .producter-register__map {
+    flex: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 1rem 0;
-    border: 2px solid var(--black);
-}
-
-
-@media (width >=768px) {
-
-    .producter-register {
-        place-content: center;
-    }
-
-    .producter-register__form {
-        height: auto;
-        width: 95%;
-        /* overflow: visible;
-        padding: 20px; */
-    }
-
-    .producter-register__fields-farm {
-        padding-left: 24px;
-        align-items: start;
-    }
-
-    .producter-register__location {
-        margin: 0 16px;
-    }
-
-    .producter-register__farm-location {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-
-    .producter-register__actions {
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
-
-    .producter-register__button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
-        gap: 4rem;
-        margin: 2rem 0;
-        padding: 1rem 0;
-    }
-
-
-    .producter-register__identification {
-        flex-direction: row;
-    }
-
-    .producter-register__file-farm {
-        text-align: center;
-    }
-
-
-}
-
-@media (width >= 1024px){
-    .producter-register__farm-location {
-        flex-direction: row;
-        
-    }
-
-    .producter-register__form {
-        height: auto;
-        width: 70%;
-        
-    }
+  }
 }
