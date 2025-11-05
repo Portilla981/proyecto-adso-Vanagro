@@ -43,23 +43,10 @@
     gap: 24px;
     justify-content: center;
     align-items: center;
-    /* padding: 24px; */
-    /* margin: 24px;  */
-
 }
 
 @media (width > 640px) {
     .cards-container {
         flex-direction: row;
-        /* grid-template-columns: repeat(3, 1fr); */
-        /* max-width: 90%; */
-        /* margin: 30px auto 50px; */
     }
 }
-
-/* @media (width > 1024px) {
-    .cards-container {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 90%;
-    }
-} */

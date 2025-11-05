@@ -16,10 +16,9 @@
 /* Título */
 .user-list__title {
   font-size: var(--fs-md);
-  margin-bottom: 32px;
+  margin: 0 0 24px 0;
   color: var(--black);
 }
-
 
 /* Tabla */
 .user-list__table {

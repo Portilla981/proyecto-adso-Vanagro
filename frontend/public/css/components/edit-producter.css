@@ -101,44 +101,17 @@
   height: 48px;
 }
 
-/* Botones */
-.edit-form__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 24px;
-  gap: 16px;
-  cursor: pointer;
-}
-
 @media (max-width: 1024px) {
-
-  /* .edit-form__block {
-    width: fit-content;
-    margin: 16px auto;
-  } */
 
   .edit-form__form {
     display: flex;
     flex-direction: column;
   }
 
-  /* .edit-form__group {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  } */
-
 }
 
 
 @media (min-width: 1024px) {
-  .edit-form__actions {
-    flex-direction: row;
-    justify-content: space-around;
-    /* gap: 24px; */
-  }
 
   .edit-form__block {
     width: fit-content;
@@ -153,7 +126,6 @@
     /* max-width: 1000px; */
   }
 
-
   .edit-form__form {
     display: grid;
     /*grid-template-columns: 1fr 1fr 100px;*/
@@ -162,90 +134,8 @@
     gap: 24px;
   }
 
-  /* .edit-form__group { */
-    /* grid-column: span 2; */
-    /* Campos ocupan las dos primeras columnas */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px; */
-  /* } */
-
   .edit-form__file {
     width: 200px;
   }
 
 }
-
-/* @media (max-width: 768px) { */
-/* .edit-form__images{
-    display: none;
-  } */
-/* } */
-
-
-
-/* .p-id {
-  margin: 0;
-  color: var(--terciary-900);
-  font-size: var(--fs-xs);
-  font-weight: bold;
-  text-align: center;
-} */
-
-
-
-
-/* .edit-form__actions {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 24px;
-  } */
-
-/* .btn-save {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn-cancel {
-  padding: 8px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn-save {
-  background-color: var(--primary-900);
-  color: var(--white);
-}
-
-.btn-save:hover {
-  background-color: var(--primary-800);
-  box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
-}
-
-.btn-cancel {
-  background-color: var(--secundary-900);
-  color: var(--black);
-}
-
-.btn-cancel:hover {
-  background-color: var(--secundary-800);
-  color: var(--gray-400);
-  box-shadow: 0.5rem 0.5rem 1rem var(--secundary-400);
-} */
-
-
-/* .edit-form__label--file{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 8px;
-  font-size: var(--fs-xxxs);
-  gap: 4px;
-  text-align: left;
-} */

@@ -103,42 +103,6 @@
   height: 48px;
 }
 
-/* Botones */
-.form-register__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 24px;
-  gap: 16px;
-  cursor: pointer;
-}
-
-.btn__password{
-  display: flex;
-  align-items: center;  
-}
-
-.btn__password--link{
-    padding: 0 16px;
-    height: 40px;
-    background-color: var(--terciary-800);
-    color: var(--white); 
-    border: none;
-    border-radius: 4px;
-    margin: 15px;
-}
-
-.btn__password--link:hover {
-    background-color: var(--terciary-700);
-    color: var(--white);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.btn__password--link:focus {
-    outline: 2px solid var(--primary-500);
-    outline-offset: 2px;
-}
-
 
 @media (max-width: 1024px) {
 
@@ -204,6 +168,3 @@
   }
 
 }
-
-
-/*----------------------------------------------------------------------*/

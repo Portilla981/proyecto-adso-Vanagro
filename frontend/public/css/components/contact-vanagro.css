@@ -47,11 +47,6 @@ body {
     .contact-form__row {
         grid-template-columns: 1fr 1fr;
     }
-
-    /* .buttons {
-        flex-direction: row;
-        justify-content: space-evenly;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -60,9 +55,6 @@ body {
         gap: 16px;
     }
 
-    /* .btn-send {
-        width: 100%;
-    } */
 }
 
 /* ---- LABELS E INPUTS ---- */

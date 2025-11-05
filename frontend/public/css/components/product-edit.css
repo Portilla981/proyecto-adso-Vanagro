@@ -4,7 +4,7 @@
   border-radius: 2px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
   width: max-content;
-  margin: 32px auto;
+  margin: 28px auto;
   display: grid;
   gap: 24px;
   font-size: var(--fs-xs);
@@ -15,9 +15,9 @@
 /* Títulos y subtítulos */
 .product-edit__title {
   text-align: center;
-  margin: 0;
   color: var(--black);
   font-size: var(--fs-sm);
+  margin: auto;
 }
 
 .product-edit__subtitle {
@@ -28,24 +28,24 @@
 
 /* Contenedores principales */
 .product-edit__container,
-.product-edit__form {
+.product-edit__edit {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Filas */
+/* Filas: por defecto en columna, en desktop 2 columnas */
 .product-edit__row {
   display: grid;
   gap: 24px;
 }
 
-/* Fila completa (textarea, imagen, etc.) */
+/* Forzar fila completa cuando haga falta */
 .product-edit__row--full {
   grid-template-columns: 1fr !important;
 }
 
-/* Etiquetas */
+/* Etiquetas generales */
 .product-edit__label {
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
   box-shadow: 0 0 0 2px var(--primary-500);
 }
 
-/* Select personalizado */
+/* Select con icono personalizado */
 .product-edit__select--unit {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,<svg fill='%23000000' height='18' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
@@ -99,11 +99,11 @@
 
 /* Textarea */
 .product-edit__textarea {
-  min-height: 100px;
+  /* min-height: 100px; */
   resize: vertical;
 }
 
-/* Placeholder */
+/* Placeholders */
 .product-edit__input::placeholder,
 .product-edit__textarea::placeholder,
 .product-edit__select::placeholder {
@@ -208,7 +208,7 @@
   border: 1px solid var(--gray-300);
 }
 
-/* Acciones / botones */
+
 .product-edit__actions {
   display: flex;
   flex-direction: column;
@@ -233,9 +233,7 @@
   box-shadow: 0.3rem 0.3rem 0.8rem var(--primary-400);
 }
 
-
-/* Responsive */
-@media (width >= 768px) {
+@media (width > 768px) {
   .product-edit__row {
     grid-template-columns: 1fr 1fr;
   }
@@ -265,6 +263,11 @@
 @media (width > 1024px) {
   .product-edit__row {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-edit__row--checkbox {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
   }
 }

@@ -4,7 +4,7 @@
   border-radius: 2px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
   width: max-content;
-  margin: 32px auto;
+  margin: 28px auto;
   display: grid;
   gap: 24px;
   font-size: var(--fs-xs);
@@ -17,6 +17,7 @@
   text-align: center;
   color: var(--black);
   font-size: var(--fs-sm);
+  margin: auto;
 }
 
 .product-form__subtitle {

@@ -76,19 +76,6 @@
     text-decoration: none;
 }
 
-.form-register__button{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    /* border-radius: 2rem;  */
-    font-size: var(--fs-xs); 
-    cursor: pointer;
-    gap: 2rem;
-    
-}
-
-/* ---------------------------------------------------------------- */
-
 .form-register__identification{
     /* display: flex; */
     /* flex-direction: column; */
@@ -116,15 +103,13 @@
 }
 
 .form-register__fields-farm{ 
-        display: grid;   
-        justify-content: center;
-        width: 90%;
-        padding: 2rem;
-        gap: 2rem;
-        align-items: center;
-    }
-
-
+    display: grid;   
+    justify-content: center;
+    width: 90%;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+}
 
 .form-register__file-farm{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
@@ -198,20 +183,6 @@
         align-items: center;
     }
 
-
-
-    .form-register__button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    justify-content:space-between;
-    width: 70%;
-    gap: 4rem; 
-    margin: 2rem 0;
-    padding: 1rem 0;
-    }
-
-/* --------------------------------------------------- */
     .form-register__identification{
     display: flex;
     flex-direction: row;
@@ -229,9 +200,6 @@
         gap: 2rem;
     }
 
-
-
-
     .form-register__file-farm{
     /* display: flex;
     flex-direction: column; */
@@ -241,9 +209,6 @@
     width: 40%;
     }
 
-
-
-
     .form-register__producter-location{
     display: flex;    
     flex-direction: row;
@@ -252,6 +217,4 @@
     /* gap: 2rem; */
     /* width: 100%; */
     }
-
-
 }

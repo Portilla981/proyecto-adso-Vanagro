@@ -39,16 +39,6 @@
   font-weight: 500;
   border-radius: 50%; /* MD3: toque amigable */
 }
-/* .footer-vanagro__icon {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--black);
-  text-decoration: none;
-  font-size: var(--fs-xs);
-  font-weight: 500;
-} */
-
 
 .footer-vanagro__icon i {
   font-size: 24px;
@@ -58,9 +48,7 @@
   align-items: center;
   justify-content: center;
 }
-/* .footer-vanagro__icon i {
-  font-size: 18px;
-} */
+
 
 @media (width >= 768px) {
   .footer-vanagro__content {
@@ -77,32 +65,3 @@
     gap: 24px;
   }
 }
-
-/* @media (width > 768px) {
-
-  .footer-vanagro__content {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer-vanagro__social {
-    flex-direction: row;
-    margin: 1rem;
-    gap: 4rem;
-  }
-
-} */
-
-/* @media (width > 768px) {
-  .footer-vanagro__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-  }
-
-  .footer-vanagro__social {
-    flex-direction: row;
-    gap: 2rem;
-  }
-} */

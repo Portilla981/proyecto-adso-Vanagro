@@ -1,49 +1,13 @@
 .header-vanagro {
     position: static;
+    /* Posición fija */
     top: 0;
+    /* Altura Total*/
     width: 100%;
+    z-index: 10;
     background-color: var(--primary-900);
-    padding: 16px;
-    justify-content: center;
+    padding: 8px;
 }
-
-.navbar-vanagro__container {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-vanagro__profile {
-    /* padding: 0; */
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navbar-vanagro__profile--nav {
-    display: none;
-}
-
-.navbar-vanagro__container--simple {
-    padding-right: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navbar-vanagro__icons {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    /* justify-content: space-between; */
-}
-
 
 .navbar-vanagro__icons--cart,
 .navbar-vanagro__icons--login,
@@ -52,23 +16,19 @@
     display: none;
 }
 
-
 .navbar-vanagro__title {
     margin: 0;
-    /* padding: 0 16px; */
+    /* padding: 1rem; */
     font-size: var(--fs-lg);
     text-align: center;
     display: flex;
     flex-direction: column;
     color: var(--white);
-    width: max-content;
-    
 }
 
 .navbar-vanagro__subtitle {
-    font-size: var(--fs-md);
+    font-size: var(--fs-xs);
     color: var(--gray-600);
-    width: max-content;
 }
 
 .navbar-vanagro {
@@ -83,12 +43,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0;
     width: 100%;
     list-style: none;
     padding: 0;
+    /* font-size: var(--fs-xxs); */
 }
 
-/* Mobile firts */
 .navbar-vanagro__link {
     display: block;
     position: relative;
@@ -109,92 +70,63 @@
     transform: translateY(-10px) scale(1.3);
 }
 
-.navbar-vanagro__login {
-    padding: 4px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: solid 2px var(--gray-600);
-    background-color: var(--white);
+/* Clases de navbar perfil cliente y productor */
+.navbar-vanagro__icons--logout {
+  visibility: visible;
+  display: block;
+  font-size: 32px;
+  color: var(--white);
+  margin-left: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.navbar-vanagro__icons--simple {
-    visibility: visible;
-    display: block;
-    /* padding: 16px; */
-    font-size: 48px;
-    color: var(--white);
-    position: relative;
-    /* z-index: 10;                         */
+.navbar-vanagro__icons--logout:hover {
+  color: var(--secundary-950);
+  transform: scale(1.2);
 }
+
+.navbar-vanagro__profile-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--white);
+  margin-left: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-vanagro__profile-img:hover {
+  transform: scale(1.15);
+  border-color: var(--secundary-950);
+}
+
 
 /* Determinar el estilo responsive de la lista de la barra */
-@media (width >=768px) {
-    
-    
-    /* .navbar-vanagro__title{
-        width: max-content;
-    } */
-
-    .navbar-vanagro__container {
-        /* padding: 0 16px; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+@media (width > 768px) {
+    .navbar-vanagro{
+        /* display: flex; */
+        justify-content: center;
         align-items: center;
-        gap: 16px;
-    }
-    
-
-
-    .navbar-vanagro__profile--nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 24px;
-
     }
 
-    .navbar-vanagro__nav {
-        display: none;
-    }
-
-    .navbar-vanagro__profile {
-        /* padding: 0 16px; */
+    .navbar-vanagro__container{
         display: grid;
-        grid-template-columns: repeat(3, 30% 60% 10%);
-
+        grid-template-columns: repeat(3, 20% 60% 20%);
+        /* justify-content: space-between;*/
+        /* align-items: end; */
     }
-
-    .navbar-vanagro__block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 0 16px;
-    }
-
-    .navbar-vanagro {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
-    }
-
-
+    
     .navbar-vanagro__icons--cart,
     .navbar-vanagro__icons--login,
     .navbar-vanagro__icons--back {
         visibility: visible;
         display: block;
         /* padding: 16px; */
-        font-size: 48px;
+        font-size: 32px;
         color: var(--white);
-        position: relative;
+        position: relative; 
         /* z-index: 10;                         */
     }
-
 
     .navbar-vanagro__icons--cart:hover,
     .navbar-vanagro__icons--login:hover,
@@ -202,48 +134,25 @@
     .navbar-vanagro__icons--simple:hover {
         color: var(--secundary-950);
         scale: 1.2;
-
     }
 
     .navbar-vanagro__icons {
         display: flex;
-        height: 48px;
+        height: 56px;
         justify-content: space-around;
-        align-items: end;
-        /* gap: 32px; */
+        align-items: center;
     }
-
-    .navbar-vanagro__login {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-    }
-
-
-    .navbar-vanagro__list {        
-        width: 90%;
+    
+    .navbar-vanagro__list {
         flex-direction: row;
-        justify-content: space-between;
-        margin: 0 16px;
+        justify-content: space-around;
+        margin: 0 16px;  
     }
-
 
     .navbar-vanagro__item--sesion2,
     .navbar-vanagro__item--cart,
     .navbar-vanagro__item--back {
         display: none;
     }
-
-}
-
-
-@media(width > 1024px) {
-
-    /* .navbar-vanagro__container {
-        display: grid;
-        grid-template-columns: repeat(2, 20% 80%);
-        justify-content: space-between;
-        align-items: end;
-    } */
 
 }

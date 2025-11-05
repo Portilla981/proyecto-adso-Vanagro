@@ -8,10 +8,10 @@
         <form action="#" method="" class="form-register__form">
             <div class="form-register__group">
                 <label class="form-register__label">Nombres
-                    <input class="form-register__input" type="text" value="Johan David">
+                    <input class="form-register__input" type="text" placeholder="Armando">
                 </label>
                 <label class="form-register__label">Apellidos
-                    <input class="form-register__input" type="text" value="Portilla Zambrano">
+                    <input class="form-register__input" type="text" placeholder="Puertas Casas">
                 </label>
             </div>
 
@@ -24,7 +24,7 @@
                     </select>
                 </label>
                 <label class="form-register__label">Número de identificación
-                    <input class="form-register__input" type="number" value="1154123145">
+                    <input class="form-register__input" type="number" placeholder="1154123145">
                 </label>
             </div>
 
@@ -59,16 +59,16 @@
             <div class="form-register__group">
                 <label class="form-register__label">Dirección
                     <input class="form-register__input" type="text"
-                        value="calle 58 # 42-12 B/ El carmen misiones">
+                        placeholder="Vereda la maravilla">
                 </label>
-                <label class="form-register__label">Correo Electronico
-                    <input class="form-register__input" type="email" value="johandp@gmail.com">
+                <label class="form-register__label">Correo Electrónico
+                    <input class="form-register__input" type="email" placeholder="user@example.com">
                 </label>
             </div>
 
             <div class="form-register__group">
                 <label class="form-register__label">Teléfono
-                    <input class="form-register__input" type="tel" value="3252152545">
+                    <input class="form-register__input" type="tel" placeholder="3252152545">
                 </label>
                 <label class="form-register__label">Teléfono Alterno
                     <input class="form-register__input" type="tel" placeholder="Ingrese su numero telefonico alterno">
@@ -77,30 +77,34 @@
 
             <div class="form-register__group">
                 <label class="form-register__label">Contraseña
-                    <input class="form-register__input" type="password" value="***************">
+                    <input class="form-register__input" type="password" placeholder="***************">
                 </label>
+                <label class="form-register__label">Confirmar contraseña
+                    <input class="form-register__input" type="password" placeholder="**************">
+                </label>
+            </div>
                 
-                <div class="btn__password">
+                <!-- <div class="btn__password">
                     <button type="button" class="btn__password--link" onclick="location.href='javascript:history.back()'">Cambiar Contraseña</button>
                 </div>
-            </div>
+            </div> -->
         </form>
 
         <div class="form-register__images">
             <img class="form-register__images--img" src="/frontend/public/assets/vanagro/campesino.jpg"
                 alt="Foto productor">
-            <label class="form-register__label">Cargar fotografia de perfil
+            <label class="form-register__label">Cargar foto de perfil
                 <input class="form-register__file" type="file">
             </label>
         </div>
     </div>
 
-
-    <div class="form-register__actions">
+    <div class="buttons">
         <button type="button" class="buttons__action--secondary btn-cancel"
             onclick="location.href='javascript:history.back()'">Cancelar</button>
-            <button type="button" class="buttons__action--primary btn-save edit-user-alert">Guardar cambios</button>
+        <button type="button" class="buttons__action--primary btn-save edit-user-alert">Guardar cambios</button>
     </div>
+    
     <div class="popup" id="popupMessage">
         <div class="popup__header">
             <i class="fa-solid fa-check popup__icon"></i>
