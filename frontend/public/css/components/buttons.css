@@ -62,6 +62,29 @@
     outline-offset: 2px;
 }
 
+/* Terciary */
+.buttons__action--terciary {
+    padding: 0 12px;
+    height: 32px;
+    background-color: var(--terciary-900);
+    color: var(--white);
+    border-radius: 4px;
+    border: none;
+}
+
+.buttons__action--terciary:hover {
+    background-color: var(--terciary-700);
+    color: var(--gray-200);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.buttons__action--terciary:focus {
+    outline: 2px solid var(--terciary-700);
+    outline-offset: 2px;
+}
+
+
+
 /* Responsive */
 @media (width > 768px) {
     .product-edit__row {
