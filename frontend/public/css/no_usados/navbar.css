@@ -1,22 +1,21 @@
-.header {
-    /* display: grid;
-    grid-template-columns: repeat(1fr, 1); */
+/* .header {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1); 
     position: static;
-    /* Posición fija */
+    Posición fija 
     top: 0;
-    /* Altura Total*/
+    Altura Total
     width: 100%;
     z-index: 1000;
 }
-
 
 .navbar__title {
     margin: 0;
     padding: 12px;
     font-size: var(--fs-xs);
     text-align: center;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column; 
 }
 
 .navbar__subtitle {
@@ -27,9 +26,9 @@
 .navbar {
     display: flex;
     flex-direction: column;
-    /* Dirección de los elementos */
+    Dirección de los elementos 
     margin: 0 auto;
-    /* Este pegado a la margen y utilice automáticamente el ancho*/
+    Este pegado a la margen y utilice automáticamente el ancho
     width: 100%;
     background-color: var(--primary-900);
 }
@@ -42,22 +41,22 @@
     width: 100%;
     list-style: none;
     padding: 0;
-    /* font-size: var(--fs-xxs); */
+    font-size: var(--fs-xxs); 
 }
 
 
-/* Mobile firts */
+Mobile firts 
 
 .navbar__link {
     display: block;
     text-align: center;
     padding: 0.8rem;
     text-decoration: none;
-    /* Elimina el decorador de las referencias*/
+    Elimina el decorador de las referencias
     color: var(--white);
-    /* Tamaño de la fuente */
+    Tamaño de la fuente 
     font-size: var(--fs-xs);
-    /* Efecto*/
+    Efecto
     transition: color 0.3s ease;    
 }
 
@@ -65,13 +64,12 @@
     color: var(--secundary-950);
 }
 
-
 .navbar__link.active{
     background-color: var(--white);
     color: var(--primary-900);
-    /* border-radius: 15px; */
-    /* clip-path: ellipse(50% 30% at 50% 50%); */
-    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+    border-radius: 15px; 
+    clip-path: ellipse(50% 30% at 50% 50%); 
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     width: 150px;
 }
@@ -80,34 +78,22 @@ p {
     font-size: var(--fs-md);
 }
 
-/* Determinar el estilo responsive de la lista de la barra */
+Determinar el estilo responsive de la lista de la barra 
 @media (width > 768px) {
 
     .navbar__list {
-        /* list-style: none; */
-        /* Elimina los puntos de la lista de elementos*/
-        /* padding: 4px; */
+        list-style: none; 
+        Elimina los puntos de la lista de elementos
+        padding: 4px; 
         margin: 0;
         display: flex;
         flex-direction: row;
-        /* Elementos en linea a lo horizontal*/
+        Elementos en linea a lo horizontal
         gap: 40px;
-        /* Separación de elementos */
+        Separación de elementos 
         flex-grow: 1;
         justify-content: space-evenly;
-        /* Separación uniforme a lo ancho del elemento según el total de los elementos*/        
+        Separación uniforme a lo ancho del elemento según el total de los elementos        
     }
-
-    /* .navbar__link {    
-    font-size: var(--fs-xs); */
     
-}
-
-/* .navbar__title {
-    font-size: var(--fs-md);    
-}
-
-.navbar__subtitle {
-    font-size: var(--fs-xs);
-    /* color: var(--gray-700); 
 } */

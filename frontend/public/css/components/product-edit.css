@@ -208,29 +208,12 @@
   border: 1px solid var(--gray-300);
 }
 
-
 .product-edit__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   cursor: pointer;
-}
-
-.product-edit__button {
-  background-color: var(--primary-900);
-  color: var(--white);
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: var(--fs-xs);
-  transition: all 0.3s ease;
-}
-
-.product-edit__button:hover {
-  box-shadow: 0.3rem 0.3rem 0.8rem var(--primary-400);
 }
 
 @media (width > 768px) {
@@ -242,6 +225,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
   }
 
   .product-edit__dates-input {

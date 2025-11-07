@@ -1,6 +1,5 @@
-
 <div class="card-product">
-    <img src="{{imgProd}}" alt="[Imagen de producto]" class="card-product__image" />
+    <img src="{{imgProd}}" alt="[Imagen de producto]" class="card-product__image"/>
 
     <div class="card-product__info">
         <h3 class="card-product__title">{{title}}</h3>
@@ -8,9 +7,17 @@
         <strong class="card-product__price">{{price}}</strong>
     </div>
     
-    <div class="card-product__button">
+    <div class="buttons">
+
         <a href="#details">
-            <button type="button"  class="buttons__action buttons__action--primary">Ver mas</button>
+            <button type="button" class="buttons__action--secondary">Detalles</button>
         </a>
-    </div>    
+
+        <a href="">
+            <button type="button" class="buttons__action--icon">
+                <ion-icon name="cart-outline"></ion-icon>
+            </button>
+        </a>
+        
+    </div>   
 </div>

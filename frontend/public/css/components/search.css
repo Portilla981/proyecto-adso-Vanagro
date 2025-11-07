@@ -1,66 +1,106 @@
-/* Bloque: .search */
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* Bloque principal */
 .search {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 56px; 
-    background-color: var(--white);
-    border-radius: 4px; 
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); 
-    padding: 0; 
-    width: 390px;
-    margin: 0 auto;
-    gap: 0;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 380px;
+  overflow: hidden;
 }
 
-/* Elemento: input */
+/* Input */
 .search__input {
-    flex: 1;
-    width: 320px;
-    height: 100%; 
-    padding: 0 16px;
-    border: 1px solid var(--gray-300);
-    border-radius: 4px 0 0 4px;
-    font-size: 16px; 
-    line-height: 24px;
-    font-family: var(--main-font);
-    color: var(--gray-900);
-    outline: none;
-    box-sizing: border-box;
+  flex: 1;
+  padding: 0 16px;
+  border: none;
+  font-size: 16px;
+  font-family: var(--main-font);
+  color: var(--gray-900);
+  outline: none;
 }
 
-/* Elemento: botón de búsqueda */
+.search__input::placeholder {
+  color: var(--gray-500);
+}
+
+/* Botón */
 .search__button {
-    height: 100%;
-    width: 56px; /* ancho suficiente, puede equivaler al height si es solo icono botón */
-    min-width: 48px; /* asegurando target táctil mínimo 48dp mínimo si botón visible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gray-200);
-    border: 1px solid var(--gray-300);
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-600);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-/* Modificador: hover/estado activo del botón */
 .search__button:hover {
-    background-color: var(--primary-600);
-    color: var(--black);
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    transform: scale(1.05);
+  background-color: var(--primary-700);
+  transform: scale(1.05);
 }
 
-/* Icono dentro del botón */
 .search__button-icon {
-    font-size: 24px; /* icono típicamente 24dp */
-    line-height: 24px;
-    width: 24px;
-    height: 24px;
-    /* Asegurar que esté centrado en el botón */
-    display: inline-flex;
-    align-items: center;
+  color: var(--white);
+  font-size: 32px;
+}
+
+/* Categorías */
+.search__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search__category {
+  background-color: var(--white);
+  border: 1px solid var(--primary-600);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-900);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search__category:hover {
+  background-color: var(--primary-200);
+  color: var(--black);
+  font-weight: 500;
+  transform: translateY(-2px);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .search-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search__categories {
     justify-content: center;
+  }
 }

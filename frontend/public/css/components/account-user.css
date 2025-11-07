@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
+    padding: 6px;
 }
 
 
@@ -68,7 +68,7 @@
     object-fit: cover;
     border: 2px solid var(--primary-950);
     border-radius: 100%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 
@@ -178,7 +178,6 @@
 .profile__report--close ion-icon {
     font-size: var(--fs-lg);
     cursor: pointer;
-   
 }
 
 
@@ -190,7 +189,6 @@
     padding: 0 16px;
     background-color: var(--gray-100);
     padding-bottom: 16px;
-   
 }
 
 .profile__report--img {
