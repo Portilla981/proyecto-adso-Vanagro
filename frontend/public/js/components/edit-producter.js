@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const editContainer = document.querySelector(".edit_producter_section");
+  const editContainer = document.querySelector(".edit-producter__section");
   // Cargar el contenido del archivo edit-producter.html en el contenedor
   // Verifica si el contenedor existe antes de intentar cargar el contenido
   // Esto previene errores si el contenedor no está presente en la página

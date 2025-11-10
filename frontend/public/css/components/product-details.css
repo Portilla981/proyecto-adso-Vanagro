@@ -11,10 +11,10 @@
   transition: all 0.4s;
 }
 
-.details:target{
+/* .details:target{
     visibility: visible;
     /* opacity: 1;  */
-}
+/* } */
 
 
 .details__block {
