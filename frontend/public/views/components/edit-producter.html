@@ -1,6 +1,6 @@
 <div class="edit-form__head">
     <!-- <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2> -->
-    <p>Edite los campos requeridos y haga clic en <strong>Guardar cambios.</strong></p>
+    <p><strong>Editar Productora</strong></p>
 </div>
 
 <section class="edit-form__block">
@@ -8,21 +8,21 @@
         <form action="#" method="" class="edit-form__form">
             <div class="edit-form__group">
                 <label class="edit-form__label">Finca Productora
-                    <input class="edit-form__input" type="text" value="Finca Las Bovinas">
+                    <input class="edit-form__input" type="text" value="Finca Las Bovinas" required>
                 </label>
                 <label class="edit-form__label">Dirección
-                    <input class="edit-form__input" type="text" placeholder="Vereda las palmas">
+                    <input class="edit-form__input" type="text" placeholder="Vereda las palmas" required>
                 </label>              
             
                 <label class="edit-form__label">Departamento
-                    <select class="edit-form__input">
+                    <select class="edit-form__input" required>
                         <option>Risaralda</option>
                         <option>Caldas</option>
                         <option>Quindío</option>
                     </select>
                 </label>
                 <label class="edit-form__label">Municipio
-                    <select class="edit-form__input">
+                    <select class="edit-form__input" required>
                         <option>Marsella</option>
                         <option>Apía</option>
                         <option>Balboa</option>
@@ -54,9 +54,9 @@
 
 
     <div class="buttons">
-        <button type="button" class="buttons__action--secondary"
+        <button type="reset" class="buttons__action--secondary"
             onclick="location.href='javascript:history.back()'">Cancelar</button>
-        <button type="button" class="buttons__action--primary edit-producter-alert">Guardar cambios</button>
+        <button type="submit" class="buttons__action--primary edit-producter-alert">Guardar cambios</button>
     </div>
 
     <div class="popup" id="popupMessage">
