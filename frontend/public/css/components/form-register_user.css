@@ -3,9 +3,9 @@
   place-content: center;
 }
 
-.form-register__head {
+/* .form-register__head {
   padding: 16px;
-}
+} */
 
 .form-register__title {
   font-size: var(--fs-sm);
