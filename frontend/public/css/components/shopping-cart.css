@@ -22,7 +22,7 @@ body {
   grid-template-columns: repeat(7, 1fr); 
   padding: 12px;
   font-weight: bold;
-  background: var(--gray-100);
+  background: var(--primary-300);
   border-radius: 8px;
   margin-bottom: 10px;
   text-align: center;
