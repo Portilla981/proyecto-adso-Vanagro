@@ -52,7 +52,7 @@
 }
 
 .form-register__input {
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
   border: 1px solid var(--black);

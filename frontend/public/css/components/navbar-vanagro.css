@@ -65,7 +65,7 @@
 }
 
 .navbar-vanagro__link:hover {
-    color: var(--secundary-950);
+    color: var(--white);
     /* scale: 1.5; */
     transform: translateY(-10px) scale(1.3);
 }
@@ -81,7 +81,7 @@
 }
 
 .navbar-vanagro__icons--logout:hover {
-  color: var(--secundary-950);
+  color: var(--white);
   transform: scale(1.2);
 }
 
@@ -97,7 +97,7 @@
 
 .navbar-vanagro__profile-img:hover {
   transform: scale(1.15);
-  border-color: var(--secundary-950);
+  border-color: var(--white);
 }
 
 
@@ -132,7 +132,7 @@
     .navbar-vanagro__icons--login:hover,
     .navbar-vanagro__icons--back:hover,
     .navbar-vanagro__icons--simple:hover {
-        color: var(--secundary-950);
+        color: var(--white);
         scale: 1.2;
     }
 
