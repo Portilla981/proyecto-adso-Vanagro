@@ -127,6 +127,7 @@
   justify-content: space-between; /* Antes estaba en flex-end */
   align-items: center;
   padding-top: 8px;
+  flex-direction: row;
 }
 
 
@@ -147,7 +148,7 @@
   }
 
   .producter-register__actions {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
   }

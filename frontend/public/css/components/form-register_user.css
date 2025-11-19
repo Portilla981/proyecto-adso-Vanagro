@@ -16,7 +16,7 @@
   padding: 24px;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 90%;
   margin: 0 auto 24px;
   gap: 16px;
   font-size: var(--fs-xs);
@@ -30,6 +30,7 @@
 .form-register__form {
   display: grid;
   gap: 24px;
+  justify-content: center;
 }
 
 .form-register__group {
@@ -59,7 +60,7 @@
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
-  height: 48px;
+  height: 56px;
 }
 
 .form-register__input::placeholder {
@@ -94,7 +95,7 @@
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
-  height: 48px;
+  height: 56px;
 }
 
 /* --- TABLET --- */
@@ -171,6 +172,6 @@
 
   .form-register__file {
     width: 320px;
-    height: 48px;
+    height: 56px;
   }
 }

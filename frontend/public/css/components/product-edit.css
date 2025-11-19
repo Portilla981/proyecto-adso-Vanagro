@@ -63,7 +63,7 @@
   background-color: var(--white);
   border: 1px solid var(--black);
   width: 320px;
-  height: 48px;
+  height: 56px;
   font-size: var(--fs-xs);
   font-family: var(--main-font);
   box-sizing: border-box;
