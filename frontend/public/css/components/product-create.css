@@ -229,6 +229,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .product-form {
+    height: 123vh;
+  }
+}
+
 @media (width > 768px) {
   .product-form__row {
     grid-template-columns: 1fr 1fr;

@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .producter-register__title {
   color: var(--black);
-  margin-bottom: 8px; /* antes 20px */
   font-size: var(--fs-xs);
 }
 
@@ -20,7 +19,7 @@
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 /* --- Bloque superior (datos + foto) --- */

@@ -90,7 +90,6 @@
   padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
-  border: 1px solid var(--black);
   width: 320px;
   font-size: var(--fs-xs);
   box-sizing: border-box;
@@ -136,6 +135,11 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+  }
+
+  .form-register__file {
+    width: 320px;
+    height: 56px;
   }
 }
 

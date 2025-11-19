@@ -229,6 +229,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .product-edit{
+    height: 123vh;
+  }
+}
+
 @media (width > 768px) {
   .product-edit__row {
     grid-template-columns: 1fr 1fr;
