@@ -46,17 +46,16 @@
   font-size: var(--fs-xxxs);
   color: var(--black);
   width: 100%;
-  max-width: 356px;
+  /* max-width: 356px; */
   box-sizing: border-box;
 }
 
 .form-register__input {
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
   border: 1px solid var(--black);
-  width: 100%;
-  min-width: 320px;
+  width: 320px;
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
@@ -87,11 +86,11 @@
 
 .form-register__file {
   flex: 1;
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
   border: 1px solid var(--black);
-  width: 100%;
+  width: 320px;
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
@@ -171,6 +170,7 @@
   }
 
   .form-register__file {
-    width: 200px;
+    width: 320px;
+    height: 48px;
   }
 }

@@ -1,4 +1,4 @@
-.form-register__title{
+.trash-form-register__title{
     text-align: center;
     color: var(--gray-900);
     margin-bottom: 10px;
@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 
-.form-register__form{
+.trash-form-register__form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,11 +14,10 @@
     margin: 2rem;
     width: 90%;   
     height: 400px;
-    /* margin-bottom: 10px; */
     overflow: auto;
 }
 
-.form-register__label{
+.trash-form-register__label{
     text-align: left;
     width: 80%;
     font-size: var(--fs-xxxs);
@@ -26,13 +25,13 @@
     margin-bottom: 5px;
 }
 
-.form-register__container{
+.trash-form-register__container{
     display: flex;    
     flex-direction: column;
     align-items: center;  
 }
 
-.form-register__fields{
+.trash-form-register__fields{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,18 +40,15 @@
     gap: 1.5rem;
 }
 
-.form-register__input,
-.form-register__select
- {
+.trash-form-register__input,
+.trash-form-register__select {
     width: 200px;
     height: 32px;
     background-color: var(--secundary-400);
-    /* border: 1px solid var(--gray-900); */
     border-radius: 5px;
 }
 
-
-.form-register__file{    
+.trash-form-register__file{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -64,35 +60,30 @@
     background-color: var(--white);
 }
 
-
-.form-register__actions{
+.trash-form-register__actions{
     display: flex;
     flex-direction: column;
     align-items: center;    
-    /* justify-content: center; */
     gap: 2rem; 
     margin: 2rem 0;
     padding: 1rem 0;
     text-decoration: none;
 }
 
-.form-register__identification{
-    /* display: flex; */
-    /* flex-direction: column; */
+.trash-form-register__identification{
     align-items: baseline;
     justify-content: space-evenly;
     gap: 1rem;
     width: 90%;
 }
 
-.form-register__info {
+.trash-form-register__info {
     font-size: var(--fs-xs);
     width: 300px;
     margin-left: 2rem;
 }
 
-
-.form-register__photo{
+.trash-form-register__photo{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -102,7 +93,7 @@
     width: 100%;
 }
 
-.form-register__fields-farm{ 
+.trash-form-register__fields-farm{ 
     display: grid;   
     justify-content: center;
     width: 90%;
@@ -111,7 +102,7 @@
     align-items: center;
 }
 
-.form-register__file-farm{    
+.trash-form-register__file-farm{    
     background-image: url(/frontend/public/assets/vanagro/camara.svg);
     background-repeat: no-repeat;
     background-size: 128px;
@@ -124,7 +115,7 @@
     background-color: var(--white);
 }
 
-.form-register__location{
+.trash-form-register__location{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,11 +124,11 @@
     width: 100%;
 }
 
-.location-map p{    
+.trash-location-map p{    
     text-align: center;
 }
 
-.form-register__map{
+.trash-form-register__map{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,53 +137,52 @@
     border: 2px solid var(--black);
 }
 
-
 @media (width > 768px){
 
-    .form-register{
+    .trash-form-register{
         display: grid;
         place-content: center;
         height: 100%;
         width: 100%;
     }
 
-    .form-register__form{
+    .trash-form-register__form{
         height: auto;
         width: 700px;
         overflow: visible;
     }
 
-    .form-register__fields{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    width: 90%;
-    padding: 2rem;
-    gap: 1.5rem;
+    .trash-form-register__fields{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        width: 90%;
+        padding: 2rem;
+        gap: 1.5rem;
     }
 
-    .form-register__container{
-    flex-direction: row;
-    align-items: flex-start;
+    .trash-form-register__container{
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    .form-register__actions{
+    .trash-form-register__actions{
         flex-direction: row;
         width: 80%;
         justify-content: space-around;
         align-items: center;
     }
 
-    .form-register__identification{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-evenly;
-    gap: 1rem;
-    width: 100%;
+    .trash-form-register__identification{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+        gap: 1rem;
+        width: 100%;
     }
 
-    .form-register__fields-farm{ 
+    .trash-form-register__fields-farm{ 
         display: grid;   
         align-items: center;
         width: 90%;
@@ -200,21 +190,17 @@
         gap: 2rem;
     }
 
-    .form-register__file-farm{
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 40%;
+    .trash-form-register__file-farm{
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 40%;
     }
 
-    .form-register__producter-location{
-    display: flex;    
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* gap: 2rem; */
-    /* width: 100%; */
+    .trash-form-register__producter-location{
+        display: flex;    
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -57,13 +57,26 @@
 
 /* Inputs, selects y textarea */
 .product-edit__input,
-.product-edit__select,
-.product-edit__textarea {
+.product-edit__select{
   padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
   border: 1px solid var(--black);
+  width: 320px;
+  height: 48px;
+  font-size: var(--fs-xs);
+  font-family: var(--main-font);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-edit__textarea {
+    padding: 16px;
+  border-radius: 4px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
   width: 100%;
+  height: 48px;
   font-size: var(--fs-xs);
   font-family: var(--main-font);
   box-sizing: border-box;
@@ -159,12 +172,12 @@
 
 .product-edit__dates-input {
   height: 48px;
-  padding: 0 16px;
+  padding: 16px;
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   background-color: var(--secundary-400);
   font-size: var(--fs-xs);
-  width: 100%;
+  width: 320px;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
