@@ -11,8 +11,6 @@
   font-size: var(--fs-xs);
 }
 
-
-
 .producter-register__form {
   background-color: var(--white);
   border-radius: 10px;
@@ -70,7 +68,7 @@
 
 .producter-register__label-farm {
   font-weight: bold;
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xxxs);
   margin-bottom: 4px;
 }
 
@@ -81,7 +79,7 @@
 }
 
 .producter-register__file-farm {
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xxxs);
   width: 100%;
 }
 
@@ -100,7 +98,7 @@
   gap: 12px 20px;
 }
 
-.form-register__label {
+/* .form-register__label {
   display: flex;
   flex-direction: column;
   font-size: var(--fs-xxxs);
@@ -113,7 +111,7 @@
   border: 1px solid var(--gray-400);
   border-radius: 6px;
   font-size: var(--fs-xxs);
-}
+} */
 
 /* --- Mapa más pequeño --- */
 .producter-register__map iframe {
