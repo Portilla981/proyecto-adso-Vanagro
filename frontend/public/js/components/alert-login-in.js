@@ -17,15 +17,14 @@
     popup.__hideTimeout = setTimeout(() => {
       popup.style.display = "none";
 
- 
-      window.location.href = "/frontend/public/views/list-buies.html";
+      window.location.href = "/frontend/public/views/index_vanagro.html";
 
     }, POPUP_DURATION);
   }
 
   // Detectar clicks en el botón
   document.addEventListener("click", (event) => {
-    const btn = event.target.closest(".payment-alert");
+    const btn = event.target.closest(".login-in");
     if (!btn) return;
 
     const form = btn.closest("form");

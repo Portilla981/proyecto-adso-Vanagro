@@ -21,7 +21,7 @@
 .form-register__label{
     text-align: left;
     width: 80%;
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxxs);
     color: var(--gray-900);
     margin-bottom: 5px;
 }
@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    padding: 2rem;
+    padding: 16px;
     gap: 1.5rem;
 }
 
