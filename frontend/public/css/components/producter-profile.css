@@ -43,7 +43,7 @@
     text-align: left;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 24px;
 
 }
 
@@ -154,7 +154,7 @@
 }
 
 .profile__report--close{
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: baseline;
 }
 
@@ -174,7 +174,7 @@
     border: 2px solid var(--primary-950);
     /* border-radius: 100%; */
     padding: 0 16px;
-    background-color: var(--gray-100);
+    background-color: var(--gray-50);
     padding-bottom: 16px;
     
 }  

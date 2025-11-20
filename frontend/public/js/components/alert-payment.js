@@ -1,6 +1,6 @@
 // message-edit-product.js
 (function () {
-  const POPUP_DURATION = 4000; // Duración del popup (4 segundos)
+  const POPUP_DURATION = 1000; // Duración del popup (4 segundos)
 
   function showPopup() {
     const popup = document.getElementById("popupMessage");
@@ -18,7 +18,7 @@
       popup.style.display = "none";
 
  
-      window.location.href = "/frontend/public/views/list-buies.html";
+      window.location.href = "/frontend/public/views/shopping-cart_user.html";
 
     }, POPUP_DURATION);
   }
