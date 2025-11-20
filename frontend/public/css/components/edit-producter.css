@@ -61,7 +61,7 @@
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
-  height: 48px;
+  height: 56px;
 }
 
 .edit-form__input::placeholder {
