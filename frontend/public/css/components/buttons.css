@@ -8,6 +8,23 @@
     padding: 16px;
 }
 
+/* Contenedor de 3 botones */
+.buttons__edit-producter {
+    display: flex;
+    justify-content: space-between; /* separa izquierda y derecha */
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+}
+
+/* Contenedor de los botones de la derecha */
+.buttons__right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+
 .buttons__action {
     border: none;
     border-radius: 0.8rem;

@@ -27,7 +27,7 @@ function renderUsers() {
     const tr = document.createElement("tr");
     tr.classList.add("user-list__row");
 
-    // ✅ Ajuste: añadimos data-label a cada celda
+    // Ajuste: añadimos data-label a cada celda
     tr.innerHTML = `
       <td class="user-list__cell" data-label="ID">${user.id}</td>
       <td class="user-list__cell" data-label="Nombre">${user.nombre}</td>

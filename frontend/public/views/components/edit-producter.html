@@ -1,6 +1,5 @@
 <div class="edit-form__head">
-    <!-- <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2> -->
-    <p><strong>Editar Productora</strong></p>
+    <p><strong>Editar Tienda</strong></p> 
 </div>
 
 <section class="edit-form__block">
@@ -40,23 +39,33 @@
                     </select>
                 </label>
             </div>
-
         </form>
 
         <div class="edit-form__images">
             <img class="edit-form__images--img" src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca">
-            <!-- <img src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca"> -->
             <label class="edit-form__label">Actualizar foto
-                    <input class="edit-form__file" type="file" >
+                <input class="edit-form__file" type="file">
             </label>
         </div>
     </div>
 
-
+    <!-- BOTONES -->
     <div class="buttons">
-        <button type="reset" class="buttons__action--secondary"
-            onclick="location.href='javascript:history.back()'">Cancelar</button>
-        <button type="submit" class="buttons__action--primary edit-producter-alert">Guardar cambios</button>
+        <button 
+            id="toggleStoreBtn"
+            class="user-list__action-btn user-list__action-btn--disable"
+            data-active="true"
+        >
+            Deshabilitar tienda
+        </button>
+
+        <div class="buttons__right">
+            <button type="reset" class="buttons__action--secondary"
+            onclick="location.href='javascript:history.back()'">
+            Cancelar</button>
+            <button type="submit" class="buttons__action--primary edit-producter-alert">
+            Guardar cambios</button>
+        </div>
     </div>
 
     <div class="popup" id="popupMessage">

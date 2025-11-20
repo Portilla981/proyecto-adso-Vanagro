@@ -229,9 +229,44 @@
   cursor: pointer;
 }
 
+
 @media (max-width: 640px) {
-  .product-edit{
-    height: 123vh;
+
+  .product-edit {
+    padding: 24px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .product-edit__row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .product-edit__input,
+  .product-edit__select,
+  .product-edit__dates-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-edit__dates {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .product-edit__image-preview img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-edit__actions {
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
