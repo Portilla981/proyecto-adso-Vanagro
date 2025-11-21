@@ -34,7 +34,7 @@
 .user-list__cell {
   padding: 12px;
   border: 2px solid var(--gray-100);
-  text-align: left;
+
 }
 
 
@@ -58,6 +58,16 @@
   color: var(--black);
 }
 
+.user-list__icon {
+  font-size: 22px;
+  color: var(--black);
+}
+
+.user-list__icon:hover {
+  color: var(--primary-950);
+}
+
+
 
 
 @media (width < 768px) {
@@ -74,7 +84,7 @@
 
   .user-list {
   max-width: 100%; 
-  overflow-x: hidden;   
+  overflow-x: hidden;  
   
 }
 
