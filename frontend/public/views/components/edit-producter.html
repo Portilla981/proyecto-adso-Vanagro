@@ -1,6 +1,5 @@
 <div class="edit-form__head">
-    <!-- <h2 class="edit-form__title">EDITAR DATOS DE LA FINCA / PRODUCTOR</h2> -->
-    <p>Edite los campos requeridos y haga clic en <strong>Guardar cambios.</strong></p>
+    <p><strong>Editar Tienda</strong></p> 
 </div>
 
 <section class="edit-form__block">
@@ -8,21 +7,21 @@
         <form action="#" method="" class="edit-form__form">
             <div class="edit-form__group">
                 <label class="edit-form__label">Finca Productora
-                    <input class="edit-form__input" type="text" value="Finca Las Bovinas">
+                    <input class="edit-form__input" type="text" value="Finca Las Bovinas" required>
                 </label>
                 <label class="edit-form__label">Dirección
-                    <input class="edit-form__input" type="text" placeholder="Vereda las palmas">
+                    <input class="edit-form__input" type="text" placeholder="Vereda las palmas" required>
                 </label>              
             
                 <label class="edit-form__label">Departamento
-                    <select class="edit-form__input">
+                    <select class="edit-form__input" required>
                         <option>Risaralda</option>
                         <option>Caldas</option>
                         <option>Quindío</option>
                     </select>
                 </label>
                 <label class="edit-form__label">Municipio
-                    <select class="edit-form__input">
+                    <select class="edit-form__input" required>
                         <option>Marsella</option>
                         <option>Apía</option>
                         <option>Balboa</option>
@@ -40,27 +39,35 @@
                     </select>
                 </label>
             </div>
-
-            
         </form>
 
         <div class="edit-form__images">
-            <img class="edit-form__images--img" src="/frontend/public/assets/farms/finca5.jpg" alt="Foto productor">
-            <!-- <img src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca"> -->
-            <label class="edit-form__label">Actualizar fotografia
-                    <input class="edit-form__file" type="file" >
+            <img class="edit-form__images--img" src="/frontend/public/assets/farms/finca5.jpg" alt="Foto finca">
+            <label class="edit-form__label">Actualizar foto
+                <input class="edit-form__file" type="file">
             </label>
         </div>
     </div>
 
+    <!-- BOTONES -->
+    <div class="buttons">
+        <button 
+            id="toggleStoreBtn"
+            class="user-list__action-btn user-list__action-btn--disable"
+            data-active="true"
+        >
+            Deshabilitar tienda
+        </button>
 
-    <div class="edit-form__actions">
-        <button type="button" class="buttons__action--secondary btn-cancel"
-            onclick="location.href='javascript:history.back()'">Cancelar</button>
-            <button type="button" class="buttons__action--primary btn-save edit-producter-alert">Guardar cambios</button>
-
-
+        <div class="buttons__right">
+            <button type="reset" class="buttons__action--secondary"
+            onclick="location.href='javascript:history.back()'">
+            Cancelar</button>
+            <button type="submit" class="buttons__action--primary edit-producter-alert">
+            Guardar cambios</button>
+        </div>
     </div>
+
     <div class="popup" id="popupMessage">
         <div class="popup__header">
             <i class="fa-solid fa-check popup__icon"></i>

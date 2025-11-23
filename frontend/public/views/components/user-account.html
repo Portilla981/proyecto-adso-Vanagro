@@ -1,6 +1,5 @@
 <div class="profile__container">
 
-
   <!-- Portada con leyenda -->
   <div class="profile__hero">
     <div class="profile__legend">
@@ -12,10 +11,8 @@
     </div>
   </div>
 
-
   <!-- Contenido principal -->
   <div class="profile__content">
-
 
     <!-- Columna izquierda: datos del productor -->
     <div class="profile__info">
@@ -29,23 +26,20 @@
       <p class="profile__detail"><strong>TELÉFONO:</strong> 3054331178 // 3252152545</p>
     </div>
 
-
-
-
     <!-- Columna derecha: opciones -->
     <div class="profile__actions">
       <button class="profile__action" onclick="location.href='/frontend/public/views/products-list.html'">
         <ion-icon name="eye-outline"></ion-icon>
         <span>Ver Productos</span>
       </button>
-      <button class="profile__action" onclick="location.href='/frontend/public/views/list-buies.html'"">
+      <button class="profile__action" onclick="location.href='/frontend/public/views/list-buies.html'">
         <ion-icon name="bag-add-outline"></ion-icon>
         <span>Compras/Pedidos</span>
       </button>
-      <button class="profile__action">
+      <!-- <button class="profile__action">
         <ion-icon name="calendar-outline"></ion-icon>
         <span>Ver Eventos</span>
-      </button>
+      </button> -->
       <button class="profile__action" onclick="location.href='#report'">
         <ion-icon name="document-text-outline"></ion-icon>
         <span>Reportes</span>
@@ -59,24 +53,23 @@
     </div>
   </div>
 
-
   <div class="profile__report" id="report">
     <div class="profile__report--photo">
       <div class="profile__report--phpto-head">
-        <img class="profile__report--img" src="/frontend/public/assets/vanagro/reporte.jpg" alt="">
+        <img class="profile__report--img" src="/frontend/public/assets/vanagro/reportecompras.PNG" alt="">
         <div class="profile__report--close">
-        <ion-icon onclick="location.href='javascript:history.back()'"  name="close-outline"></ion-icon>
+          <ion-icon onclick="location.href='javascript:history.back()'"  name="close-outline"></ion-icon>
         </div>
       </div>
-      <div class="profile__buttons">
+
+      <div class="buttons">
         <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'">
-          <ion-icon name="print-outline"></ion-icon>
-          <span>Imprimir</span>
+          Imprimir
         </button>
-        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'">
-          <ion-icon name="download-outline"></ion-icon>
-          <span>Descargar</span>
+        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'"> 
+          Descargar
         </button>
       </div>
     </div>
   </div>
+</div>

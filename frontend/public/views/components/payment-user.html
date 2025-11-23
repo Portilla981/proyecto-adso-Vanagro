@@ -33,9 +33,17 @@
       </ul>
 
       <!-- Botón pagar -->
-      <button class="buttons__action buttons__action--primary"
-        onclick="window.location.href='/frontend/public/views/list-buies.html'">Pagar</button>
+      <button class="buttons__action--primary payment-alert">Pagar</button>
     </div>
   </div>
-
+</div>
+<div class="popup" id="popupMessage">
+    <div class="popup__header">
+        <i class="fa-solid fa-check popup__icon"></i>
+    </div>
+    <div class="popup__body">
+        <h3 class="popup__title">¡PAGO REALIZADO!</h3>
+        <p class="popup__message">¡Hemos recibido tu pago, gracias por tu compra!</p>
+        <p class="popup__time"><strong>Por favor espera un momento...</strong></p>
+    </div>
 </div>

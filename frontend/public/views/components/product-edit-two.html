@@ -1,14 +1,14 @@
-<div class="product-form">
+<div class="product-edit">
 	<!-- <h2 class="product-edit__title">Creación de Productos</h2> -->
 
-	<form
+	<edit
 		action="#"
 		method="post"
 		class="product-edit__container"
-		enctype="multipart/form-data"
+		enctype="multipart/edit-data"
 	>
-		<div class="product-form__row product-form__row--checkbox">
-			<span class="product-form__label"
+		<div class="product-edit__row product-edit__row--checkbox">
+			<span class="product-edit__label"
 				><strong>Tipo de Producto:</strong></span
 			>
 			<label><input type="checkbox" /> Carnes</label>
@@ -18,24 +18,24 @@
 			<label><input type="checkbox" /> Verduras</label>
 		</div>
 
-		<div class="product-form__dates">
-			<h3 class="product-form__dates-title">Caducidad</h3>
+		<div class="product-edit__dates">
+			<h3 class="product-edit__dates-title">Caducidad</h3>
 
 			<div>
-				<p class="product-form__label">Fecha de Elaboración</p>
-				<input type="date" class="product-form__dates-input" required />
+				<p class="product-edit__label">Fecha de Elaboración</p>
+				<input type="date" class="product-edit__dates-input" required />
 			</div>
 
 			<div>
-				<p class="product-form__label">Fecha de Vencimiento</p>
-				<input type="date" class="product-form__dates-input" required />
+				<p class="product-edit__label">Fecha de Vencimiento</p>
+				<input type="date" class="product-edit__dates-input" required />
 			</div>
 		</div>
 
-		<div class="product-form__image">
-			<label class="product-form__image-upload">
+		<div class="product-edit__image">
+			<label class="product-edit__image-upload">
 				<span>Imagen del producto</span>
-				<div class="product-form__image-preview">
+				<div class="product-edit__image-preview">
 					<img
 						src="/frontend/public/assets/products/platano_verde.png"
 						alt="Imagen del producto"
@@ -62,7 +62,7 @@
 				Guardar
 			</button>
 		</div>
-	</form>
+	</edit>
 	<div class="popup" id="popupMessage">
 		<div class="popup__header">
 			<i class="fa-solid fa-check popup__icon"></i>

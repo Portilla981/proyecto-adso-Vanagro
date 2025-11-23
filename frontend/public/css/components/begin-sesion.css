@@ -67,7 +67,7 @@
 
 .beginner-form__input {
     min-width: 320px;
-    padding: 1rem;
+    padding: 16px;
     height: 48px;
     border-radius: 1rem;
     background-color: var(--white);

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     <!-- script para los iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,13 +14,16 @@
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
     <script src="/frontend/public/js/components/shopping-cart.js" defer></script>
     <script src="/frontend/public/js/components/payment-user.js" defer></script>
+    <script src="/frontend/public/js/components/alert-payment.js" defer></script>
 
 </head>
 
 <body>
-    <section class="navbar-simple"></section>   
+    <section class="navbar-simple"></section>
+
     <main class="cart">
         <h2 class="cart__title">Mi Carrito</h2>
+
         <div class="cart__header">
             <span>Producto</span>
             <span></span>
@@ -29,7 +33,9 @@
             <span>Finca/Tienda</span>
             <span>Eliminar</span>
         </div>
+
         <section id="cart-products"></section>
+        
         <div class="cart__summary">
             <div class="cart__total">
                 <span class="cart__total-label">TOTAL</span>
@@ -37,11 +43,11 @@
             </div>
         </div>
         <br>
-        <div class="cart__actions">
-            <a href="/frontend/public/views/products.html">
-                <button class="buttons__action buttons__action--secondary">Seguir Viendo</button>
+        
+        <div class="buttons">
+            <button class="buttons__action--secondary">Seguir Viendo</button>
             </a>
-            <button id="open-payment" class="buttons__action buttons__action--primary">¡Comprar!</button>
+            <button id="open-payment" class="buttons__action--primary">¡Comprar!</button>
         </div>
         <div id="payment-container"></div>
     </main>
@@ -50,6 +56,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 
 </html>

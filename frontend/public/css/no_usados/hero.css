@@ -1,4 +1,4 @@
-.hero{
+/* .hero{
     background-image: url(/frontend/public/assets/hero/img_fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -6,8 +6,8 @@
     position: relative;
     text-align: center;
     color: var(--white);
-}
-
+} */
+/* 
 .hero__content { 
 
     background-color: rgb(0 0 0 / 60%)  ;
@@ -19,14 +19,14 @@
     align-items: center;
     justify-content: center;
     
-}
+} */
 
-.hero__title {
+/* .hero__title {
     font-size: var(--fs-md);
-    /* color: aliceblue; */
-}
+    color: aliceblue; 
+}*/
 
-.hero_location {
+/* .hero_location {
     font-size: var(--fs-xs);
 
 }
@@ -41,10 +41,10 @@
     width: 80%;
     margin-top: 4rem;
     text-align: center;
-}
+} */
 
 /* cursor se comvierta en mano */
-.hero__button:hover{
+/* .hero__button:hover{
     cursor: pointer;
 }
 
@@ -53,4 +53,4 @@
         width: auto;
     }
     
-}
+} */

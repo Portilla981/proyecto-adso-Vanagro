@@ -2,19 +2,19 @@
     {
         "id": "finca1",
         "title": "Finca El Atardecer",
-        "property": "José Guillermo Ocampo López",
+        "property": "Jose Guillermo Giraldo",
         "img": "/frontend/public/assets/farms/finca.jpeg"
     },
     {
         "id": "finca2",
         "title": "Finca La Valentina",
-        "property": "Valentina Toro Peña",
+        "property": "Alba Nidia Toro Peña",
         "img": "/frontend/public/assets/farms/finca7.jpg"
     },
     {
         "id": "finca3",
         "title": "Finca La Natalia",
-        "property": "Angelly Natalia Agudelo Idárraga",
+        "property": "Natalia Agudelo Idarraga",
         "img": "/frontend/public/assets/farms/finca2.jpg"
     },
     {
@@ -23,16 +23,28 @@
         "property": "Johan David Portilla Zambrano",
         "img": "/frontend/public/assets/farms/finca6.jpg"
     },
-    {
-        "id": "finca5",
-        "title": "Finca Las Bovinas",
-        "property": "Julio Armando Cifuentes Correa",
-        "img": "/frontend/public/assets/farms/finca5.jpg"
+     {
+        "id": "finca1",
+        "title": "Finca El Atardecer",
+        "property": "Jose Guillermo Giraldo",
+        "img": "/frontend/public/assets/farms/finca.jpeg"
     },
     {
-        "id": "finca6",
-        "title": "Finca La Montañera",
-        "property": "María Antonia Restrepo Palacios",
-        "img": "/frontend/public/assets/farms/finca3.jpg"
+        "id": "finca2",
+        "title": "Finca La Valentina",
+        "property": "Alba Nidia Toro Peña",
+        "img": "/frontend/public/assets/farms/finca7.jpg"
+    },
+    {
+        "id": "finca3",
+        "title": "Finca La Natalia",
+        "property": "Natalia Agudelo Idarraga",
+        "img": "/frontend/public/assets/farms/finca2.jpg"
+    },
+    {
+        "id": "finca4",
+        "title": "Finca Portones de David",
+        "property": "Johan David Portilla Zambrano",
+        "img": "/frontend/public/assets/farms/finca6.jpg"
     }
 ]
