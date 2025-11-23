@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const editContainer = document.querySelector(".edit_producter_section");
+  const editContainer = document.querySelector(".edit-producter__section");
 
   if (editContainer) {
-    fetch("/frontend/public/views/components/edit-producter.html")
+    fetch("/frontend/public/views/components/edit-shop-user.html")
       .then(response => response.text())
       .then(data => {
         editContainer.innerHTML = data;

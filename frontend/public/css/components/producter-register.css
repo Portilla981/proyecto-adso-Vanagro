@@ -26,8 +26,9 @@
 .producter-register__identification {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 16px;
+  align-items: center;
 }
 
 /* Datos del productor */
@@ -36,6 +37,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 10px;
+  text-align: justify;
 }
 
 .profile__info--space {
@@ -123,12 +125,18 @@
 /* --- Botones --- */
 .producter-register__actions {
   display: flex;
-  justify-content: space-between; /* Antes estaba en flex-end */
+  justify-content: space-around; /* Antes estaba en flex-end */
   align-items: center;
   padding-top: 8px;
   flex-direction: row;
 }
 
+.btn__password {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* margin-top: 8px; */
+}
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
@@ -163,7 +171,7 @@
 
   .producter-register__fields-farm {
     flex: 1.5;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: 10px;
   }
 

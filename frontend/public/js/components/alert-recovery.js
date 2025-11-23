@@ -1,6 +1,6 @@
 // message-edit-product.js
 (function () {
-  const POPUP_DURATION = 1000; // Duración del popup (4 segundos)
+  const POPUP_DURATION = 2000; // Duración del popup (4 segundos)
 
   function showPopup() {
     const popup = document.getElementById("popupRecovery");

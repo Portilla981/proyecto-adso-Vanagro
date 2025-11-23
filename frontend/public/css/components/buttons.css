@@ -1,7 +1,7 @@
 .buttons {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -143,6 +143,6 @@
         /* margin: 0px 20px; */
         flex-direction: row;
         gap: 6rem;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
