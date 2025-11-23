@@ -16,10 +16,9 @@
 /* Título */
 .user-list__title {
   font-size: var(--fs-md);
-  margin-bottom: 32px;
+  margin: 0 0 24px 0;
   color: var(--black);
 }
-
 
 /* Tabla */
 .user-list__table {
@@ -35,7 +34,7 @@
 .user-list__cell {
   padding: 12px;
   border: 2px solid var(--gray-100);
-  text-align: left;
+
 }
 
 
@@ -59,6 +58,16 @@
   color: var(--black);
 }
 
+.user-list__icon {
+  font-size: 22px;
+  color: var(--black);
+}
+
+.user-list__icon:hover {
+  color: var(--primary-950);
+}
+
+
 
 
 @media (width < 768px) {
@@ -75,7 +84,7 @@
 
   .user-list {
   max-width: 100%; 
-  overflow-x: hidden;   
+  overflow-x: hidden;  
   
 }
 

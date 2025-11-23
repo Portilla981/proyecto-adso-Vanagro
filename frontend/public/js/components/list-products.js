@@ -40,7 +40,14 @@ function renderProducts() {
           onclick="toggleProduct('${product.id}')">
           ${product.estado ? "Deshabilitar" : "Habilitar"}
         </button>
-      </td>
+      
+        <td class="user-list__cell" data-label="Editar">
+          <a href="/frontend/public/views/edit-product.html">
+            <ion-icon class="user-list__icon" name="create-outline"></ion-icon>
+          </a>
+        </td>
+
+  
     `;
     tbody.appendChild(tr);
   });

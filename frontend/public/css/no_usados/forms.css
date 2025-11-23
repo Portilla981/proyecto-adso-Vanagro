@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;    
-} */
+}
 
 .form-container {    
     padding: 24px;
@@ -67,10 +67,10 @@
 .form__input::placeholder {
     color: var(--gray-500);    
     font-size: var(--fs-xxs);
-    opacity: 0.7; /* Asegura que no sea semi-transparente */
-}
+    opacity: 0.7; /* Asegura que no sea semi-transparente 
+}*/
 
-.form__button--primary {
+/* .form__button--primary {
     padding: 12px;
     margin: 20px;
 }
@@ -84,10 +84,10 @@
 .form__button--secondary {
     padding: 10px;
     margin: 20px 60px;
-}
+} 
 
 .form__button--secondary:hover {    
     color: var(--primary-950);
     border: solid 0.2rem;
     background-color: var(--white);
-}
+}*/

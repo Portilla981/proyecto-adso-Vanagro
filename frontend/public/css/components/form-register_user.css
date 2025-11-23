@@ -1,11 +1,10 @@
 .form-register__user {
-  /* display: grid; */
   place-content: center;
 }
 
-.form-register__head {
+/* .form-register__head {
   padding: 16px;
-}
+} */
 
 .form-register__title {
   font-size: var(--fs-sm);
@@ -16,8 +15,8 @@
   background-color: var(--white);
   padding: 24px;
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
-  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
   margin: 0 auto 24px;
   gap: 16px;
   font-size: var(--fs-xs);
@@ -31,6 +30,8 @@
 .form-register__form {
   display: grid;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-register__group {
@@ -47,21 +48,20 @@
   font-size: var(--fs-xxxs);
   color: var(--black);
   width: 100%;
-  max-width: 356px;
+  /* max-width: 356px; */
   box-sizing: border-box;
 }
 
 .form-register__input {
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
   border: 1px solid var(--black);
-  width: 100%;
-  min-width: 320px;
+  width: 320px;
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
-  height: 48px;
+  height: 56px;
 }
 
 .form-register__input::placeholder {
@@ -69,20 +69,17 @@
   font-size: var(--fs-xs);
 }
 
-
 .form-register__images {
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
   padding: 12px;
-  /* margin-top: 32px; */
 }
 
 .form-register__images--img {
   width: 200px;
   height: 200px;
-  /* background-image: url(/frontend/public/assets/vanagro/avatar.png); */
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
@@ -91,65 +88,47 @@
 
 .form-register__file {
   flex: 1;
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
-  border: 1px solid var(--black);
-  width: 100%;
-  /* min-width: 320px; */
+  width: 320px;
   font-size: var(--fs-xs);
   box-sizing: border-box;
   line-height: 1.5;
-  height: 48px;
+  height: 56px;
 }
 
-/* Botones */
-.form-register__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 24px;
-  gap: 16px;
-  cursor: pointer;
+/* --- TABLET --- */
+@media (width > 640px) and (width <= 1024px) {
+  .form-register__block--form {
+    flex-direction: column; /* imagen arriba */
+    align-items: center;
+  }
+
+  .form-register__images {
+    order: -1; /* asegura que quede arriba */
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .form-register__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* dos columnas */
+    gap: 16px;
+  }
+
+  .form-register__form {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-.btn__password{
-  display: flex;
-  align-items: center;  
-}
-
-.btn__password--link{
-    padding: 0 16px;
-    height: 40px;
-    background-color: var(--terciary-800);
-    color: var(--white); 
-    border: none;
-    border-radius: 4px;
-    margin: 15px;
-}
-
-.btn__password--link:hover {
-    background-color: var(--terciary-700);
-    color: var(--white);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.btn__password--link:focus {
-    outline: 2px solid var(--primary-500);
-    outline-offset: 2px;
-}
-
-
-@media (max-width: 1024px) {
-
-  /* .form-register__block {
-    width: fit-content;
-    margin: 16px auto;
-  } */
-
+/* --- CELULAR --- */
+@media (width <= 640px) {
   .form-register__form {
     display: flex;
     flex-direction: column;
+    gap: 16px;
   }
 
   .form-register__group {
@@ -159,19 +138,21 @@
     align-items: center;
   }
 
+  .form-register__file {
+    width: 320px;
+    height: 56px;
+  }
 }
 
-
-@media (min-width: 1024px) {
+/* --- DESKTOP --- */
+@media (width > 1024px) {
   .form-register__actions {
     flex-direction: row;
     justify-content: space-around;
-    /* gap: 24px; */
   }
 
   .form-register__block {
     width: fit-content;
-    /* margin: 16px auto; */
     padding: 24px;
   }
 
@@ -179,31 +160,23 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    /* max-width: 1000px; */
   }
-
 
   .form-register__form {
     display: grid;
-    /*grid-template-columns: 1fr 1fr 100px;*/
-    /* 2 columnas de inputs + 1 columna para imágenes */
     align-items: start;
     gap: 24px;
   }
 
   .form-register__group {
     grid-column: span 2;
-    /* Campos ocupan las dos primeras columnas */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
 
   .form-register__file {
-    width: 200px;
+    width: 320px;
+    height: 56px;
   }
-
 }
-
-
-/*----------------------------------------------------------------------*/

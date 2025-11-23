@@ -1,0 +1,36 @@
+[
+    { 
+        "id": 1,
+        "nombre": "Finca el atardecer",
+        "propietario": "Jose Guillermo Giraldo",
+        "ubicacion": "Marsella",
+        "activo": true 
+    },
+
+
+    { 
+        "id": 2,
+        "nombre": "Finca la valentina",
+        "propietario": "Alba Nidia Toro Peña",
+        "ubicacion": "Santuario",
+        "activo": true 
+    },
+
+
+    { 
+        "id": 3,
+        "nombre": "Finca la natalia",
+        "propietario": "Angelly Natalia Agudelo Idarraga",
+        "ubicacion": "Santa Rosa",
+        "activo": false
+    },
+
+
+    { 
+        "id": 4,
+        "nombre": "Finca portones de david",
+        "propietario": "Johan David Portilla Zambrano",
+        "ubicacion": "Finca",
+        "activo": true 
+    }
+]

@@ -25,13 +25,15 @@
       <p class="profile_producter--detail"><strong>TELÉFONO:</strong> 3054331178 / 3054411190</p>
     </div>
     <div class="profile_producter--info">
+      <a href="/frontend/public/views/edit-producter.html">
+        <ion-icon name="create-outline" class="profile_producter--edit"></ion-icon>
+      </a>
       <img class="profile_producter--avatar" src="/frontend/public/assets/farms/finca5.jpg" alt="Foto de la finca">
       <h3 class="profile_producter--name">Finca las Bovinas</h3>
       <p class="profile_producter--joined">Desde 1997</p>
       <p class="profile_producter--detail"><strong>UBICACIÓN:</strong> Vereda las Palmas - Marsella, Risaralda</p>
       <p class="profile_producter--detail"><strong>DESCRIPCIÓN:</strong> Finca dedicada a la producción de carne de res y café, comprometida con la calidad, el cuidado del medio ambiente y las tradiciones del campo colombiano 🐮🌱</p>
     </div>
-
 
     <div class="profile_producter--actions">
         <button class="profile_producter--action" onclick="location.href='/frontend/public/views/create-product.html'">
@@ -43,10 +45,10 @@
             <ion-icon name="create-outline"></ion-icon>
             <span>Editar Producto</span>
         </button>
-        <button class="profile_producter--action">
+        <!-- <button class="profile_producter--action">
             <ion-icon name="business-outline"></ion-icon>
             <span>Ver Empresas</span>
-        </button>
+        </button> -->
 
         <button class="profile_producter--action" onclick="location.href='/frontend/public/views/list-products.html'">
             <ion-icon name="calendar-outline"></ion-icon>
@@ -58,30 +60,30 @@
             <span>Reportes</span>
         </button>
 
-        <button class="profile_producter--action" onclick="location.href='/frontend/public/views/edit-producter.html'">
-            <ion-icon name="settings-outline"></ion-icon>
-            <span>Ajustes</span>
+        <button class="profile_producter--action" onclick="location.href='/frontend/public/views/producter-orders.html'">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span>Pedidos</span>
         </button>
 
     </div>
     
     <div class="profile__report" id="report">
-    <div class="profile__report--photo">
-      <div class="profile__report--phpto-head">
-        <img class="profile__report--img" src="/frontend/public/assets/vanagro/reporte.jpg" alt="">
-        <div class="profile__report--close">
-        <ion-icon onclick="location.href='javascript:history.back()'"  name="close-outline"></ion-icon>
+      <div class="profile__report--photo">
+        <div class="profile__report--phpto-head">
+          <img class="profile__report--img" src="/frontend/public/assets/vanagro/reporte.jpg" alt="">
+          <div class="profile__report--close">
+            <ion-icon onclick="location.href='javascript:history.back()'"  name="close-outline"></ion-icon>
+          </div>
         </div>
-      </div>
-      <div class="profile__buttons">
-        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'">
-          <ion-icon name="print-outline"></ion-icon>
-          <span>Imprimir</span>
-        </button>
-        <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'"> 
-          <ion-icon name="download-outline"></ion-icon>
-          <span>Descargar</span>
-        </button>
+
+        <div class="buttons">
+          <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'">
+            Imprimir
+          </button>
+          <button class="buttons__action--primary" onclick="location.href='javascript:history.back()'"> 
+            Descargar
+          </button>
+        </div>
       </div>
     </div>
   </div>

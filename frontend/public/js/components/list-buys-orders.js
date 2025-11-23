@@ -27,7 +27,7 @@ function renderUsers() {
     const tr = document.createElement("tr");
     tr.classList.add("user-list__row");
 
-    // ✅ Ajuste: añadimos data-label a cada celda
+
     tr.innerHTML = `
       <td class="user-list__cell" data-label="ID Compra">${user.id}</td>
       <td class="user-list__cell" data-label="Fecha">${user.fecha}</td>
@@ -35,9 +35,11 @@ function renderUsers() {
       <td class="user-list__cell" data-label="Precio">${user.precio}</td>
       <td class="user-list__cell" data-label="Estado">${user.estado}</td>
       <td class="user-list__cell" data-label="Acciones">
-        <button 
-          class="buttons__action--primary">Detalles
-        </button>
+        <a href="#details">
+          <button class="buttons__action--primary">Detalles</button>
+        </a>
+
+        
       </td>
       <hr class="user-list__hr">
     `;

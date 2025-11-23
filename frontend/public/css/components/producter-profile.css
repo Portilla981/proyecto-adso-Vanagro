@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 12px;
 }
 
 .profile_producter--legend {
@@ -26,13 +26,13 @@
 }
 
 .profile_producter--role {
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     font-weight: bold;
     margin: 1;
 }
 
 .profile_producter--message {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
     font-weight: 600;
     margin: 0.5rem 0 0;
 }
@@ -43,7 +43,7 @@
     text-align: left;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 24px;
 
 }
 
@@ -53,11 +53,27 @@
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 3px 3px var(--gray-500);
+    position: relative;
 }
 
+
+.profile_producter--edit {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.profile_producter--edit:hover {
+    color: var(--primary-950);
+}
+
+
 .profile_producter--avatar {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-950);
@@ -154,7 +170,7 @@
 }
 
 .profile__report--close{
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: baseline;
 }
 
@@ -174,7 +190,7 @@
     border: 2px solid var(--primary-950);
     /* border-radius: 100%; */
     padding: 0 16px;
-    background-color: var(--gray-100);
+    background-color: var(--gray-50);
     padding-bottom: 16px;
     
 }  

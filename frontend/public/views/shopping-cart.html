@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     <!-- script para los iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,7 +14,7 @@
     <script src="/frontend/public/js/components/footer_vanagro.js" defer></script>
     <script src="/frontend/public/js/components/shopping-cart.js" defer></script>
     <script src="/frontend/public/js/components/payment.js" defer></script>
-    <script src="/frontend/public/js/components/alert-payment.js" defer></script>
+    <script src="/frontend/public/js/components/alert-login-in.js" defer></script>
         
 </head>
 
@@ -33,9 +34,7 @@
             <span>Eliminar</span>
         </div>
 
-
         <section id="cart-products"></section>
-
 
         <div class="cart__summary">
             <div class="cart__total">
@@ -44,11 +43,23 @@
             </div>
         </div>
         <br>
-        <div class="cart__actions">
+
+        <div class="buttons">
             <a href="/frontend/public/views/products.html">
-            <button class="buttons__action buttons__action--secondary">Seguir Viendo</button></a>
+                <button class="buttons__action--secondary">Seguir Viendo</button>
+            </a>
             
-            <button id="open-payment" class="buttons__action buttons__action--primary">¡Comprar!</button>
+            <button class="buttons__action--primary login-in">¡Comprar!</button>
+            <div class="popup--warning" id="popupMessage">
+                <div class="popup__header--warning">
+                    <i class="fa-solid fa-exclamation popup__icon--warning"></i>
+                </div>
+                <div class="popup__body--warning">
+                    <h3 class="popup__title--warning">¡INICIA SESIÓN!</h3>
+                    <p class="popup__message--warning">¡Antes de comprar por favor inicia sesión!</p>
+                    <p class="popup__time--warning"><strong>Por favor espera un momento...</strong></p>
+                </div>
+            </div>
         </div>
         <div id="payment-container"></div>
     </main>
@@ -58,6 +69,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 
 </html>
