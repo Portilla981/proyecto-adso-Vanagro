@@ -14,7 +14,7 @@
 
 .purchase-details__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -32,9 +32,6 @@
     width: 70px;
     height: 70px;
     border-radius: 12px;
-    position: absolute;
-    top: 50px;
-    right: 16px;
 }
 
 
