@@ -27,18 +27,18 @@ function renderOrders() {
     const tr = document.createElement("tr");
     tr.classList.add("user-list__row");
 
-    // ✅ Ajuste: añadimos data-label a cada celda
+  
     tr.innerHTML = `
       <td class="user-list__cell" data-label="Id Pedido">${order.id}</td>
       <td class="user-list__cell" data-label="Fecha Pedido">${order.fecha}</td>
       <td class="user-list__cell" data-label="Nombre Producto">${order.nombre}</td>
       <td class="user-list__cell" data-label="Valor">${order.valor}</td>
       <td class="user-list__cell" data-label="Acciones">
-        <button 
-          class="user-list__action-btn ${order.estado ? "user-list__action-btn--disable" : "user-list__action-btn--enable"}" 
-          onclick="toggleOrder('${order.id}')">
-          ${order.estado ? "Cancelar" : "Habilitar"}
-        </button>
+        <a href="/frontend/public/views/producter-purchase-detail.html">
+          <button class="buttons__action--primary">Detalles</button>
+        </a>
+
+        
       </td>
     `;
     tbody.appendChild(tr);
